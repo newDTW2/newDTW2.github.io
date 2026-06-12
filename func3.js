@@ -2695,19 +2695,21 @@ function func331() {
                 }
                 if (var_73[var_1171][var_1172] == 1 && var_127 == 0 && var_132 == 0) {
                     if (var_102 == 1 || var_98 == 1 || var_156[365] == 1) {
+                        // 下り階段？
                         color(0, 255, 255);
                         boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                         color(0, 0, 0);
-                        boxf(var_1171 * var_37 + 1, var_1172 * var_38 + 1, var_1171 * var_37 + 3, var_1172 * var_38 + 3);
+                        boxf(var_1171 * var_37 + 1.5, var_1172 * var_38 + 1.5, var_1171 * var_37 + map_elem_size - 1.5, var_1172 * var_38 + map_elem_size - 1.5);
                         var_1179 = 5;
                     }
                 }
                 if (var_73[var_1171][var_1172] == 2 && var_127 == 0 && var_132 == 0) {
                     if (var_102 == 1 || var_99 == 1 || var_156[365] == 1) {
+                        // 登り階段？
                         color(0, 255, 255);
                         boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                         color(0, 0, 0);
-                        boxf(var_1171 * var_37 + 1, var_1172 * var_38 + 1, var_1171 * var_37 + 3, var_1172 * var_38 + 3);
+                        boxf(var_1171 * var_37 + 1.5, var_1172 * var_38 + 1.5, var_1171 * var_37 + map_elem_size - 1.5, var_1172 * var_38 + map_elem_size - 1.5);
                         var_1179 = 5;
                     }
                 }
