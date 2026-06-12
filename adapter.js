@@ -195,10 +195,7 @@ function await_(time) {
 function bgscr(data0, data1, data2, data3, data4, data5, data6 = null, data7 = null) { undef_func("bgscr", [data0, data1, data2, data3, data4, data5, data6, data7]); }
 function bload(file_name, data_size = null, offset = null) {
     if (file_name.split(".")[1] == "wav") {
-        var audio = new Audio("se/" + file_name);
-        audio.autoplay = false;
-        audio.loop = false;
-        return audio;
+        return loadSound("se/" + file_name);
     }
     if (file_name.split(".")[1] == "mid") {
         return file_name;
@@ -652,11 +649,10 @@ function DSLOADMEMORY(audio_data, audio_id) {
     se[audio_id] = audio_data;
 }
 function DSPLAY(audio_id = null) {
-    se[audio_id].currentTime = 0;
-    se[audio_id].play();
+    playSound(se[audio_id], se[audio_id].volume);
 }
 function DSSETVOLUME(se_id, volume) {
-    se[se_id].volume = volume / 1000;
+    se[se_id].volume = volume / 100;
 }
 function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
