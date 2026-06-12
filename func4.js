@@ -9385,10 +9385,12 @@ function func480() {
 }
 function func481() {
     return __awaiter(this, void 0, void 0, function* () {
+        // memo: いつ呼び出される？
+        // 何故、前任者はここのコードを書き替えた？
         dbgprt(481);
         var_233[0] = var_78[var_2044];
         var_78[var_2044].Var0 = 1234123;
-        console.log(var_233[0].Var0);
+        console.log("debug", var_233[0].Var0);
         return;
     });
 }
