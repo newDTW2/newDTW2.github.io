@@ -2702,6 +2702,10 @@ function func433() {
             var_447 = var_447 + 1;
             var_449 = var_449 + 1;
         }
+
+        var_233[var_447].Var0 = 0;
+        var_233[var_449].Var0 = 0;
+
         var_1956 = 1;
         for (var cnt1 = 0; cnt1 < var_224; ++cnt1) {
             if (var_479[var_1956] == 1) {
