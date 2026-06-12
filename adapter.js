@@ -337,7 +337,14 @@ function ResetKey(key_id) {
     gamepad_key_list[key_id] = 0;
 }
 function getstr(data0, data1, data2, data3) { undef_func("getstr", [data0, data1, data2, data3]); }
-function gettime(data0) { undef_func("gettime", [data0]); }
+function gettime(data0) {
+    const now = new Date();
+    switch (data0) {
+        case 0: return now.getFullYear();
+        case 1: return now.getMonth() + 1;
+        case 3: return now.getDate();
+    }
+}
 function ginfo(data_id) {
     switch (data_id) {
         case 2:
