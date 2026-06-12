@@ -2630,6 +2630,8 @@ function func330() {
         return;
     });
 }
+
+// ミニマップの描画
 function func331() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(331);
@@ -2694,7 +2696,7 @@ function func331() {
                 if (var_73[var_1171][var_1172] == 1 && var_127 == 0 && var_132 == 0) {
                     if (var_102 == 1 || var_98 == 1 || var_156[365] == 1) {
                         color(0, 255, 255);
-                        boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                        boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                         color(0, 0, 0);
                         boxf(var_1171 * var_37 + 1, var_1172 * var_38 + 1, var_1171 * var_37 + 3, var_1172 * var_38 + 3);
                         var_1179 = 5;
@@ -2703,7 +2705,7 @@ function func331() {
                 if (var_73[var_1171][var_1172] == 2 && var_127 == 0 && var_132 == 0) {
                     if (var_102 == 1 || var_99 == 1 || var_156[365] == 1) {
                         color(0, 255, 255);
-                        boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                        boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                         color(0, 0, 0);
                         boxf(var_1171 * var_37 + 1, var_1172 * var_38 + 1, var_1171 * var_37 + 3, var_1172 * var_38 + 3);
                         var_1179 = 5;
@@ -2713,21 +2715,22 @@ function func331() {
                     var_1180 = var_77[var_1171][var_1172];
                     if (var_100 == 1 || var_156[301] == 1 || var_78[var_1180].Var10 == 1) {
                         color(0, 255, 255);
-                        boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                        boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                         var_1179 = 3;
                     }
                 }
                 if (var_80[var_1171][var_1172] > 0 && var_127 == 0 && var_132 == 0) {
                     var_1181 = var_80[var_1171][var_1172];
                     if (var_81[var_1181][4] == 1 || var_170 == 1 || var_121 == 1 || var_156[303] == 1) {
+                        // 罠
                         color(255, 0, 255);
                         var_1182 = 0;
                         if (var_81[var_1181][0] == 82 || var_81[var_1181][0] == 86 || var_81[var_1181][0] == 87 || var_81[var_1181][0] == 88 || var_81[var_1181][0] == 90 || var_81[var_1181][0] == 91 || var_81[var_1181][0] == 92 || var_81[var_1181][0] == 93 || var_81[var_1181][0] == 94 || var_81[var_1181][0] == 99 || var_81[var_1181][0] == 79 || var_81[var_1181][0] == 80 || var_81[var_1181][0] == 81 || var_81[var_1181][0] == 78 || var_81[var_1181][0] == 77) {
                             color(0, 255, 255);
                             var_1182 = 1;
                         }
-                        line(var_1171 * var_37 - 1, var_1172 * var_38 - 1, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
-                        line(var_1171 * var_37 + 5, var_1172 * var_38 - 1, var_1171 * var_37, var_1172 * var_38 + 4);
+                        line(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + map_elem_size, var_1172 * var_38 + map_elem_size);
+                        line(var_1171 * var_37 + map_elem_size, var_1172 * var_38, var_1171 * var_37, var_1172 * var_38 + map_elem_size);
                         var_1179 = 2;
                         if (var_1182 == 1) {
                             var_1179 = 9;
@@ -2735,14 +2738,11 @@ function func331() {
                     }
                 }
                 if (var_65[var_1171][var_1172] == 1) {
+                    // ディアボロ
                     color(255, 255, 255);
-                    pset(var_1171 * var_37 + 1, var_1172 * var_38);
-                    pset(var_1171 * var_37 + 2, var_1172 * var_38);
-                    pset(var_1171 * var_37 + 3, var_1172 * var_38);
-                    pset(var_1171 * var_37 + 1, var_1172 * var_38 + 4);
-                    pset(var_1171 * var_37 + 2, var_1172 * var_38 + 4);
-                    pset(var_1171 * var_37 + 3, var_1172 * var_38 + 4);
-                    boxf(var_1171 * var_37, var_1172 * var_38 + 1, var_1171 * var_37 + 4, var_1172 * var_38 + 3);
+                    context.beginPath();
+                    context.arc(var_1171 * var_37 + map_elem_size / 2, var_1172 * var_38 + map_elem_size / 2, map_elem_size / 2, 0, 6.28, false);
+                    context.fill();
                     var_1179 = 6;
                 }
                 if (var_82[var_1171][var_1172] > 0 && var_83[var_1178].Var0 != 50) {
@@ -2786,7 +2786,7 @@ function func331() {
                             }
                         }
                         if (var_83[var_1178].Var10 == var_201 && var_201 != 14) {
-                            boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                            boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                             var_1179 = 4;
                             if (var_1184 == 1) {
                                 var_1179 = 8;
@@ -2810,7 +2810,7 @@ function func331() {
                         }
                         if (var_201 != 14 && var_201 != 0 && var_201 != 13) {
                             if (var_71[var_1185][var_1172] == var_201 || var_71[var_1186][var_1172] == var_201 || var_71[var_1171][var_1187] == var_201 || var_71[var_1171][var_1188] == var_201 || var_71[var_1185][var_1187] == var_201 || var_71[var_1185][var_1188] == var_201 || var_71[var_1186][var_1187] == var_201 || var_71[var_1186][var_1188] == var_201) {
-                                boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                                boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                                 var_1179 = 4;
                                 if (var_1184 == 1) {
                                     var_1179 = 8;
@@ -2818,14 +2818,14 @@ function func331() {
                             }
                         }
                         if (var_65[var_1185][var_1172] == 1 || var_65[var_1186][var_1172] == 1 || var_65[var_1171][var_1187] == 1 || var_65[var_1171][var_1188] == 1 || var_65[var_1185][var_1187] == 1 || var_65[var_1185][var_1188] == 1 || var_65[var_1186][var_1187] == 1 || var_65[var_1186][var_1188] == 1) {
-                            boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                            boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                             var_1179 = 4;
                             if (var_1184 == 1) {
                                 var_1179 = 8;
                             }
                         }
                         if (var_101 == 1 || var_156[312] == 1 || var_132 >= 1 || var_391 == 1) {
-                            boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + 4, var_1172 * var_38 + 4);
+                            boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                             var_1179 = 4;
                             if (var_1184 == 1) {
                                 var_1179 = 8;
