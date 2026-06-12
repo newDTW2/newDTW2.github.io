@@ -194,12 +194,6 @@ function await_(time) {
 }
 function bgscr(data0, data1, data2, data3, data4, data5, data6 = null, data7 = null) { undef_func("bgscr", [data0, data1, data2, data3, data4, data5, data6, data7]); }
 function bload(file_name, data_size = null, offset = null) {
-
-    // if (file_name == "03.dat") {
-    //     console.log("03.dat");
-    //     debugger
-    // }
-
     if (file_name.split(".")[1] == "wav") {
         var audio = new Audio("se/" + file_name);
         audio.autoplay = false;
