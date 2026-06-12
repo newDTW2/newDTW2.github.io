@@ -3069,7 +3069,11 @@ function func231() {
         var_985 = 0;
         bsave(var_735, var_704, null, var_985);
         var_985 = var_985 + 1200;
-        bsave(var_735, var_233, null, var_985);
+        var save_233 = Array();
+        var_233.forEach(function (save) {
+            save_233.push(save.Save());
+        });
+        bsave(var_735, save_233, null, var_985);
         var_985 = var_985 + 12000;
         bsave(var_735, var_476, null, var_985);
         var_985 = var_985 + 160;
@@ -3103,7 +3107,11 @@ function func231() {
         var_985 = var_985 + 19600;
         bsave(var_735, var_77, null, var_985);
         var_985 = var_985 + 19600;
-        bsave(var_735, var_78, null, var_985);
+        var save_78 = Array();
+        var_78.forEach(function (save) {
+            save_78.push(save.Save());
+        });
+        bsave(var_735, save_78, null, var_985);
         var_985 = var_985 + 36000;
         bsave(var_735, var_81, null, var_985);
         var_985 = var_985 + 8400;
