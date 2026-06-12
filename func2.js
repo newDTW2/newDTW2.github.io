@@ -3763,6 +3763,8 @@ function func239() {
         return;
     });
 }
+
+// セーブデータの削除
 function func240() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(240);

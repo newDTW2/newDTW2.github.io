@@ -194,6 +194,12 @@ function await_(time) {
 }
 function bgscr(data0, data1, data2, data3, data4, data5, data6 = null, data7 = null) { undef_func("bgscr", [data0, data1, data2, data3, data4, data5, data6, data7]); }
 function bload(file_name, data_size = null, offset = null) {
+
+    // if (file_name == "03.dat") {
+    //     console.log("03.dat");
+    //     debugger
+    // }
+
     if (file_name.split(".")[1] == "wav") {
         var audio = new Audio("se/" + file_name);
         audio.autoplay = false;
@@ -275,7 +281,10 @@ function color(red, green, blue) {
     context.strokeStyle = context.fillStyle = "rgb(" + red + ", " + green + ", " + blue + ")";
 }
 function combox(data0, data1, data2) { undef_func("combox", [data0, data1, data2]); }
-function delete_(data0) { undef_func("delete_", [data0]); }
+function delete_(data0) {
+    localStorage.removeItem(data0);
+    delete files[data0];
+}
 function dim(length1, length2 = null, length3 = null, length4 = null) {
     if (length4 != null) {
         throw "4重配列なんてありませんよ";
