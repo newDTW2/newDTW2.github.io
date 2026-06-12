@@ -98,7 +98,9 @@ function InitInput() {
     var canv = document.getElementById("c0");
     document.onkeydown = function (e) {
         pushing_key_list[e.keyCode] = 1;
-        e.preventDefault();
+        if (e.key !== "F12") {
+            e.preventDefault();
+        }
     };
     document.onkeyup = function (e) {
         pushing_key_list[e.keyCode] = 0;
