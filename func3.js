@@ -4003,6 +4003,8 @@ function func342() {
         return;
     });
 }
+
+// HPバーの描画
 function func343() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(343);
@@ -4017,15 +4019,17 @@ function func343() {
         if (var_352 >= 300) {
             var_1235 = 30;
         }
+        var top = 25;
+        var height = 8;
         color(255, 255, 255);
-        boxf(var_1235 - 1, 24, var_352 + var_1235 + 1, 31);
+        boxf(var_1235 - 1, top - 1, var_352 + var_1235 + 1, top + height + 1);
         color(255, 0, 0);
-        boxf(var_1235, 25, var_352 + var_1235, 30);
+        boxf(var_1235, top, var_352 + var_1235, top + height);
         color(255, 0, 0);
-        boxf(var_1235, 25, var_352 + var_1235, 30);
+        boxf(var_1235, top, var_352 + var_1235, top + height);
         if (var_211 > 0) {
             color(255, 255, 255);
-            boxf(var_1235, 25, var_211 + var_1235 + 1, 30);
+            boxf(var_1235, top, var_211 + var_1235 + 1, top + height);
             color(0, 255, 0);
             if (var_130 >= 1) {
                 color(0, 0, 255);
@@ -4033,7 +4037,7 @@ function func343() {
             if (var_134 >= 1 || var_135 >= 1 || var_136 >= 1 || var_137 >= 1) {
                 color(255, 0, 255);
             }
-            boxf(var_1235, 25, var_211 + var_1235, 30);
+            boxf(var_1235, top, var_211 + var_1235, top + height);
         }
         font("MS ゴシック", 11);
         color(255, 255, 255);
