@@ -2736,32 +2736,32 @@ function func229() {
 function func230() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(230);
-        var_753 = "";
+        var_753 = [];
         for (var cnt1 = 0; cnt1 < 100; ++cnt1) {
-            var_753 = var_753 + "" + "\n";
+            var_753.push("");
         }
-        var_753 = var_753 + "ほぞん" + "\n";
-        var_753 = var_753 + "しきべつ" + "\n";
-        var_753 = var_753 + "へんげ" + "\n";
-        var_753 = var_753 + "ごうせい" + "\n";
-        var_753 = var_753 + "かいふく" + "\n";
-        var_753 = var_753 + "みがわり" + "\n";
-        var_753 = var_753 + "たかとび" + "\n";
-        var_753 = var_753 + "とじこめ" + "\n";
-        var_753 = var_753 + "やりすごし" + "\n";
-        var_753 = var_753 + "おはらい" + "\n";
-        var_753 = var_753 + "ジョジョって" + "\n";
-        var_753 = var_753 + "かっけーなー" + "\n";
-        var_753 = var_753 + "だけど" + "\n";
-        var_753 = var_753 + "スピードワゴンが" + "\n";
-        var_753 = var_753 + "ストレイツォに" + "\n";
-        var_753 = var_753 + "ころされていった" + "\n";
-        var_753 = var_753 + "いどうなるだろう" + "\n";
-        var_753 = var_753 + "ジョジョは" + "\n";
-        var_753 = var_753 + "オレの" + "\n";
-        var_753 = var_753 + "ともダチ" + "\n";
+        var_753.push("ほぞん");
+        var_753.push("しきべつ");
+        var_753.push("へんげ");
+        var_753.push("ごうせい");
+        var_753.push("かいふく");
+        var_753.push("みがわり");
+        var_753.push("たかとび");
+        var_753.push("とじこめ");
+        var_753.push("やりすごし");
+        var_753.push("おはらい");
+        var_753.push("ジョジョって");
+        var_753.push("かっけーなー");
+        var_753.push("だけど");
+        var_753.push("スピードワゴンが");
+        var_753.push("ストレイツォに");
+        var_753.push("ころされていった");
+        var_753.push("いどうなるだろう");
+        var_753.push("ジョジョは");
+        var_753.push("オレの");
+        var_753.push("ともダチ");
         for (var cnt1 = 0; cnt1 < 100; ++cnt1) {
-            var_753 = var_753 + "" + "\n";
+            var_753.push("");
         }
         return;
     });
