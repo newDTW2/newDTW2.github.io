@@ -48,3 +48,9 @@ window.onload = func001;
     requestAnimationFrame(updateGamepad);
 })();
 
+// 自動セーブ
+document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+        func231();
+    }
+});
