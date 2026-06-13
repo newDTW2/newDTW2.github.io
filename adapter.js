@@ -305,7 +305,7 @@ function dim(length1, length2 = null, length3 = null, length4 = null) {
 function dirinfo(data0) { undef_func("dirinfo", [data0]); }
 function dirlist(data0, data1, data2 = null) { undef_func("dirlist", [data0, data1, data2]); }
 function end() {
-    window.close();
+    location.reload();
 }
 function exist(file_name) {
     bload(file_name);
