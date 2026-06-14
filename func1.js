@@ -953,7 +953,7 @@ function func139() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(139);
         onexit(0);
-        var_686 = 50;
+        var_686 = 40;
         var_25[7] = 255;
         var_26[7] = 255;
         var_27[7] = 255;
