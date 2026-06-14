@@ -2713,6 +2713,7 @@ function func331() {
                 if (var_77[var_1171][var_1172] > 0 && var_127 == 0 && var_132 == 0) {
                     var_1180 = var_77[var_1171][var_1172];
                     if (var_100 == 1 || var_156[301] == 1 || var_78[var_1180].Var10 == 1) {
+                        // アイテム
                         color(0, 255, 255);
                         boxf(var_1171 * var_37 + 0.5, var_1172 * var_38 + 0.5, var_1171 * var_37 + map_elem_size - 0.5, var_1172 * var_38 + map_elem_size - 0.5);
                         var_1179 = 3;
