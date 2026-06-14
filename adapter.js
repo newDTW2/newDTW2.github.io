@@ -327,11 +327,13 @@ function int(data0) {
 function limit(val, min_val, max_val) {
     return Math.max(min_val, Math.min(val, max_val));
 }
-function line(start_x, start_y, end_x, end_y) {
+function line(start_x, start_y, end_x, end_y, lineWidth = 1) {
+    context.lineWidth = lineWidth;
     context.beginPath();
     context.moveTo(start_x, start_y);
     context.lineTo(end_x, end_y);
     context.stroke();
+    context.lineWidth = 1;
 }
 function listbox(data0, data1, data2) { undef_func("listbox", [data0, data1, data2]); }
 function mes(text) {

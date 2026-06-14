@@ -2727,8 +2727,8 @@ function func331() {
                             color(0, 255, 255);
                             var_1182 = 1;
                         }
-                        line(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + map_elem_size, var_1172 * var_38 + map_elem_size);
-                        line(var_1171 * var_37 + map_elem_size, var_1172 * var_38, var_1171 * var_37, var_1172 * var_38 + map_elem_size);
+                        line(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + map_elem_size, var_1172 * var_38 + map_elem_size, 1.5);
+                        line(var_1171 * var_37 + map_elem_size, var_1172 * var_38, var_1171 * var_37, var_1172 * var_38 + map_elem_size, 1.5);
                         var_1179 = 2;
                         if (var_1182 == 1) {
                             var_1179 = 9;
