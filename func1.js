@@ -1700,7 +1700,7 @@ function func142() {
         }
         if (var_255 == 1) {
             if (var_64 == 0) {
-                var_64 = 4;
+                var_64 = 1;
                 DSPLAY(100);
                 yield func143();
                 yield wait(13);
@@ -1726,7 +1726,7 @@ function func142() {
                 yield wait(10);
             }
             if (var_64 == 4) {
-                var_64 = 1;
+                var_64 = 3;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
@@ -1754,7 +1754,7 @@ function func142() {
                 yield wait(10);
             }
             if (var_64 == 1) {
-                var_64 = 4;
+                var_64 = 0;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
@@ -1970,7 +1970,7 @@ function func146() {
         color(155, 155, 155);
         mes("配布サイトへ");
         pos(45, 120);
-        color(255, 255, 255);
+        color(155, 155, 155);
         mes("終了");
         if (var_64 == 0) {
             pos(12, 37);
