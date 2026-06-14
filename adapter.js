@@ -62,34 +62,6 @@ function is_changed(x, y) {
     }
     return false;
 }
-function reset_input(x, y) {
-    pushing_key_list[37] = pushing_key_list[38] = pushing_key_list[39] = pushing_key_list[40] = 0;
-    if (pushing_key_list[88] == 1 && pushing_key_list[90] == 1) {
-        pushing_key_list[88] = pushing_key_list[90] = 0;
-    }
-    if ((x <= 5) || (y <= 5) || (x >= canvasSize - 5) || (y >= canvasSize - 5)) {
-        pre_pos = [0, 0];
-        return;
-    }
-    var b1 = canvasSize / 3;
-    var b2 = canvasSize / 3 * 2;
-    if (x < b1) {
-        pushing_key_list[37] = 1;
-    }
-    if (x > b2) {
-        pushing_key_list[39] = 1;
-    }
-    if (y < b1) {
-        pushing_key_list[38] = 1;
-    }
-    if (y > b2) {
-        pushing_key_list[40] = 1;
-    }
-    if (b1 < x && x < b2 && b1 < y && y < b2) {
-        pushing_key_list[88] = pushing_key_list[90] = 1;
-    }
-    pre_pos = [x, y];
-}
 function ResetDataAndReload(e) {
     localStorage.clear();
     location.reload();
