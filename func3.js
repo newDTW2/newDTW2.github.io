@@ -2667,7 +2667,8 @@ function func331() {
                     }
                     var_1173 = var_1173 + 1;
                 }
-                color(240, 240, 20);
+                // 移動経路の描画
+                // color(240, 240, 20);
                 if (var_71[var_1171][var_1172] != 0 && var_71[var_1171][var_1172] != 13) {
                     if (var_74[var_1171][var_1172] == 2) {
                         boxf(var_1171 * var_37, var_1172 * var_38, var_1171 * var_37 + map_elem_size, var_1172 * var_38 + map_elem_size);
