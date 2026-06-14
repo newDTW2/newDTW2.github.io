@@ -7694,7 +7694,7 @@ function func193() {
         }
         if (var_255 == 1) {
             if (var_899 == 0) {
-                var_899 = 6;
+                var_899 = 2;
                 DSPLAY(100);
                 yield func337();
                 yield func337();
@@ -7784,7 +7784,7 @@ function func193() {
                 return;
             }
             if (var_899 == 2) {
-                var_899 = 3;
+                var_899 = 0;
                 DSPLAY(100);
                 yield func337();
                 yield func337();
@@ -8008,15 +8008,19 @@ function func197() {
         pos(145, 130);
         mes("キーコンフィグ");
         pos(145, 150);
+        color(150, 150, 150);
         mes("ゲームパッド");
         pos(145, 170);
+        color(150, 150, 150);
         mes("画面サイズ");
         pos(145, 190);
+        color(150, 150, 150);
         mes("マップ色変更");
         if (var_62 == 99 || var_637 != 0) {
             color(150, 150, 150);
         }
         pos(145, 210);
+        color(150, 150, 150);
         mes("通信モード");
         color(255, 255, 255);
         if (var_900 == 1 || var_901 == 1 || var_902 == 1 || var_903 == 1 || var_904 == 1 || var_905 == 1) {
@@ -8046,6 +8050,7 @@ function func197() {
             color(150, 150, 150);
         }
         pos(265, 210);
+        color(150, 150, 150);
         if (var_407 == 0) {
             mes("OFF");
         }
