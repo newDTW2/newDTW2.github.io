@@ -116,7 +116,7 @@ function bload(file_name, data_size = null, offset = null) {
         return files[file_name][0];
     }
 }
-function boxf(left = null, top = null, right = null, bottom = null) {
+function boxf(left = null, top = null, right = null, bottom = null, isFill = true) {
     left = left || 0;
     top = top || 0;
     right = right || 680;
@@ -126,7 +126,12 @@ function boxf(left = null, top = null, right = null, bottom = null) {
     }
     var ga = context.globalAlpha;
     context.globalAlpha = 1;
-    context.fillRect(left, top, right - left, bottom - top);
+    if (isFill) {
+        context.fillRect(left, top, right - left, bottom - top);
+    }
+    else {
+        context.strokeRect(left, top, right - left, bottom - top);
+    }
     context.globalAlpha = ga;
 }
 function bsave(file_name, data, data_size = null, offset = null) {
