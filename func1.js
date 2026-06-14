@@ -1726,7 +1726,7 @@ function func142() {
                 yield wait(10);
             }
             if (var_64 == 4) {
-                var_64 = 3;
+                var_64 = 1;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
@@ -1754,7 +1754,7 @@ function func142() {
                 yield wait(10);
             }
             if (var_64 == 1) {
-                var_64 = 2;
+                var_64 = 4;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
@@ -1964,7 +1964,7 @@ function func146() {
         color(255, 255, 255);
         mes("ボス日記を消す");
         pos(45, 80);
-        color(255, 255, 255);
+        color(155, 155, 155);
         mes("魔少年の問題");
         pos(45, 100);
         color(155, 155, 155);
