@@ -45,7 +45,7 @@ var alpha_mode = 0;
 var alpha_color = "#ffffff";
 var files = {};
 var se = [];
-var isClick = false;
+var canvasContainer = document.getElementById("canvas_container");
 var canvasSize = 0;
 var pre_pos = [0, 0];
 function is_changed(x, y) {
@@ -66,7 +66,6 @@ function reset_input(x, y) {
     pushing_key_list[37] = pushing_key_list[38] = pushing_key_list[39] = pushing_key_list[40] = 0;
     if (pushing_key_list[88] == 1 && pushing_key_list[90] == 1) {
         pushing_key_list[88] = pushing_key_list[90] = 0;
-        document.getElementById("XH").style.border = '';
     }
     if ((x <= 5) || (y <= 5) || (x >= canvasSize - 5) || (y >= canvasSize - 5)) {
         pre_pos = [0, 0];
@@ -96,7 +95,6 @@ function ResetDataAndReload(e) {
     location.reload();
 }
 function InitInput() {
-    var canv = document.getElementById("c0");
     document.onkeydown = function (e) {
         pushing_key_list[e.keyCode] = 1;
         if (e.key !== "F12") {
@@ -107,82 +105,9 @@ function InitInput() {
         pushing_key_list[e.keyCode] = 0;
         e.preventDefault();
     };
-    var buttons = document.getElementsByTagName("button");
-    for (var i = 0; i < buttons.length; ++i) {
-        if (buttons[i].id == "reset_data") {
-            buttons[i].onmouseup = ResetDataAndReload;
-            buttons[i].ontouchend = ResetDataAndReload;
-            continue;
-        }
-        if (buttons[i].id == "debug_data") {
-            buttons[i].onmouseup = data_update_for_debug;
-            buttons[i].ontouchend = data_update_for_debug;
-            continue;
-        }
-        if (buttons[i].id == "XH") {
-            buttons[i].onmousedown = function (e) {
-                if (pushing_key_list[88] > 0) {
-                    pushing_key_list[88] = 0;
-                    this.style.border = 'inset 2px';
-                }
-                else {
-                    pushing_key_list[88] = 1;
-                    this.style.border = '';
-                }
-            };
-            buttons[i].ontouchstart = function (e) {
-                if (pushing_key_list[88] > 0) {
-                    console.log(e);
-                    pushing_key_list[88] = 0;
-                    this["style"].border = 'inset 2px';
-                }
-                else {
-                    pushing_key_list[88] = 1;
-                    this["style"].border = '';
-                }
-            };
-            continue;
-        }
-        buttons[i].onmousedown = function (e) {
-            pushing_key_list[this.id] = 1;
-        };
-        buttons[i].onmouseup = function (e) {
-            pushing_key_list[this.id] = 0;
-        };
-        buttons[i].ontouchstart = function (e) {
-            pushing_key_list[this.id] = 1;
-        };
-        buttons[i].ontouchend = function (e) {
-            pushing_key_list[this.id] = 0;
-        };
-    }
-    ;
-    canv.onmousedown = function (e) {
-        reset_input(e.x, e.y);
-        isClick = true;
-    };
-    canv.onmousemove = function (e) {
-        if (isClick && is_changed(e.x, e.y)) {
-            reset_input(e.x, e.y);
-        }
-    };
-    canv.onmouseup = function (e) {
-        reset_input(0, 0);
-        isClick = false;
-    };
-    canv.ontouchstart = function (e) {
-        reset_input(e.touches[0].clientX, e.touches[0].clientY);
-        isClick = true;
-    };
-    canv.ontouchmove = function (e) {
-        if (isClick && is_changed(e.touches[0].clientX, e.touches[0].clientY)) {
-            reset_input(e.touches[0].clientX, e.touches[0].clientY);
-        }
-    };
-    canv.ontouchend = function (e) {
-        reset_input(0, 0);
-        isClick = false;
-    };
+    var debugDataButton = document.getElementById("debug_data");
+    debugDataButton.onmouseup = data_update_for_debug;
+    debugDataButton.ontouchend = data_update_for_debug;
 }
 var last_wait_time = new Date();
 function await_(time) {
@@ -604,12 +529,11 @@ function screen_(id, display_width, display_height, init_mode, pos_x = null, pos
         display_width = 340;
         display_height = 340;
         canvasSize = display_width;
-        document.getElementById("pad").style.top = "360px";
     }
     buffer(id, display_width, display_height, init_mode);
     canvases[id].style.top = pos_x;
     canvases[id].style.left = pos_y;
-    document.body.appendChild(canvases[id]);
+    canvasContainer.appendChild(canvases[id]);
     canvases[id].style.display = "none";
 }
 function sendmsg(data0, data1, data2, data3) { undef_func("sendmsg", [data0, data1, data2, data3]); }
@@ -658,105 +582,7 @@ function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
 function DMINIT() { }
 function DMLOADMEMORY(music_id, data0, data1) {
-    var music_list = {
-        "0": "YLCIfDqgDIk",
-        "102": "gvCmtHDDuu0",
-        "315": "AuA0HQ4Zobc",
-        "099": "X_pDwv3tpug",
-        "302": "l482T0yNkeo",
-        "312": "pL4uESRCnv8",
-        "998": "JtmpcQ-hbxI",
-        "987": "fCULDFsbA9Y",
-        "104": "v3JaosE-gZE",
-        "992": "mdt0SOqPJcg",
-        "991": "2s4slliAtQU",
-        "116": "p6gKe9Fr2ok",
-        "201": "vOJRILBRS5o",
-        "107": "bSfqNEvykv0",
-        "202": "D-dONCnY_Yg",
-        "997": "pHa4pvspCqc",
-        "412": "rnKbImRPhTE",
-        "319": "zDKO6XYXioc",
-        "117": "0aU57V6VBW0",
-        "122": "-Ro8-ngA8gs",
-        "311": "MjMCaw4qzjg",
-        "414": "I8JULmUlGDA",
-        "305": "6j7E7pvLxmI",
-        "113": "bJ9r8LMU9bQ",
-        "123": "PE9HvSdcaL4",
-        "200": "-cmo6MRYf5g",
-        "313": "UAKCR7kQMTQ",
-        "985": "9sGy_-p_sVE",
-        "308": "56u6g0POvo0",
-        "111": "OXqnHLXZugA",
-        "120": "Ixrje2rXLMA",
-        "411": "iDNtqy0zjJA",
-        "988": "EqPtz5qN7HM",
-        "986": "kZ8KK8u9dN8",
-        "401": "eBG7P-K-r1Y",
-        "207": "QV-2EJnfzjY",
-        "402": "AYUdldNzLNA",
-        "995": "usfiAsWR4qU",
-        "203": "hLhN__oEHaw",
-        "121": "fjwWjx7Cw8I",
-        "317": "iZq3i94mSsQ",
-        "205": "KFq2pU21cNU",
-        "303": "ZunGXrbS0hQ",
-        "994": "ZDwotNLyz10",
-        "396": "D9ioyEvdggk",
-        "999": "CWzrABouyeE",
-        "981": "s__rX_WL100",
-        "306": "5ZF6m659-z0",
-        "320": "Mrhg66cVPGw",
-        "408": "PivWY9wn5ps",
-        "101": "1dmt5o0DjaU",
-        "124": "cjImFYf2Vzc",
-        "301": "pO8kTRv4l3o",
-        "310": "La4Dcd1aUcE",
-        "206": "bx1Bh8ZvH84",
-        "109": "0pyxKqdtrH8",
-        "300": "qM0zINtulhM",
-        "404": "p3j2NYZ8FKs",
-        "978": "UnVBS0ZkARw",
-        "103": "HuBqE9xGtiQ",
-        "106": "cWGE9Gi0bB0",
-        "980": "N3oCS85HvpY",
-        "405": "3T1c7GkzRQQ",
-        "996": "rblt2EtFfC4",
-        "115": "7IQE62Vn4_U",
-        "395": "rY0WxgSXdEE",
-        "990": "fJ9rUzIMcZQ",
-        "112": "2ZBtPf7FOoM",
-        "204": "rkHF_JMnB8o",
-        "993": "wJzNZ1c5C9c",
-        "105": "Mr_uHJPUlO8",
-        "108": "Fmfi3UbDPnQ",
-        "318": "XCMrXC8D05Q",
-        "403": "cBojbjoMttI",
-        "309": "WSv2gLT0jkU",
-        "119": "gJLIiF15wjQ",
-        "409": "pAuPMJlK92s",
-        "400": "d27gTrPPAyk",
-        "407": "ZuI61cTNbAk",
-        "314": "mbAyj1h9vI0",
-        "316": "btPJPFnesV4",
-        "989": "JB6WZu8IAZg",
-        "118": "uZ4PZOfVnP8",
-        "304": "Ae0nwSv6cTU",
-        "114": "unHzLEA6gvI",
-    };
-    var link_id = music_list[music_id.split(".")[0]];
-    if (link_id) {
-        var a_tug = (document.getElementById("bgmlink"));
-        a_tug.href = "https://www.youtube.com/watch?v=" + link_id;
-        var iframe = document.getElementById("bgm");
-        iframe.src = "https://www.youtube.com/embed/" + link_id;
-    } else {
-        var a_tug = (document.getElementById("bgmlink"));
-        a_tug.href = "";
-        var iframe = document.getElementById("bgm");
-        iframe.src = "";
-    }
+    // 音楽の再生
 }
 function DMPLAY(data0, data1) { }
 function DMSTOP() { }
