@@ -52,7 +52,7 @@ window.onload = func001;
 document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
         const fileName = `0${var_726}.dat`;
-        if (localStorage.getItem(file_name)) {
+        if (localStorage.getItem(fileName)) {
             func231();
         }
     }
