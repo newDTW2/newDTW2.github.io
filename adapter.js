@@ -81,12 +81,20 @@ function InitInput() {
     debugDataButton.onmouseup = data_update_for_debug;
     debugDataButton.ontouchend = data_update_for_debug;
 }
-var last_wait_time = new Date();
+// 参考元：https://github.com/zawatton/newDTW.github.io/blob/613da/src/renderer/adapter/await_.ts
+let lastWaitTime = Date.now();
 function await_(time) {
-    var wait_time = Math.max(time - Math.max(0, new Date().getMilliseconds() - last_wait_time.getMilliseconds()), 0);
-    last_wait_time = new Date();
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve(), wait_time);
+    // 前回呼び出しからの経過時間 (ms)
+    const elapsed = Date.now() - lastWaitTime;
+    // 待つべき残り時間
+    const waitTime = Math.max(time - elapsed, 0);
+
+    return new Promise((resolve) => {
+        setTimeout(() => {
+        // タイマー終了時に現在時刻を更新
+        lastWaitTime = Date.now();
+        resolve();
+        }, waitTime);
     });
 }
 function bgscr(data0, data1, data2, data3, data4, data5, data6 = null, data7 = null) { undef_func("bgscr", [data0, data1, data2, data3, data4, data5, data6, data7]); }
