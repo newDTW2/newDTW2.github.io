@@ -46,22 +46,7 @@ var alpha_color = "#ffffff";
 var files = {};
 var se = [];
 var canvasContainer = document.getElementById("canvas_container");
-var canvasSize = 0;
 var pre_pos = [0, 0];
-function is_changed(x, y) {
-    if (pre_pos[0] == 0 && pre_pos[1] == 0) {
-        return true;
-    }
-    var b1 = canvasSize / 3;
-    var b2 = canvasSize / 3 * 2;
-    if (((pre_pos[0] - b1) * (x - b1) < 0) ||
-        ((pre_pos[0] - b2) * (x - b2) < 0) ||
-        ((pre_pos[1] - b2) * (y - b2) < 0) ||
-        ((pre_pos[1] - b2) * (y - b2) < 0)) {
-        return true;
-    }
-    return false;
-}
 function ResetDataAndReload(e) {
     localStorage.clear();
     location.reload();
@@ -515,7 +500,6 @@ function screen_(id, display_width, display_height, init_mode, pos_x = null, pos
     if (id == 0) {
         display_width = 340;
         display_height = 340;
-        canvasSize = display_width;
     }
     buffer(id, display_width, display_height, init_mode);
     canvases[id].style.top = pos_x;
