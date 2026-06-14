@@ -51,6 +51,9 @@ window.onload = func001;
 // 自動セーブ
 document.addEventListener("visibilitychange", () => {
     if (document.hidden) {
-        func231();
+        const fileName = `0${var_726}.dat`;
+        if (localStorage.getItem(file_name)) {
+            func231();
+        }
     }
 });
