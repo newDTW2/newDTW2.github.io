@@ -201,7 +201,14 @@ function func004() {
         yield func138();
         buffer(9);
         yield picload("img_item.gif");
-        buffer(10, 340, 200);
+        {
+            const dpr = devicePixelRatio || 1;
+            const scale = 2 * dpr;
+            buffer(10, 340 * scale, 200 * scale);
+            const context = contexts[10];
+            context.setTransform(scale, 0, 0, scale, 0, 0);
+            context.imageSmoothingEnabled = false;
+        }
         var_60++;
         yield func138();
         buffer(11);
@@ -5431,24 +5438,26 @@ function func048() {
         if (var_299 == 6) {
             var_496 = 63;
         }
+        const dpr = devicePixelRatio || 1;
+        const scale = 2 * dpr;
         pos(0, 252);
-        gcopy(10, 0, var_496, 40, 60);
+        gzoom(40, 60, 10, 0 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(40, 252);
-        gcopy(10, 40, var_496, 40, 60);
+        gzoom(40, 60, 10, 40 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(80, 252);
-        gcopy(10, 80, var_496, 40, 60);
+        gzoom(40, 60, 10, 80 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(120, 252);
-        gcopy(10, 120, var_496, 40, 60);
+        gzoom(40, 60, 10, 120 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(160, 252);
-        gcopy(10, 160, var_496, 40, 60);
+        gzoom(40, 60, 10, 160 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(200, 252);
-        gcopy(10, 200, var_496, 40, 60);
+        gzoom(40, 60, 10, 200 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(240, 252);
-        gcopy(10, 240, var_496, 40, 60);
+        gzoom(40, 60, 10, 240 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(280, 252);
-        gcopy(10, 280, var_496, 40, 60);
+        gzoom(40, 60, 10, 280 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(320, 252);
-        gcopy(10, 320, var_496, 40, 60);
+        gzoom(40, 60, 10, 320 * scale, var_496 * scale, 40 * scale, 60 * scale);
         gmode(2);
         return;
     });
@@ -5469,6 +5478,13 @@ function func049() {
         mes(var_296);
         mes(var_297);
         mes(var_298);
+
+        if (!canvases[10].hoge) {
+            canvases[10].hoge = true;
+            const c = canvases[10];
+            document.body.appendChild(c);
+        }
+
         gsel(0);
         return;
     });
