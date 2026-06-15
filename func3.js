@@ -1809,11 +1809,19 @@ function func324() {
                 var_1155 = 0;
                 for (var cnt3 = 0; cnt3 < 9; ++cnt3) {
                     pos(var_1155, var_1154);
-                    gcopy(0, var_1155, var_1154, 40, 40);
+                    // gcopy(0, var_1155, var_1154, 40, 40);
                     var_1155 = var_1155 + 40;
                 }
                 var_1154 = var_1154 + 40;
             }
+            contexts[36].drawImage(
+                canvases[0],
+                0, 0,
+                canvases[0].width,
+                canvases[0].height,
+                0, 0,
+                340, 340
+            );
             gsel(0);
             return;
         }
