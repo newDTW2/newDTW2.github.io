@@ -2102,6 +2102,8 @@ function func329() {
         return;
     });
 }
+
+// ディアボロの周りの暗視エフェクト処理
 function func330() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(330);
