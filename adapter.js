@@ -300,7 +300,13 @@ function gzoom(dst_size_x, dst_size_y, org_buffer_id, x, y, img_width, img_heigh
             pix[i + 1] = grayscale;
             pix[i + 2] = grayscale;
         }
-        context.putImageData(imgd, 0, 0);
+
+        var tmp = document.createElement('canvas');
+        tmp.width = img_width;
+        tmp.height = img_height;
+        tmp.getContext('2d').putImageData(imgd, 0, 0);
+
+        context.drawImage(tmp, 0, 0, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
         return;
     }
     else if (org_buffer_id == 8 && (x == 760 && y == 920 || x > 400 && y < 350)) {
