@@ -5478,13 +5478,6 @@ function func049() {
         mes(var_296);
         mes(var_297);
         mes(var_298);
-
-        if (!canvases[10].hoge) {
-            canvases[10].hoge = true;
-            const c = canvases[10];
-            document.body.appendChild(c);
-        }
-
         gsel(0);
         return;
     });
