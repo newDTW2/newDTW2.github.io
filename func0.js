@@ -5454,11 +5454,13 @@ function func048() {
     });
 }
 function func049() {
-    // 参考元：https://github.com/zawatton/newDTW.github.io/blob/6904b2e/src/renderer/func/func049.ts
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(49);
+        gsel(10);
+        color(0, 0, 0);
+        boxf(0, 0, 340, 200);
         font("ＭＳ Ｐゴシック", 16, 1);
-        pos(30, 240);
+        pos(30, 0);
         color(var_25_x, var_26_x, var_27_x);
         mes("");
         mes(var_293);
@@ -5467,6 +5469,7 @@ function func049() {
         mes(var_296);
         mes(var_297);
         mes(var_298);
+        gsel(0);
         return;
     });
 }
