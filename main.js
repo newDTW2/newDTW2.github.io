@@ -49,7 +49,7 @@ window.onload = func001;
 })();
 
 // 自動セーブ
-document.addEventListener("pagehide", e => {
+window.addEventListener("pagehide", e => {
     if (!e.persisted) {
         const fileName = `0${var_726}.dat`;
         if (localStorage.getItem(fileName)) {
