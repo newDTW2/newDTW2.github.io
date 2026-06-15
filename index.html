@@ -30,6 +30,23 @@
 		<canvas id="c0"></canvas>
 	</div>
 	<button id="debug_data">デバッグ:攻略済みにする</button>
+	<script>
+		// 高画質化
+		// 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
+		window.addEventListener("load", () => {
+			setTimeout(() => {
+				const canvas = document.getElementById("c0");
+				const context = canvas.getContext("2d");
+				const dpr = devicePixelRatio || 1;
+				canvas.width = 680 * dpr;
+				canvas.height = 680 * dpr;
+				canvas.style.width = "680px";
+				canvas.style.height = "680px";
+				context.setTransform(dpr * 2, 0, 0, dpr * 2, 0, 0);
+				context.imageSmoothingEnabled = false;
+			}, 300);
+		});
+	</script>
 	<script src="classes.js"></script>
 	<script src="sound.js"></script>
 	<script src="adapter.js"></script>
