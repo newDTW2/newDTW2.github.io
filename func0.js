@@ -49,7 +49,7 @@ function func004() {
         dbgprt(4);
         HMMINIT(3);
         if (stat == 0) {
-            end();
+            end(); return;
         }
         var_8 = 0;
         var_9 = 0;

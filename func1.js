@@ -2029,7 +2029,7 @@ function func147() {
             return;
         }
         if (var_64 == 4) {
-            end();
+            end(); return;
         }
         yield func142();
         return;

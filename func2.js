@@ -2774,7 +2774,7 @@ function func231() {
         bsave("00.dat", var_8, null, 40);
         bsave("00.dat", var_9, null, 60);
         if (var_62 == 99) {
-            end();
+            end(); return;
         }
         if (var_262 == 1 && var_1049 == 0) {
             yield func182();
@@ -3165,7 +3165,7 @@ function func231() {
         if (var_637 >= 1) {
             chgdisp();
         }
-        end();
+        end(); return;
     });
 }
 function func232() {
@@ -3435,7 +3435,7 @@ function func234() {
         if (var_407 == 1) {
             netclose(var_1050);
         }
-        end();
+        end(); return;
     });
 }
 function func235() {
