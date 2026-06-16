@@ -15,8 +15,9 @@
 			image-rendering: pixelated;
 		}
 		#c0 {
-			width: 680px;
-			height: 680px;
+			min-width: 340px;
+			max-width: 680px;
+			width: 100%;
 		}
 		#debug_data {
 			font-size: 16px;
@@ -40,8 +41,6 @@
 				const dpr = devicePixelRatio || 1;
 				canvas.width = 680 * dpr;
 				canvas.height = 680 * dpr;
-				canvas.style.width = "680px";
-				canvas.style.height = "680px";
 				context.setTransform(dpr * 2, 0, 0, dpr * 2, 0, 0);
 				context.imageSmoothingEnabled = false;
 			}, 300);
