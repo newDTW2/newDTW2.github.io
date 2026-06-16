@@ -7,9 +7,17 @@
 	<script src="howler.min.js"></script>
 	<style type="text/css">
 		body {
-			margin: 0 0 16px 0;
+			margin: 8px 8px 16px 8px;
 			background-color: black;
 			color: white;
+			font-size: 16px;
+		}
+		#main {
+			width: fit-content;
+			margin: 0 auto;
+		}
+		#canvas_container {
+			margin-bottom: 16px;
 		}
 		canvas {
 			user-select: none;
@@ -21,28 +29,49 @@
 			width: 100%;
 		}
 		details {
+			margin-top: 8px;
+		}
+		summary {
 			margin-bottom: 8px;
+			font-size: 1.2rem;
+		}
+		.pad-button-config {
+			display: flex;
+		}
+		.pad-button-config label {
+			width: 10em;
+			text-align: right;
+			margin-right: 0.5em;
+		}
+		.pad-button-config input {
+			width: 50px;
 		}
 		#debug_data {
-			font-size: 16px;
 			width: 150px;
 			height: 32px;
 		}
 	</style>
 </head>
 <body>
-	<div id="canvas_container">
-		<canvas id="c0"></canvas>
+	<div id="main">
+		<div id="canvas_container">
+			<canvas id="c0"></canvas>
+		</div>
+		<details>
+			<summary>ゲームパッド設定</summary>
+			<div style="margin-bottom: 8px;">参考：<a href="https://hardwaretester.com/gamepad" target="_blank" rel="noopener noreferrer">Hexgaming ゲームパッド テスター</a></div>
+			<div class="pad-button-config"><label>攻撃・決定</label><input type="number"></div>
+			<div class="pad-button-config"><label>ダッシュ・キャンセル</label><input type="number"></div>
+			<div class="pad-button-config"><label>コマンドウィンドウ</label><input type="number"></div>
+			<div class="pad-button-config"><label>射撃</label><input type="number"></div>
+			<div class="pad-button-config"><label>向き変更</label><input type="number"></div>
+			<div class="pad-button-config"><label>斜め移動</label><input type="number"></div>
+		</details>
+		<details>
+			<summary>チート</summary>
+			<button id="debug_data">攻略済みにする</button>
+		</details>
 	</div>
-	<hr>
-	<details>
-		<summary>ゲームパッド設定</summary>
-		hogehoge
-	</details>
-	<details>
-		<summary>チート</summary>
-		<button id="debug_data">攻略済みにする</button>
-	</details>
 	<script>
 		// 高画質化
 		// 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
