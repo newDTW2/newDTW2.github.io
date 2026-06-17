@@ -47,10 +47,6 @@ var files = {};
 var se = [];
 var canvasContainer = document.getElementById("canvas_container");
 var pre_pos = [0, 0];
-function ResetDataAndReload(e) {
-    localStorage.clear();
-    location.reload();
-}
 function InitInput() {
     document.onkeydown = function (e) {
         pushing_key_list[e.keyCode] = 1;
