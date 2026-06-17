@@ -15,6 +15,20 @@ var_691 = [];
 InitInput();
 window.onload = func001;
 
+// 高画質化
+// 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const canvas = document.getElementById("c0");
+        const context = canvas.getContext("2d");
+        const dpr = devicePixelRatio || 1;
+        canvas.width = 680 * dpr;
+        canvas.height = 680 * dpr;
+        context.setTransform(dpr * 2, 0, 0, dpr * 2, 0, 0);
+        context.imageSmoothingEnabled = false;
+    }, 300);
+});
+
 // ゲームパッド対応
 // https://w3c.github.io/gamepad/#remapping
 (function updateGamepad() {
@@ -56,3 +70,28 @@ window.addEventListener("pagehide", e => {
         }
     }
 });
+
+// Vue
+
+const ConfigApp = {
+    data() {
+        return {
+            //
+        };
+    },
+    created() {
+        //
+    },
+    mounted() {
+        //
+    },
+    watch: {
+        //
+    },
+    methods: {
+        //
+    },
+
+};
+
+Vue.createApp(ConfigApp).mount("#config");
