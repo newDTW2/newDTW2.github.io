@@ -45,15 +45,15 @@ window.addEventListener("load", () => {
         // 各自コードを書き換えてください。
 
         // Z 攻撃・選択
-        gamepad_key_list[var_655] = gp.buttons[1]?.pressed ? 1 : 0;
+        gamepad_key_list[var_655] = gp.buttons[2]?.pressed ? 1 : 0;
         // X キャンセル
-        gamepad_key_list[var_656] = gp.buttons[2]?.pressed ? 1 : 0;
+        gamepad_key_list[var_656] = gp.buttons[1]?.pressed ? 1 : 0;
         // A メニュー
-        gamepad_key_list[var_657] = gp.buttons[0]?.pressed ? 1 : 0;
+        gamepad_key_list[var_657] = gp.buttons[3]?.pressed ? 1 : 0;
         // Space 地図
         gamepad_key_list[32] = gp.buttons[7]?.pressed ? 1 : 0;
         // C 方向
-        gamepad_key_list[var_660] = gp.buttons[3]?.pressed ? 1 : 0;
+        gamepad_key_list[var_660] = gp.buttons[0]?.pressed ? 1 : 0;
         // Shift 斜め移動補助
         gamepad_key_list[var_659] = gp.buttons[5]?.pressed ? 1 : 0;
         // S 射撃
