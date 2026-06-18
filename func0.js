@@ -3404,12 +3404,12 @@ function func019() {
                 var_398 = 0;
                 for (var cnt3 = 0; cnt3 < var_97 + 1; ++cnt3) {
                     if (var_83[cnt3][0] == 130) {
-                        var_399 = var_83[cnt4][1];
-                        var_400 = var_83[cnt4][2];
+                        var_399 = var_83[cnt3][1];
+                        var_400 = var_83[cnt3][2];
                         var_82[var_399][var_400] = 0;
-                        var_83[cnt4][0] = 0;
-                        var_83[cnt4][1] = 0;
-                        var_83[cnt4][2] = 0;
+                        var_83[cnt3][0] = 0;
+                        var_83[cnt3][1] = 0;
+                        var_83[cnt3][2] = 0;
                         var_398 = 1;
                     }
                 }
@@ -3761,18 +3761,18 @@ function func020() {
                 var_398 = 0;
                 for (var cnt3 = 0; cnt3 < var_97 + 1; ++cnt3) {
                     if (var_83[cnt3][0] == 146 && var_83[cnt3][31] == 5) {
-                        var_399 = var_83[cnt4][1];
-                        var_400 = var_83[cnt4][2];
+                        var_399 = var_83[cnt3][1];
+                        var_400 = var_83[cnt3][2];
                         var_82[var_399][var_400] = 0;
-                        var_83[cnt4][0] = 0;
-                        var_83[cnt4][1] = 0;
-                        var_83[cnt4][2] = 0;
-                        var_83[cnt4][6] = 0;
-                        var_83[cnt4][7] = 0;
-                        var_83[cnt4][8] = 0;
-                        var_83[cnt4][9] = 0;
-                        var_83[cnt4][15] = 0;
-                        var_83[cnt4][18] = 0;
+                        var_83[cnt3][0] = 0;
+                        var_83[cnt3][1] = 0;
+                        var_83[cnt3][2] = 0;
+                        var_83[cnt3][6] = 0;
+                        var_83[cnt3][7] = 0;
+                        var_83[cnt3][8] = 0;
+                        var_83[cnt3][9] = 0;
+                        var_83[cnt3][15] = 0;
+                        var_83[cnt3][18] = 0;
                         var_398 = 1;
                     }
                 }

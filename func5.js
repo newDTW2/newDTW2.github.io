@@ -29607,37 +29607,37 @@ function func585() {
             var_2804 = 0;
             for (var cnt2 = 0; cnt2 < var_97 + 1; ++cnt2) {
                 if (var_83[cnt2][0] == 137) {
-                    if (var_83[cnt3][10] == var_83[var_673].Var10 && var_83[cnt3][10] != 14) {
+                    if (var_83[cnt2][10] == var_83[var_673].Var10 && var_83[cnt2][10] != 14) {
                         var_2804 = 1;
                     }
-                    var_2806 = var_83[cnt3][1];
-                    var_2807 = var_83[cnt3][2];
-                    var_2808 = var_83[cnt3][1] - 1;
+                    var_2806 = var_83[cnt2][1];
+                    var_2807 = var_83[cnt2][2];
+                    var_2808 = var_83[cnt2][1] - 1;
                     if (var_2808 < 0) {
                         var_2808 = 0;
                     }
-                    var_2809 = var_83[cnt3][1] + 1;
+                    var_2809 = var_83[cnt2][1] + 1;
                     if (var_2809 > var_33) {
                         var_2809 = var_33;
                     }
-                    var_2810 = var_83[cnt3][2] - 1;
+                    var_2810 = var_83[cnt2][2] - 1;
                     if (var_2810 < 0) {
                         var_2810 = 0;
                     }
-                    var_2811 = var_83[cnt3][2] + 1;
+                    var_2811 = var_83[cnt2][2] + 1;
                     if (var_2811 > var_34) {
                         var_2811 = var_34;
                     }
-                    if (var_71[var_2808][var_2807] == var_83[var_673].Var10 && var_83[cnt3][10] != 14) {
+                    if (var_71[var_2808][var_2807] == var_83[var_673].Var10 && var_83[cnt2][10] != 14) {
                         var_2804 = 1;
                     }
-                    if (var_71[var_2809][var_2807] == var_83[var_673].Var10 && var_83[cnt3][10] != 14) {
+                    if (var_71[var_2809][var_2807] == var_83[var_673].Var10 && var_83[cnt2][10] != 14) {
                         var_2804 = 1;
                     }
-                    if (var_71[var_2806][var_2811] == var_83[var_673].Var10 && var_83[cnt3][10] != 14) {
+                    if (var_71[var_2806][var_2811] == var_83[var_673].Var10 && var_83[cnt2][10] != 14) {
                         var_2804 = 1;
                     }
-                    if (var_71[var_2806][var_2810] == var_83[var_673].Var10 && var_83[cnt3][10] != 14) {
+                    if (var_71[var_2806][var_2810] == var_83[var_673].Var10 && var_83[cnt2][10] != 14) {
                         var_2804 = 1;
                     }
                 }
@@ -31334,42 +31334,42 @@ function func596() {
         var_2787 = var_83[var_673].Var2;
         for (var cnt1 = 0; cnt1 < 10; ++cnt1) {
             if (var_65[var_2784][var_2783] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 6;
                 break;
             }
             if (var_65[var_2785][var_2783] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 4;
                 break;
             }
             if (var_65[var_2782][var_2786] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 2;
                 break;
             }
             if (var_65[var_2782][var_2787] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 8;
                 break;
             }
             if (var_65[var_2785][var_2786] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 1;
                 break;
             }
             if (var_65[var_2784][var_2786] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 3;
                 break;
             }
             if (var_65[var_2785][var_2787] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 7;
                 break;
             }
             if (var_65[var_2784][var_2787] == 1) {
-                var_2843 = cnt2;
+                var_2843 = cnt1;
                 var_2845 = 9;
                 break;
             }
