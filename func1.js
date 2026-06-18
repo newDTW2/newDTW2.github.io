@@ -4225,18 +4225,19 @@ function func160() {
             var_83[var_97].Var10 = 1;
             var_83[var_97].Var31 = 4;
             var_83[var_97].Var32 = rnd(6);
-            var_97 = var_97 + 1;
-            var_761 = var_97;
-            var_82[18][10] = var_97;
-            var_83[var_97].Var0 = 173;
-            var_83[var_97].Var1 = 18;
-            var_83[var_97].Var2 = 10;
-            var_83[var_97].Var3 = 20;
-            var_83[var_97].Var4 = 0;
-            var_83[var_97].Var5 = 2;
-            var_83[var_97].Var10 = 1;
-            var_83[var_97].Var31 = 4;
-            var_83[var_97].Var32 = rnd(6);
+            // ロッコ・バロッコ所長
+            // var_97 = var_97 + 1;
+            // var_761 = var_97;
+            // var_82[18][10] = var_97;
+            // var_83[var_97].Var0 = 173;
+            // var_83[var_97].Var1 = 18;
+            // var_83[var_97].Var2 = 10;
+            // var_83[var_97].Var3 = 20;
+            // var_83[var_97].Var4 = 0;
+            // var_83[var_97].Var5 = 2;
+            // var_83[var_97].Var10 = 1;
+            // var_83[var_97].Var31 = 4;
+            // var_83[var_97].Var32 = rnd(6);
         }
         return;
     });
