@@ -50,7 +50,11 @@ var pre_pos = [0, 0];
 function InitInput() {
     document.onkeydown = function (e) {
         pushing_key_list[e.keyCode] = 1;
-        if (e.key !== "F12") {
+        if (e.key === "F12") {
+            // フルスクリーンモード無効
+            pushing_key_list[e.keyCode] = 0;
+        }
+        else {
             e.preventDefault();
         }
     };
