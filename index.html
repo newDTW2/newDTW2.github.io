@@ -47,9 +47,11 @@
 		.pad-button-config input {
 			width: 50px;
 		}
-		#unlock_all_dungeons {
-			width: 150px;
-			height: 32px;
+		#cheat {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			align-items: flex-start;
 		}
 	</style>
 </head>
@@ -93,7 +95,13 @@
 			</details>
 			<details>
 				<summary>チート</summary>
-				<button @click="unlockAllDungeons">全ダンジョン開放</button>
+				<div id="cheat">
+					<button @click="unlockAllDungeons">全ダンジョン開放</button>
+					<div>
+						<label for="show-movement-path">移動経路表示</label>
+						<input id="show-movement-path" type="checkbox" :value="showMovementPath" @change="onChangeShowMovementPath">
+					</div>
+				</div>
 			</details>
 		</div>
 	</div>

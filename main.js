@@ -12,6 +12,7 @@ var var_27_x;
 var_494 = [];
 var_664 = [];
 var_691 = [];
+var showMovementPath = false;
 InitInput();
 window.onload = func001;
 
@@ -91,6 +92,7 @@ const ConfigApp = {
             diagonalButtonId,
             shootButtonId,
             mapButtonId,
+            showMovementPath,
         };
     },
     created() {
@@ -101,6 +103,7 @@ const ConfigApp = {
         diagonalButtonId = this.diagonalButtonId = Number(localStorage.getItem("diagonalButtonId") ?? 5);
         shootButtonId = this.shootButtonId = Number(localStorage.getItem("shootButtonId") ?? 4);
         mapButtonId = this.mapButtonId = Number(localStorage.getItem("mapButtonId") ?? 7);
+        showMovementPath = this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
     },
     mounted() {
         //
@@ -192,6 +195,10 @@ const ConfigApp = {
             var_523 = 1;
             var_524 = 1;
             var_759 = 2;
+        },
+        onChangeShowMovementPath(e) {
+            showMovementPath = event.target.checked;
+            localStorage.setItem("showMovementPath", showMovementPath);
         }
     },
 
