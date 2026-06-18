@@ -179,6 +179,20 @@ const ConfigApp = {
                 e.target.value = this.mapButtonId;
             }
         },
+        unlockAllDungeons() {
+            var_404 = 1;
+            var_704[88] = 1;
+            var_704[34] = 1;
+            var_704[93] = 2;
+            var_526 = 2;
+            var_993 = 1;
+            var_704[218] = 1;
+            var_704[235] = 1;
+            var_704[221] = 2;
+            var_523 = 1;
+            var_524 = 1;
+            var_759 = 2;
+        }
     },
 
 };

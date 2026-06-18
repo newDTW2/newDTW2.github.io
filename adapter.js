@@ -10,20 +10,6 @@ function dbgprt(num) {
 }
 function undef_func(str, arg = null) {
 }
-function data_update_for_debug(e) {
-    var_404 = 1;
-    var_704[88] = 1;
-    var_704[34] = 1;
-    var_704[93] = 2;
-    var_526 = 2;
-    var_993 = 1;
-    var_704[218] = 1;
-    var_704[235] = 1;
-    var_704[221] = 2;
-    var_523 = 1;
-    var_524 = 1;
-    var_759 = 2;
-}
 var stat = 0;
 var strsize;
 var wparam;
@@ -64,9 +50,6 @@ function InitInput() {
             e.preventDefault();
         }
     };
-    var debugDataButton = document.getElementById("debug_data");
-    debugDataButton.onmouseup = data_update_for_debug;
-    debugDataButton.ontouchend = data_update_for_debug;
 }
 // 参考元：https://github.com/zawatton/newDTW.github.io/blob/613da/src/renderer/adapter/await_.ts
 let lastWaitTime = Date.now();
