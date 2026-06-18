@@ -65,7 +65,7 @@ function func004() {
         }
         var_12 = 0;
         var_13 = "0.13";
-        var_14 = "ディアボロの大冒険 ver0.13";
+        var_14 = "ディアボロの大冒険 ver0.13（無許可ブラウザ移植版）";
         buffer(17);
         yield picload("img3.gif");
         buffer(26, 680, 680);
