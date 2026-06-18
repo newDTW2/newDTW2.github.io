@@ -9389,12 +9389,12 @@ function func480() {
 }
 function func481() {
     return __awaiter(this, void 0, void 0, function* () {
-        // MEMO: いつ呼び出される？
-        // 何故、前任者はここのコードを書き替えた？
         dbgprt(481);
-        var_233[0] = var_78[var_2044];
-        var_78[var_2044].Var0 = 1234123;
-        console.log("debug", var_233[0].Var0);
+        var_2120 = 0;
+        for (var cnt1 = 0; cnt1 < 30; ++cnt1) {
+            var_233[0][var_2120] = var_78[var_2044][var_2120];
+            var_2120++;
+        }
         return;
     });
 }
