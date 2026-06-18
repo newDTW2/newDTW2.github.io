@@ -62,12 +62,34 @@
 			<details>
 				<summary>ゲームパッド設定</summary>
 				<div style="margin-bottom: 8px;">参考：<a href="https://hardwaretester.com/gamepad" target="_blank" rel="noopener noreferrer">Hexgaming ゲームパッド テスター</a></div>
-				<div class="pad-button-config"><label>攻撃・決定</label><input type="number"></div>
-				<div class="pad-button-config"><label>ダッシュ・キャンセル</label><input type="number"></div>
-				<div class="pad-button-config"><label>コマンドウィンドウ</label><input type="number"></div>
-				<div class="pad-button-config"><label>射撃</label><input type="number"></div>
-				<div class="pad-button-config"><label>向き変更</label><input type="number"></div>
-				<div class="pad-button-config"><label>斜め移動</label><input type="number"></div>
+				<div class="pad-button-config">
+					<label>攻撃・決定</label>
+					<input type="number" min="0" max="99" :value="attackButtonId" @change="onChangeAttackButtonId">
+				</div>
+				<div class="pad-button-config">
+					<label>ダッシュ・キャンセル</label>
+					<input type="number" min="0" max="99" :value="dashButtonId" @change="onChangeDashButtonId">
+				</div>
+				<div class="pad-button-config">
+					<label>コマンドウィンドウ</label>
+					<input type="number" min="0" max="99" :value="commandButtonId" @change="onChangeCommandButtonId">
+				</div>
+				<div class="pad-button-config">
+					<label>向き変更</label>
+					<input type="number" min="0" max="99" :value="turnButtonId" @change="onChangeTurnButtonId">
+				</div>
+				<div class="pad-button-config">
+					<label>斜め移動</label>
+					<input type="number" min="0" max="99" :value="diagonalButtonId" @change="onChangeDiagonalButtonId">
+				</div>
+				<div class="pad-button-config">
+					<label>射撃</label>
+					<input type="number" min="0" max="99" :value="shootButtonId" @change="onChangeShootButtonId">
+				</div>
+				<div class="pad-button-config">
+					<label>地図	</label>
+					<input type="number" min="0" max="99" :value="mapButtonId" @change="onChangeMapButtonId">
+				</div>
 			</details>
 			<details>
 				<summary>チート</summary>

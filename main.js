@@ -32,10 +32,10 @@ window.addEventListener("load", () => {
 let attackButtonId = 2;
 let dashButtonId = 1;
 let commandButtonId = 3;
-let mapButtonId = 7;
-let shootButtonId = 4;
 let turnButtonId = 0;
 let diagonalButtonId = 5;
+let shootButtonId = 4;
+let mapButtonId = 7;
 
 // ゲームパッド対応
 // https://w3c.github.io/gamepad/#remapping
@@ -84,11 +84,23 @@ window.addEventListener("pagehide", e => {
 const ConfigApp = {
     data() {
         return {
-            //
+            attackButtonId,
+            dashButtonId,
+            commandButtonId,
+            turnButtonId,
+            diagonalButtonId,
+            shootButtonId,
+            mapButtonId,
         };
     },
     created() {
-        //
+        attackButtonId = this.attackButtonId = Number(localStorage.getItem("attackButtonId") ?? 1);
+        dashButtonId = this.dashButtonId = Number(localStorage.getItem("dashButtonId") ?? 0);
+        commandButtonId = this.commandButtonId = Number(localStorage.getItem("commandButtonId") ?? 3);
+        turnButtonId = this.turnButtonId = Number(localStorage.getItem("turnButtonId") ?? 2);
+        diagonalButtonId = this.diagonalButtonId = Number(localStorage.getItem("diagonalButtonId") ?? 5);
+        shootButtonId = this.shootButtonId = Number(localStorage.getItem("shootButtonId") ?? 4);
+        mapButtonId = this.mapButtonId = Number(localStorage.getItem("mapButtonId") ?? 7);
     },
     mounted() {
         //
@@ -97,7 +109,76 @@ const ConfigApp = {
         //
     },
     methods: {
-        //
+        onChangeAttackButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                attackButtonId = Number(strVal);
+                localStorage.setItem("attackButtonId", attackButtonId);
+            }
+            else {
+                e.target.value = this.attackButtonId;
+            }
+        },
+        onChangeDashButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                dashButtonId = Number(strVal);
+                localStorage.setItem("dashButtonId", dashButtonId);
+            }
+            else {
+                e.target.value = this.dashButtonId;
+            }
+        },
+        onChangeCommandButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                commandButtonId = Number(strVal);
+                localStorage.setItem("commandButtonId", commandButtonId);
+            }
+            else {
+                e.target.value = this.commandButtonId;
+            }
+        },
+        onChangeTurnButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                turnButtonId = Number(strVal);
+                localStorage.setItem("turnButtonId", turnButtonId);
+            }
+            else {
+                e.target.value = this.turnButtonId;
+            }
+        },
+        onChangeDiagonalButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                diagonalButtonId = Number(strVal);
+                localStorage.setItem("diagonalButtonId", diagonalButtonId);
+            }
+            else {
+                e.target.value = this.diagonalButtonId;
+            }
+        },
+        onChangeShootButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                shootButtonId = Number(strVal);
+                localStorage.setItem("shootButtonId", shootButtonId);
+            }
+            else {
+                e.target.value = this.shootButtonId;
+            }
+        },
+        onChangeMapButtonId(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                mapButtonId = Number(strVal);
+                localStorage.setItem("mapButtonId", mapButtonId);
+            }
+            else {
+                e.target.value = this.mapButtonId;
+            }
+        },
     },
 
 };

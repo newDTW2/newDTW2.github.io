@@ -54,13 +54,15 @@ function InitInput() {
             // フルスクリーンモード無効
             pushing_key_list[e.keyCode] = 0;
         }
-        else {
+        else if (["F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
             e.preventDefault();
         }
     };
     document.onkeyup = function (e) {
         pushing_key_list[e.keyCode] = 0;
-        e.preventDefault();
+        if (["F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+            e.preventDefault();
+        }
     };
     var debugDataButton = document.getElementById("debug_data");
     debugDataButton.onmouseup = data_update_for_debug;
