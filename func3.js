@@ -18723,7 +18723,7 @@ function func388() {
                     cnt2 = var_1792 - 1;
                     continue;
                 }
-                var_78[var_866][var_1791] = var_1795;
+                var_78[var_866]["Var" + var_1791] = var_1795;
                 var_1792++;
                 var_1791++;
             }
