@@ -199,7 +199,20 @@ const ConfigApp = {
         onChangeShowMovementPath(e) {
             showMovementPath = event.target.checked;
             localStorage.setItem("showMovementPath", showMovementPath);
-        }
+        },
+        addItem() {
+            // 565 プッチ
+            // 602 ネアポリスのピッツァ
+            // 799 装備+９９
+            for (let i = 1; i <= 20; i++) {
+                const item = var_233[i];
+                if (item.Var0 === 0) {
+                    var_224++;
+                    item.Var0 = 799;
+                    break;
+                }
+            }
+        },
     },
 
 };
