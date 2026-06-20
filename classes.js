@@ -66,12 +66,12 @@ class CharactorInfo {
 }
 class ItemInfo {
     constructor(Var0 = 0, Var1 = 0, Var2 = 0, Var3 = 0, Var4 = 0, Var5 = 0, Var6 = 0, Var7 = 0, Var8 = 0, Var9 = 0, Var10 = 0, Var11 = 0, Var12 = 0, Var13 = 0, Var14 = 0, Var15 = 0, Var16 = 0, Var17 = 0, Var18 = 0, Var19 = 0, Var20 = 0, Var21 = 0, Var22 = 0, Var23 = 0, Var24 = 0, Var25 = 0, Var26 = 0, Var27 = 0, Var28 = 0, Var29 = 0) {
-        this.Var0 = Var0;
+        this.Var0 = Var0; // アイテムID
         this.Var1 = Var1;
         this.Var2 = Var2;
         this.Var3 = Var3;
-        this.Var4 = Var4;
-        this.Var5 = Var5;
+        this.Var4 = Var4; // 装備DISC 修正値
+        this.Var5 = Var5; // 合成空き容量
         this.Var6 = Var6;
         this.Var7 = Var7;
         this.Var8 = Var8;
@@ -85,17 +85,17 @@ class ItemInfo {
         this.Var16 = Var16;
         this.Var17 = Var17;
         this.Var18 = Var18;
-        this.Var19 = Var19;
-        this.Var20 = Var20;
-        this.Var21 = Var21;
-        this.Var22 = Var22;
-        this.Var23 = Var23;
-        this.Var24 = Var24;
-        this.Var25 = Var25;
-        this.Var26 = Var26;
-        this.Var27 = Var27;
-        this.Var28 = Var28;
-        this.Var29 = Var29;
+        this.Var19 = Var19; // 能力数
+        this.Var20 = Var20; // track1 必然的にVar0と同じ値になる
+        this.Var21 = Var21; // track2
+        this.Var22 = Var22; // track3
+        this.Var23 = Var23; // track4
+        this.Var24 = Var24; // track5
+        this.Var25 = Var25; // track6
+        this.Var26 = Var26; // track7
+        this.Var27 = Var27; // track8
+        this.Var28 = Var28; // track9
+        this.Var29 = Var29; // track10
     }
     static Load(data) {
         return new ItemInfo(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10], data[11], data[12], data[13], data[14], data[15], data[16], data[17], data[18], data[19], data[20], data[21], data[22], data[23], data[24], data[25], data[26], data[27], data[28], data[29]);
