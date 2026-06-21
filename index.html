@@ -102,6 +102,12 @@
 						<input id="show-movement-path" type="checkbox" :checked="showMovementPath" @change="onChangeShowMovementPath">
 					</div>
 					<div>
+						<select>
+							<option v-for="(name, index) in アイテムジャンル名一覧" :key="index" :value="name + '一覧'">{{ name }}</option>
+						</select>
+						<select>
+							<option v-for="(item, index) in アイテム一覧[アイテムジャンル名]" :key="index" :value="index">{{ item.name }}</option>
+						</select>
 						<button @click="addItem">アイテム追加</button>
 					</div>
 				</div>

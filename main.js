@@ -90,6 +90,10 @@ const ConfigApp = {
             shootButtonId,
             mapButtonId,
             showMovementPath,
+            アイテムジャンル名: "装備DISC一覧",
+            アイテムジャンル名一覧: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
+            アイテム: 装備DISC一覧[0],
+            アイテム一覧: {装備DISC一覧, 射撃DISC一覧, 記憶DISC一覧, 食べ物一覧, 消費アイテム一覧, 壺一覧, コミック一覧},
         };
     },
     created() {
