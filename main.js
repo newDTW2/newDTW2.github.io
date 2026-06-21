@@ -50,9 +50,6 @@ let mapButtonId = 7;
         gamepad_key_list[var_649] = gp.axes[1] < -0.5 ? 1 : 0;
         gamepad_key_list[var_650] = gp.axes[1] >  0.5 ? 1 : 0;
 
-        // 注意：gp.buttonsのindexの割り当ては機種依存
-        // 各自コードを書き換えてください。
-
         // Z 攻撃・選択
         gamepad_key_list[var_655] = gp.buttons[attackButtonId]?.pressed ? 1 : 0;
         // X キャンセル
