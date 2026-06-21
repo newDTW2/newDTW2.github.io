@@ -90,10 +90,18 @@ const ConfigApp = {
             shootButtonId,
             mapButtonId,
             showMovementPath,
-            アイテムジャンル: "装備DISC一覧",
+            アイテムジャンル: "装備DISC",
             アイテムジャンル一覧: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
             アイテム: 装備DISC一覧[0],
-            アイテム一覧: {装備DISC一覧, 射撃DISC一覧, 記憶DISC一覧, 食べ物一覧, 消費アイテム一覧, 壺一覧, コミック一覧},
+            アイテム一覧: {
+                装備DISC: 装備DISC一覧,
+                射撃DISC: 射撃DISC一覧,
+                記憶DISC: 記憶DISC一覧,
+                食べ物: 食べ物一覧,
+                消費アイテム: 消費アイテム一覧,
+                壺: 壺一覧,
+                コミック: コミック一覧
+            },
         };
     },
     created() {
@@ -209,14 +217,18 @@ const ConfigApp = {
             this.アイテム = this.アイテム一覧[this.アイテムジャンル][index];
         },
         addItem() {
-            // 565 プッチ
-            // 602 ネアポリスのピッツァ
-            // 799 装備+９９
             for (let i = 1; i <= 20; i++) {
                 const item = var_233[i];
                 if (item.Var0 === 0) {
                     var_224++;
-                    item.Var0 = 799;
+                    item.Var0 = this.アイテム.id;
+                    if (this.アイテムジャンル === "装備DISC") {
+                        item.Var5 = this.アイテム.Var5;
+                        item.Var16 = this.アイテム.Var16;
+                    }
+                    else if (this.アイテムジャンル === "射撃DISC") {
+                        item.Var3 = 5;
+                    }
                     break;
                 }
             }

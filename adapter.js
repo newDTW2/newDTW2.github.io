@@ -40,13 +40,13 @@ function InitInput() {
             // フルスクリーンモード無効
             pushing_key_list[e.keyCode] = 0;
         }
-        else if (["F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+        else if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
             e.preventDefault();
         }
     };
     document.onkeyup = function (e) {
         pushing_key_list[e.keyCode] = 0;
-        if (["F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+        if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
             e.preventDefault();
         }
     };

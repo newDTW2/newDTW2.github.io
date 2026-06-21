@@ -69,7 +69,7 @@ class ItemInfo {
         this.Var0 = Var0; // アイテムID
         this.Var1 = Var1;
         this.Var2 = Var2;
-        this.Var3 = Var3;
+        this.Var3 = Var3; // 射撃DISC 回数
         this.Var4 = Var4; // 装備DISC 修正値
         this.Var5 = Var5; // 合成空き容量
         this.Var6 = Var6;
