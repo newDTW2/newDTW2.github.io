@@ -233,7 +233,7 @@ const ConfigApp = {
                         item.Var3 = 5;
                     }
                     else if (this.アイテムジャンル === "壺") {
-                        item.Var7 = 5;
+                        item.Var7 = 6;
                         item.Var6 = var_858;
 
                         var_486[var_858][1][0] = 0;
@@ -246,6 +246,17 @@ const ConfigApp = {
                         var_486[var_858][8][0] = 0;
                         var_486[var_858][9][0] = 0;
                         var_486[var_858][10][0] = 0;
+
+                        // トラクターのタイヤ
+                        if (item.Var0 === 802) {
+                            item.Var7 = 10;
+                        }
+                        // ホルマジオの瓶
+                        else if (item.Var0 === 851) {
+                            item.Var7 -= 1;
+                            item.Var8 = 1;
+                            var_486[var_858][1][15] = 37;
+                        }
 
                         var_858 += 1;
                         if (var_858 > 79) {
