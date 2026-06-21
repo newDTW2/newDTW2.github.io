@@ -89,7 +89,19 @@ const 装備DISC一覧 = [
 ];
 
 const 射撃DISC一覧 = [
-
+    {id: 400, name: "ﾊｲｴﾛﾌｧﾝﾄｸﾞﾘｰﾝのDISC"},
+    {id: 401, name: "ﾌｰ･ﾌｧｲﾀｰｽﾞのDISC"},
+    {id: 402, name: "ｴﾝﾍﾟﾗｰのDISC"},
+    {id: 403, name: "ｾｯｸｽﾋﾟｽﾄﾙｽﾞのDISC"},
+    {id: 404, name: "ﾎﾙｽ神のDISC"},
+    {id: 405, name: "ｴｺｰｽﾞACT2のDISC"},
+    {id: 406, name: "ｴｺｰｽﾞACT1のDISC"},
+    {id: 407, name: "ﾊｲｴﾛﾌｧﾝﾄｴﾒﾗﾙﾄﾞのDISC"},
+    {id: 408, name: "ﾏﾝ･ｲﾝ･ｻﾞ･ﾐﾗｰのDISC"},
+    {id: 409, name: "ﾗﾊﾞｰｽﾞのDISC"},
+    {id: 411, name: "ﾀﾜｰ･ｵﾌﾞ･ｸﾞﾚｰのDISC"},
+    {id: 412, name: "ﾍﾌﾞﾝｽﾞﾄﾞｱｰのDISC"},
+    {id: 414, name: "ﾀｽｸのDISC"},
 ];
 
 const 壺一覧 = [
