@@ -80,7 +80,7 @@ class ItemInfo {
         this.Var11 = Var11;
         this.Var12 = Var12;
         this.Var13 = Var13;
-        this.Var14 = Var14;
+        this.Var14 = Var14; // 装備したかどうか（多分）
         this.Var15 = Var15;
         this.Var16 = Var16;
         this.Var17 = Var17;
