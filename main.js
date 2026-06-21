@@ -211,7 +211,6 @@ const ConfigApp = {
             }
         },
     },
-
 };
 
 Vue.createApp(ConfigApp).mount("#config");
