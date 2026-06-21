@@ -53,7 +53,35 @@ const 消費アイテム一覧 = [
 ];
 
 const 記憶DISC一覧 = [
-
+    {id: 560, name: "仗助のDISC"},
+    {id: 562, name: "康一のDISC"},
+    {id: 563, name: "ﾝﾄﾞｩｰﾙのDISC"},
+    {id: 564, name: "噴上裕也のDISC"},
+    {id: 565, name: "ﾌﾟｯﾁ神父のDISC"},
+    {id: 566, name: "ｹﾝｿﾞｰのDISC"},
+    {id: 567, name: "ｱｳﾞﾄﾞｩﾙのDISC"},
+    {id: 568, name: "ｼﾞｮﾝｶﾞﾘ･AのDISC"},
+    {id: 569, name: "ﾎﾟﾙﾅﾚﾌのDISC"},
+    {id: 570, name: "ｼﾞｮﾅｻﾝのDISC"},
+    {id: 571, name: "ﾎﾞｲﾝｺﾞのDISC"},
+    {id: 572, name: "承太郎のDISC"},
+    {id: 573, name: "重ちーのDISC"},
+    {id: 574, name: "ｴﾝﾎﾟﾘｵのDISC"},
+    {id: 575, name: "ﾏﾆｯｼｭﾎﾞｰｲのDISC"},
+    {id: 576, name: "破裂するDISC"},
+    {id: 577, name: "ﾐｷﾀｶのDISC"},
+    {id: 578, name: "ｻﾝﾄﾞﾏﾝのDISC"},
+    {id: 579, name: "ﾍﾟｯﾄｼｮｯﾌﾟのDISC"},
+    {id: 580, name: "ﾄﾞｯﾋﾟｵのDISC"},
+    {id: 582, name: "水が熱湯になるDISC"},
+    {id: 583, name: "ﾃﾞｨｱﾎﾞﾛのDISC"},
+    {id: 584, name: "ﾇｹｻｸのDISC"},
+    {id: 585, name: "億泰のDISC"},
+    {id: 586, name: "ペッシのDISC"},
+    {id: 587, name: "吉良吉影のDISC"},
+    {id: 588, name: "J･ｶﾞｲﾙのDISC"},
+    {id: 589, name: "ﾌﾟﾛｼｭｰﾄ兄貴のDISC"},
+    {id: 590, name: "ｷﾞｱｯﾁｮのDISC"},
 ];
 
 const 装備DISC一覧 = [
