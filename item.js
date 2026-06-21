@@ -136,13 +136,13 @@ const 装備DISC一覧 = [
     {id: 318, name: "ｼﾞｬﾝﾋﾟﾝJﾌﾗｯｼｭのDISC", Var16: 10, Var5: 3},
     {id: 319, name: "ﾎﾞｰｲIIﾏﾝのDISC", Var16: 10, Var5: 3},
     {id: 320, name: "ﾒﾀﾘｶのDISC", Var16: 5, Var5: 3},
-    {id: 393, name: "ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC", Var16: 10, Var5: 0},
-    {id: 394, name: "ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC", Var16: 10, Var5: 0},
-    {id: 395, name: "ﾊﾞｲﾂｧ･ﾀﾞｽﾄのDISC", Var16: 10, Var5: 0},
-    {id: 396, name: "ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC", Var16: 10, Var5: 0},
-    {id: 397, name: "ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC", Var16: 10, Var5: 0},
-    {id: 398, name: "ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC", Var16: 10, Var5: 0},
-    {id: 399, name: "G･E･ﾚｸｲｴﾑのDISC", Var16: 10, Var5: 0},
+    {id: 393, name: "ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC", Var16: 10, Var5: 1},
+    {id: 394, name: "ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC", Var16: 10, Var5: 1}, // TODO Var16の正しい値は？
+    {id: 395, name: "ﾊﾞｲﾂｧ･ﾀﾞｽﾄのDISC", Var16: 5, Var5: 3},
+    {id: 396, name: "ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC", Var16: 10, Var5: 0}, // TODO Var16の正しい値は？
+    {id: 397, name: "ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC", Var16: 10, Var5: 2}, // TODO Var16の正しい値は？
+    {id: 398, name: "ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC", Var16: 10, Var5: 0}, // TODO Var16の正しい値は？
+    {id: 399, name: "G･E･ﾚｸｲｴﾑのDISC", Var16: 10, Var5: 1},
 ];
 
 const 射撃DISC一覧 = [
