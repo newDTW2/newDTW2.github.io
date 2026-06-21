@@ -235,7 +235,7 @@ const ConfigApp = {
                     else if (this.アイテムジャンル === "壺") {
                         item.Var7 = 5;
                         item.Var6 = var_858;
-                        
+
                         var_486[var_858][1][0] = 0;
                         var_486[var_858][2][0] = 0;
                         var_486[var_858][3][0] = 0;

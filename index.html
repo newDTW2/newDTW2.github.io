@@ -106,8 +106,8 @@
 						<select @change="onChangeアイテムジャンル($event.target.value)">
 							<option v-for="(name, index) in アイテムジャンル一覧" :key="index" :value="name">{{ name }}</option>
 						</select>
-						<select @change="onChangeアイテム($event.target.value)">
-							<option v-for="(item, index) in アイテム一覧[アイテムジャンル]" :key="index" :value="index">{{ item.name }}</option>
+						<select :value="アイテム.name" @change="onChangeアイテム($event.target.selectedIndex)">
+							<option v-for="(item, index) in アイテム一覧[アイテムジャンル]" :key="index" :value="item.name">{{ item.name }}</option>
 						</select>
 						<button @click="addItem">アイテム追加</button>
 					</div>
