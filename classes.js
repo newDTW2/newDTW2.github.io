@@ -73,8 +73,8 @@ class ItemInfo {
         this.Var4 = Var4; // 装備DISC 修正値
         this.Var5 = Var5; // 合成空き容量
         this.Var6 = Var6;
-        this.Var7 = Var7;
-        this.Var8 = Var8;
+        this.Var7 = Var7; // 壺 使える回数 ()の中の数値
+        this.Var8 = Var8; // 現在の最大容量 - Var7
         this.Var9 = Var9;
         this.Var10 = Var10;
         this.Var11 = Var11;

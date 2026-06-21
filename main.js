@@ -225,9 +225,13 @@ const ConfigApp = {
                     if (this.アイテムジャンル === "装備DISC") {
                         item.Var5 = this.アイテム.Var5;
                         item.Var16 = this.アイテム.Var16;
+                        item.Var20 = this.アイテム.id;
                     }
                     else if (this.アイテムジャンル === "射撃DISC") {
                         item.Var3 = 5;
+                    }
+                    else if (this.アイテムジャンル === "壺") {
+                        item.Var7 = 5;
                     }
                     break;
                 }
