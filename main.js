@@ -199,10 +199,10 @@ const ConfigApp = {
             var_526 = 2;
             var_993 = 1;
             var_704[218] = 1;
-            var_704[235] = 1;
+            // var_704[235] = 1; // 没ダンジョン：鉄の牢獄
             var_704[221] = 2;
             var_523 = 1;
-            var_524 = 1;
+            // var_524 = 1; // 没ダンジョン：鉄の牢獄
             var_759 = 2;
         },
         onChangeShowMovementPath(e) {
