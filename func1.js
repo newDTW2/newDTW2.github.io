@@ -4869,6 +4869,8 @@ function func164() {
             var_779 = (var_66 + 2) * var_35;
             var_780 = (var_67 + 1) * var_36;
         }
+        color(0, 0, 0);
+        boxf(0, 0, 340, 340);
         pos(0, 0);
         gmode(2);
         gcopy(18, var_779, var_780, 340, 340);

@@ -6667,6 +6667,7 @@ function func060() {
                 if (var_407 == 2) {
                     yield func932();
                 }
+                // var_94 = 9; // debug 任意の特殊部屋にする
                 yield func076();
                 for (var cnt3 = 0; cnt3 < 80; ++cnt3) {
                     yield func339();
