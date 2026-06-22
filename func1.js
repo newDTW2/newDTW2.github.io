@@ -4342,8 +4342,11 @@ function func163() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(163);
 
-        color(0, 0, 0);
-        boxf(0, 0, 340, 340);
+        // 亀の中
+        if (var_595 === 1) {
+            color(0, 0, 0);
+            boxf(0, 0, 340, 340);
+        }
 
         if (var_409 == 0) {
             var_778 = 0;
