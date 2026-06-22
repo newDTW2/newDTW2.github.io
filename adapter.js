@@ -535,6 +535,9 @@ function DSLOADMEMORY(audio_data, audio_id) {
     se[audio_id] = audio_data;
 }
 function DSPLAY(audio_id = null) {
+    if (!audio_id) {
+        return;
+    }
     playSound(se[audio_id], se[audio_id].volume);
 }
 function DSSETVOLUME(se_id, volume) {
