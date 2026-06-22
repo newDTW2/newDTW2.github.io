@@ -103,6 +103,9 @@
 						<input id="show-movement-path" type="checkbox" :checked="showMovementPath" @change="onChangeShowMovementPath">
 					</div>
 					<div>
+						※ 以下は整合性を無視しているためバグる可能性があります
+					</div>
+					<div>
 						<select @change="onChangeアイテムジャンル($event.target.value)">
 							<option v-for="(name, index) in アイテムジャンル一覧" :key="index" :value="name">{{ name }}</option>
 						</select>
