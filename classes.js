@@ -79,7 +79,7 @@ class ItemInfo {
         this.Var10 = Var10;
         this.Var11 = Var11;
         this.Var12 = Var12;
-        this.Var13 = Var13;
+        this.Var13 = Var13; // レア度？
         this.Var14 = Var14; // 識別したかどうか
         this.Var15 = Var15;
         this.Var16 = Var16;
