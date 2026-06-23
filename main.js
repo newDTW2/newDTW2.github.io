@@ -102,6 +102,7 @@ const ConfigApp = {
                 壺: 壺一覧,
                 コミック: コミック一覧
             },
+            currentFloor: 1,
         };
     },
     created() {
@@ -266,6 +267,16 @@ const ConfigApp = {
                     break;
                 }
             }
+        },
+        changeCurrentFloor() {
+            if (/^\d+$/.test(this.currentFloor)) {
+                this.currentFloor = Number(this.currentFloor);
+            }
+            else {
+                this.currentFloor = 1;
+                return;
+            }
+            var_91 = this.currentFloor;
         },
     },
 };

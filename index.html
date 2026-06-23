@@ -54,6 +54,17 @@
 			gap: 8px;
 			align-items: flex-start;
 		}
+		.floor-config {
+			display: flex;
+		}
+		.floor-config label {
+			width: 4em;
+			text-align: right;
+			margin-right: 0.5em;
+		}
+		.floor-config input {
+			width: 50px;
+		}
 	</style>
 </head>
 <body>
@@ -113,6 +124,13 @@
 							<option v-for="(item, index) in アイテム一覧[アイテムジャンル]" :key="index" :value="item.name">{{ item.name }}</option>
 						</select>
 						<button @click="addItem">アイテム追加</button>
+					</div>
+					<div>
+						<div class="floor-config">
+							<label>現在階層</label>
+							<input type="number" min="1" v-model="currentFloor">
+							<button @click="changeCurrentFloor">変更</button>
+						</div>
 					</div>
 				</div>
 			</details>
