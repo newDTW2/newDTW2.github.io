@@ -13,6 +13,11 @@
 			color: white;
 			font-size: 16px;
 		}
+		select, button {
+				height: 28px;
+				padding: 0 6px;
+				box-sizing: border-box;
+		}
 		#main {
 			width: fit-content;
 			margin: 0 auto;
@@ -36,6 +41,10 @@
 			width: fit-content;
 			margin-bottom: 8px;
 			font-size: 1.2rem;
+		}
+		.config {
+			display: flex;
+	    align-items: center;
 		}
 		.pad-button-config {
 			display: flex;
@@ -109,14 +118,14 @@
 				<summary>チート</summary>
 				<div id="cheat">
 					<button @click="unlockAllDungeons">全ダンジョン開放</button>
-					<div>
+					<div class="config">
 						<label for="show-movement-path">移動経路表示</label>
 						<input id="show-movement-path" type="checkbox" :checked="showMovementPath" @change="onChangeShowMovementPath">
 					</div>
 					<div>
 						※ 以下は整合性を無視しているためバグる可能性があります
 					</div>
-					<div>
+					<div class="config">
 						<select @change="onChangeアイテムジャンル($event.target.value)">
 							<option v-for="(name, index) in アイテムジャンル一覧" :key="index" :value="name">{{ name }}</option>
 						</select>
