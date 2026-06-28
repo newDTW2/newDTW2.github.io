@@ -206,6 +206,26 @@ const ConfigApp = {
             // var_524 = 1; // 没ダンジョン：鉄の牢獄
             var_759 = 2;
         },
+        completeEnemyBook() {
+            let i = 1;
+            var_989[i++] = 140;
+            var_989[i++] = 138;
+            var_989[i++] = 36
+            var_989[i++] = 5;
+            var_989[i++] = 105;
+            var_989[i++] = 51;
+            var_989[i++] = 52;
+            var_989[i++] = 69;
+            var_989[i++] = 66;
+            var_989[i++] = 73;
+            var_989[i++] = 71;
+            var_989[i++] = 101;
+            var_989[i++] = 102;
+            var_989[i++] = 103;
+            var_989[i++] = 104;
+
+            var_1038 = i;
+        },
         onChangeShowMovementPath(e) {
             showMovementPath = event.target.checked;
             localStorage.setItem("showMovementPath", showMovementPath);
