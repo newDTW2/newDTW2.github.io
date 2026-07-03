@@ -82,6 +82,7 @@ window.addEventListener("pagehide", e => {
 const ConfigApp = {
     data() {
         return {
+            isMobile: navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent)),
             attackButtonId,
             dashButtonId,
             commandButtonId,
