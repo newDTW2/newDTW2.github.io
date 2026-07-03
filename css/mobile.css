@@ -1,10 +1,13 @@
 #virtual-pad {
-    position: fixed;
-    right: 24px;
-    bottom: 24px;
+    --button-size: 56px;
+    --gap: 0px;
 
-    width: 180px;
-    height: 180px;
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+
+    width: calc(var(--button-size) * 3 + var(--gap) * 2);
+    height: calc(var(--button-size) * 3 + var(--gap) * 2);
 
     pointer-events: none;
     z-index: 1000;
@@ -13,8 +16,8 @@
 .pad-btn {
     position: absolute;
 
-    width: 56px;
-    height: 56px;
+    width: var(--button-size);
+    height: var(--button-size);
 
     border: 2px solid #fff;
     border-radius: 50%;
@@ -24,32 +27,31 @@
     font-size: 28px;
     font-weight: bold;
 
-    pointer-events: auto;
-
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
+    pointer-events: auto;
     user-select: none;
     touch-action: none;
 }
 
 .pad-a {
-    left: 62px;
+    left: calc(var(--button-size) + var(--gap));
     top: 0;
 }
 
 .pad-c {
     left: 0;
-    top: 62px;
+    top: calc(var(--button-size) + var(--gap));
 }
 
 .pad-z {
     right: 0;
-    top: 62px;
+    top: calc(var(--button-size) + var(--gap));
 }
 
 .pad-x {
-    left: 62px;
+    left: calc(var(--button-size) + var(--gap));
     bottom: 0;
 }
