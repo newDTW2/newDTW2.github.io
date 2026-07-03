@@ -72,12 +72,10 @@
 						</select>
 						<button @click="addItem">アイテム追加</button>
 					</div>
-					<div>
-						<div class="floor-config">
-							<label>現在階層</label>
-							<input type="number" min="1" v-model="currentFloor">
-							<button @click="changeCurrentFloor">変更</button>
-						</div>
+					<div class="config">
+						<label>現在階層</label>
+						<input type="number" min="1" v-model="currentFloor">
+						<button @click="changeCurrentFloor">変更</button>
 					</div>
 				</div>
 			</details>
