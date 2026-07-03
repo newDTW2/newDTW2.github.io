@@ -1,0 +1,78 @@
+body {
+    margin: 8px 8px 16px 8px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+#main {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#canvas_container {
+    margin-bottom: 16px;
+}
+
+canvas {
+    user-select: none;
+    image-rendering: pixelated;
+}
+
+#c0 {
+    min-width: 340px;
+    max-width: 600px;
+    width: 100%;
+}
+
+details {
+    margin-top: 8px;
+}
+
+summary {
+    width: fit-content;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+select,
+button {
+    height: 28px;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 28px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    inline-size: 1.3em;
+    block-size: 1.3em;
+}
+
+label {
+    line-height: 1;
+}
+
+.pad-button-config,
+.floor-config,
+.config {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pad-button-config label {
+    width: 10em;
+    text-align: right;
+}
+
+#cheat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}

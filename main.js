@@ -117,9 +117,11 @@ const ConfigApp = {
         mapButtonId = this.mapButtonId = Number(localStorage.getItem("mapButtonId") ?? 7);
         showMovementPath = this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
 
-        window.addEventListener("orientationchange", () => {
-            this.isLandscape = [90, 270].includes(screen.orientation.angle);
-        });
+        if (this.isMobile) {
+            window.addEventListener("orientationchange", () => {
+                this.isLandscape = [90, 270].includes(screen.orientation.angle);
+            });
+        }
     },
     mounted() {
         // noop
