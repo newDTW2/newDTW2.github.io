@@ -34,22 +34,22 @@
     touch-action: none;
 }
 
-.pad-x {
+.pad-a {
     left: 62px;
     top: 0;
 }
 
-.pad-y {
+.pad-c {
     left: 0;
     top: 62px;
 }
 
-.pad-a {
+.pad-z {
     right: 0;
     top: 62px;
 }
 
-.pad-b {
+.pad-x {
     left: 62px;
     bottom: 0;
 }
