@@ -40,13 +40,71 @@ function InitInput() {
             // フルスクリーンモード無効
             pushing_key_list[e.keyCode] = 0;
         }
+        else if (e.code === "Numpad1") {
+            pushing_key_list[37] = 1; // 左
+            pushing_key_list[40] = 1; // 下
+        }
+        else if (e.code === "Numpad2") {
+            pushing_key_list[40] = 1; // 下
+        }
+        else if (e.code === "Numpad3") {
+            pushing_key_list[39] = 1; // 右
+            pushing_key_list[40] = 1; // 下
+        }
+        else if (e.code === "Numpad4") {
+            pushing_key_list[37] = 1; // 左
+        }
+        else if (e.code === "Numpad6") {
+            pushing_key_list[39] = 1; // 右
+        }
+        else if (e.code === "Numpad7") {
+            pushing_key_list[37] = 1; // 左
+            pushing_key_list[38] = 1; // 上
+        }
+        else if (e.code === "Numpad8") {
+            pushing_key_list[38] = 1; // 上
+        }
+        else if (e.code === "Numpad9") {
+            pushing_key_list[39] = 1; // 右
+            pushing_key_list[38] = 1; // 上
+        }
         else if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+            // デフォルトの挙動を殺す
             e.preventDefault();
         }
     };
     document.onkeyup = function (e) {
         pushing_key_list[e.keyCode] = 0;
+        if (e.code === "Numpad1") {
+            pushing_key_list[37] = 0; // 左
+            pushing_key_list[40] = 0; // 下
+        }
+        else if (e.code === "Numpad2") {
+            pushing_key_list[40] = 0; // 下
+        }
+        else if (e.code === "Numpad3") {
+            pushing_key_list[39] = 0; // 右
+            pushing_key_list[40] = 0; // 下
+        }
+        else if (e.code === "Numpad4") {
+            pushing_key_list[37] = 0; // 左
+        }
+        else if (e.code === "Numpad6") {
+            pushing_key_list[39] = 0; // 右
+        }
+        else if (e.code === "Numpad7") {
+            pushing_key_list[37] = 0; // 左
+            pushing_key_list[38] = 0; // 上
+        }
+        else if (e.code === "Numpad8") {
+            pushing_key_list[38] = 0; // 上
+        }
+        else if (e.code === "Numpad9") {
+            pushing_key_list[39] = 0; // 右
+            pushing_key_list[38] = 0; // 上
+        }
         if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+            // デフォルトの挙動を殺す
             e.preventDefault();
         }
     };
