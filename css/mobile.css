@@ -12,6 +12,8 @@
 .pad-action {
     --button-size: 56px;
     --gap: 0px;
+
+    position: relative;
     
     width: calc(var(--button-size) * 3 + var(--gap) * 2);
     height: calc(var(--button-size) * 3 + var(--gap) * 2);
