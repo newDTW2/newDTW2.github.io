@@ -1,10 +1,11 @@
 #virtual-pad {
     --button-size: 56px;
     --gap: 0px;
+    --margin: 12px;
 
     position: fixed;
-    right: 12px;
-    bottom: 12px;
+    right: var(--margin);
+    bottom: var(--margin);
 
     width: calc(var(--button-size) * 3 + var(--gap) * 2);
     height: calc(var(--button-size) * 3 + var(--gap) * 2);
