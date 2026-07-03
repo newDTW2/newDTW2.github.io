@@ -15,7 +15,7 @@
 		<div id="canvas-container">
 			<canvas id="c0"></canvas>
 		</div>
-		<div id="config">
+		<div id="app">
 			<div style="text-align: center;" v-if="isMobile && !isLandscape">
 				スマホを横にしてください
 			</div>
@@ -79,6 +79,12 @@
 					</div>
 				</div>
 			</details>
+			<div id="virtual-pad" v-if="isMobile && isLandscape">
+				<button class="pad-btn pad-x">X</button>
+				<button class="pad-btn pad-y">Y</button>
+				<button class="pad-btn pad-a">A</button>
+				<button class="pad-btn pad-b">B</button>
+			</div>
 		</div>
 	</div>
 	<script src="classes.js"></script>

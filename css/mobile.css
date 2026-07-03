@@ -1,0 +1,55 @@
+#virtual-pad {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    width: 180px;
+    height: 180px;
+
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.pad-btn {
+    position: absolute;
+
+    width: 56px;
+    height: 56px;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+
+    pointer-events: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+    touch-action: none;
+}
+
+.pad-x {
+    left: 62px;
+    top: 0;
+}
+
+.pad-y {
+    left: 0;
+    top: 62px;
+}
+
+.pad-a {
+    right: 0;
+    top: 62px;
+}
+
+.pad-b {
+    left: 62px;
+    bottom: 0;
+}

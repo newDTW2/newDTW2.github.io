@@ -80,7 +80,7 @@ window.addEventListener("pagehide", e => {
 
 // Vue
 
-const ConfigApp = {
+const App = {
     data() {
         return {
             isMobile: navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent)),
@@ -479,4 +479,4 @@ const ConfigApp = {
     },
 };
 
-Vue.createApp(ConfigApp).mount("#config");
+Vue.createApp(App).mount("#app");
