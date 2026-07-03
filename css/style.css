@@ -59,11 +59,14 @@ label {
 }
 
 .pad-button-config,
-.floor-config,
 .config {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.item-add-config {
+    flex-wrap: wrap;
 }
 
 .pad-button-config label {
