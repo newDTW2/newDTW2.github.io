@@ -1,63 +1,77 @@
 #virtual-pad-right {
+    --action-btn-size: 56px;
     --margin: 12px;
 
     position: fixed;
     right: var(--margin);
     bottom: var(--margin);
 
-    pointer-events: none;
+    pointer-events: auto;
+    user-select: none;
+    touch-action: none;
+
     z-index: 1000;
 }
 
-.pad-action {
-    --button-size: 56px;
-    --gap: 0px;
+.pad-util {
+    --util-gap: 8px;
 
+    display: flex;
+    margin-bottom: 16px;
+    gap: var(--util-gap);
+}
+
+.pad-map, .pad-shift {
+    width: calc(var(--action-btn-size) * 3 / 2 - var(--util-gap) / 2);
+    height: 40px;
+
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pad-action {
     position: relative;
     
-    width: calc(var(--button-size) * 3 + var(--gap) * 2);
-    height: calc(var(--button-size) * 3 + var(--gap) * 2);
+    width: calc(var(--action-btn-size) * 3);
+    height: calc(var(--action-btn-size) * 3);
 }
 
 .pad-btn {
     position: absolute;
 
-    width: var(--button-size);
-    height: var(--button-size);
+    width: var(--action-btn-size);
+    height: var(--action-btn-size);
 
     border: 2px solid #fff;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.2);
 
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    pointer-events: auto;
-    user-select: none;
-    touch-action: none;
 }
 
 .pad-a {
-    left: calc(var(--button-size) + var(--gap));
+    left: calc(var(--action-btn-size));
     top: 0;
 }
 
 .pad-c {
     left: 0;
-    top: calc(var(--button-size) + var(--gap));
+    top: calc(var(--action-btn-size));
 }
 
 .pad-z {
     right: 0;
-    top: calc(var(--button-size) + var(--gap));
+    top: calc(var(--action-btn-size));
 }
 
 .pad-x {
-    left: calc(var(--button-size) + var(--gap));
+    left: calc(var(--action-btn-size));
     bottom: 0;
 }
