@@ -122,6 +122,9 @@ const App = {
             window.addEventListener("orientationchange", () => {
                 this.isLandscape = [90, 270].includes(screen.orientation.angle);
             });
+            window.addEventListener("scroll", () => {
+                this.resizeCanvas();
+            });
         }
     },
     mounted() {
@@ -131,22 +134,25 @@ const App = {
         isLandscape: {
             immediate: true,
             handler(newVal) {
-                if (!this.isMobile) {
-                    return;
-                }
-                if (newVal) {
-                    const maxWidth = Math.min(window.innerWidth, window.innerHeight);
-                    canvas.style.minWidth = "auto";
-                    canvas.style.maxWidth = maxWidth + "px";
-                }
-                else {
-                    canvas.style.minWidth = "";
-                    canvas.style.maxWidth = "";
-                }
+                this.resizeCanvas();
             }
         }
     },
     methods: {
+        resizeCanvas() {
+            if (!this.isMobile) {
+                return;
+            }
+            if (this.isLandscape) {
+                const maxWidth = Math.min(window.innerWidth, window.innerHeight);
+                canvas.style.minWidth = "auto";
+                canvas.style.maxWidth = maxWidth + "px";
+            }
+            else {
+                canvas.style.minWidth = "";
+                canvas.style.maxWidth = "";
+            }
+        },
         onChangeAttackButtonId(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
