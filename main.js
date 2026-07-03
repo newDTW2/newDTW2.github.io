@@ -140,8 +140,8 @@ const ConfigApp = {
                     canvas.style.maxWidth = maxWidth + "px";
                 }
                 else {
-                    canvas.style.minWidth = undefined;
-                    canvas.style.maxWidth = undefined;
+                    canvas.style.minWidth = "";
+                    canvas.style.maxWidth = "";
                 }
             }
         }
