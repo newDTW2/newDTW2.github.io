@@ -31,7 +31,7 @@ var alpha_mode = 0;
 var alpha_color = "#ffffff";
 var files = {};
 var se = [];
-var canvasContainer = document.getElementById("canvas_container");
+var canvasContainer = document.getElementById("canvas-container");
 var pre_pos = [0, 0];
 function InitInput() {
     document.onkeydown = function (e) {
