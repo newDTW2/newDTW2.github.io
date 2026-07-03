@@ -68,7 +68,7 @@ function InitInput() {
             pushing_key_list[39] = 1; // 右
             pushing_key_list[38] = 1; // 上
         }
-        else if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+        else if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7", " "].includes(e.key)) {
             // デフォルトの挙動を殺す
             e.preventDefault();
         }
@@ -103,7 +103,7 @@ function InitInput() {
             pushing_key_list[39] = 0; // 右
             pushing_key_list[38] = 0; // 上
         }
-        if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7"].includes(e.key)) {
+        if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "F1", "F2", "F3", "F4", "F5", "F6", "F7", " "].includes(e.key)) {
             // デフォルトの挙動を殺す
             e.preventDefault();
         }
