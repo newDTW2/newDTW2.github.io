@@ -83,6 +83,7 @@ const ConfigApp = {
     data() {
         return {
             isMobile: navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent)),
+            isLandscape: [90, 270].includes(screen.orientation.angle),
             attackButtonId,
             dashButtonId,
             commandButtonId,
@@ -115,12 +116,16 @@ const ConfigApp = {
         shootButtonId = this.shootButtonId = Number(localStorage.getItem("shootButtonId") ?? 4);
         mapButtonId = this.mapButtonId = Number(localStorage.getItem("mapButtonId") ?? 7);
         showMovementPath = this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
+
+        window.addEventListener("orientationchange", () => {
+            this.isLandscape = [90, 270].includes(screen.orientation.angle);
+        });
     },
     mounted() {
-        //
+        // noop
     },
     watch: {
-        //
+        // noop
     },
     methods: {
         onChangeAttackButtonId(e) {

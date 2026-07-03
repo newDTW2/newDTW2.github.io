@@ -94,6 +94,9 @@
 			<canvas id="c0"></canvas>
 		</div>
 		<div id="config">
+			<div style="text-align: center;" v-if="isMobile && !isLandscape">
+				スマホを横にしてください
+			</div>
 			<details v-if="!isMobile">
 				<summary>ゲームパッド設定</summary>
 				<div style="margin-bottom: 8px;">参考：<a href="https://hardwaretester.com/gamepad" target="_blank" rel="noopener noreferrer">Hexgaming ゲームパッド テスター</a></div>
