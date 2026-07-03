@@ -79,11 +79,13 @@
 					</div>
 				</div>
 			</details>
-			<div id="virtual-pad" v-if="isMobile && isLandscape">
-				<button class="pad-btn pad-a">A</button>
-				<button class="pad-btn pad-c">C</button>
-				<button class="pad-btn pad-z">Z</button>
-				<button class="pad-btn pad-x">X</button>
+			<div id="virtual-pad-right" v-if="isMobile && isLandscape">
+				<div class="pad-action">
+					<button class="pad-btn pad-a">A</button>
+					<button class="pad-btn pad-c">C</button>
+					<button class="pad-btn pad-z">Z</button>
+					<button class="pad-btn pad-x">X</button>
+				</div>
 			</div>
 		</div>
 	</div>
