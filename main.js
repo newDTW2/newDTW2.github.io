@@ -16,11 +16,12 @@ var showMovementPath = false;
 InitInput();
 window.onload = func001;
 
+const canvas = document.getElementById("c0");
+
 // 高画質化
 // 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
 window.addEventListener("load", () => {
     setTimeout(() => {
-        const canvas = document.getElementById("c0");
         const context = canvas.getContext("2d");
         const dpr = devicePixelRatio || 1;
         canvas.width = 680 * dpr;
@@ -127,7 +128,23 @@ const ConfigApp = {
         // noop
     },
     watch: {
-        // noop
+        isLandscape: {
+            immediate: true,
+            handler(newVal) {
+                if (!this.isMobile) {
+                    return;
+                }
+                if (newVal) {
+                    const maxWidth = Math.min(window.innerWidth, window.innerHeight);
+                    canvas.style.minWidth = "auto";
+                    canvas.style.maxWidth = maxWidth + "px";
+                }
+                else {
+                    canvas.style.minWidth = undefined;
+                    canvas.style.maxWidth = undefined;
+                }
+            }
+        }
     },
     methods: {
         onChangeAttackButtonId(e) {
