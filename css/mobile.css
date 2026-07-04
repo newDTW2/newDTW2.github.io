@@ -1,94 +1,94 @@
-.virtual-pad{
-    --action-btn-size:56px;
-    --margin:12px;
+.virtual-pad {
+  --action-btn-size: 56px;
+  --margin: 12px;
 
-    position:fixed;
-    bottom:var(--margin);
+  position: fixed;
+  bottom: var(--margin);
 
-    pointer-events:auto;
-    user-select:none;
-    touch-action:none;
+  pointer-events: auto;
+  user-select: none;
+  touch-action: none;
 
-    z-index:1000;
+  z-index: 1000;
 }
 
-.virtual-pad--left{
-    left:var(--margin);
+.virtual-pad--left {
+  left: var(--margin);
 }
 
-.virtual-pad--right{
-    right:var(--margin);
+.virtual-pad--right {
+  right: var(--margin);
 }
 
-.pad-util{
-    display:flex;
-    justify-content:center;
-    margin-bottom:16px;
+.pad-util {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
-.pad-util--gap{
-    gap:8px;
+.pad-util--gap {
+  gap: 8px;
 }
 
-.pad-button{
-    height:40px;
+.pad-button {
+  height: 40px;
 
-    border:2px solid #fff;
-    border-radius:8px;
-    background:rgba(255,255,255,.2);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .2);
 
-    color:#fff;
-    font-size:20px;
-    font-weight:bold;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.pad-s{
-    width:80px;
+.pad-s {
+  width: 80px;
 }
 
 .pad-map,
-.pad-shift{
-    width:calc(var(--action-btn-size)*3/2 - 4px);
+.pad-shift {
+  width: calc(var(--action-btn-size)*3/2 - 4px);
 }
 
-.pad-stick{
-    position:relative;
-    width:calc(var(--action-btn-size)*3);
-    height:calc(var(--action-btn-size)*3);
+.pad-stick {
+  position: relative;
+  width: calc(var(--action-btn-size)*3);
+  height: calc(var(--action-btn-size)*3);
 }
 
-.pad-action{
-    position:relative;
-    width:calc(var(--action-btn-size)*3);
-    height:calc(var(--action-btn-size)*3);
+.pad-action {
+  position: relative;
+  width: calc(var(--action-btn-size)*3);
+  height: calc(var(--action-btn-size)*3);
 }
 
-.pad-btn{
-    position:absolute;
-    width:var(--action-btn-size);
-    height:var(--action-btn-size);
+.pad-btn {
+  position: absolute;
+  width: var(--action-btn-size);
+  height: var(--action-btn-size);
 }
 
-.pad-button--circle{
-    border-radius:50%;
+.pad-button--circle {
+  border-radius: 50%;
 }
 
-.pad-a{
-    left:var(--action-btn-size);
-    top:0;
+.pad-a {
+  left: var(--action-btn-size);
+  top: 0;
 }
 
-.pad-c{
-    left:0;
-    top:var(--action-btn-size);
+.pad-c {
+  left: 0;
+  top: var(--action-btn-size);
 }
 
-.pad-z{
-    right:0;
-    top:var(--action-btn-size);
+.pad-z {
+  right: 0;
+  top: var(--action-btn-size);
 }
 
-.pad-x{
-    left:var(--action-btn-size);
-    bottom:0;
+.pad-x {
+  left: var(--action-btn-size);
+  bottom: 0;
 }
