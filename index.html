@@ -81,10 +81,13 @@
 				</div>
 			</details>
 			<div id="virtual-pad-left" v-if="isMobile && isLandscape">
+				<div class="pad-util-left">
+					<button class="pad-s">S</button>
+				</div>
 				<div id="joystick" ref="joystick"></div>
 			</div>
 			<div id="virtual-pad-right" v-if="isMobile && isLandscape">
-				<div class="pad-util">
+				<div class="pad-util-right">
 					<button class="pad-map">MAP</button>
 	        <button class="pad-shift">SHIFT</button>
 				</div>
