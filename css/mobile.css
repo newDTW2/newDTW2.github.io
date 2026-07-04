@@ -1,3 +1,23 @@
+#virtual-pad-left {
+    --action-btn-size: 56px;
+    --margin: 12px;
+
+    position: fixed;
+    left: var(--margin);
+    bottom: var(--margin);
+
+    pointer-events: auto;
+    user-select: none;
+    touch-action: none;
+
+    z-index: 1000;
+}
+
+#joystick {
+    width: calc(var(--action-btn-size) * 3);
+    height: calc(var(--action-btn-size) * 3);
+}
+
 #virtual-pad-right {
     --action-btn-size: 56px;
     --margin: 12px;

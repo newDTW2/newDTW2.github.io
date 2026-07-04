@@ -128,7 +128,17 @@ const App = {
         }
     },
     mounted() {
-        // noop
+        if (this.isMobile) {
+            nipplejs.create({
+                zone: this.$refs.joystick,
+                mode: "static",
+                position: { left: "50%", top: "50%" },
+                color: {
+                    front: "#fff",
+                    back: "rgba(255, 255, 255, 0.2)"
+                }
+            });
+        }
     },
     watch: {
         isLandscape: {
