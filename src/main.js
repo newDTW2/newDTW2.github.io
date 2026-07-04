@@ -129,7 +129,7 @@ const App = {
     },
     mounted() {
         if (this.isMobile) {
-            nipplejs.create({
+            const joystick = nipplejs.create({
                 zone: this.$refs.joystick,
                 mode: "static",
                 position: { left: "50%", top: "50%" },
@@ -137,6 +137,9 @@ const App = {
                     front: "#fff",
                     back: "rgba(255, 255, 255, 0.2)"
                 }
+            });
+            window.addEventListener("scroll", () => {
+                joystick.reposition();
             });
         }
     },
