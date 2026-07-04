@@ -80,22 +80,22 @@
 					</div>
 				</div>
 			</details>
-			<div id="virtual-pad-left" v-if="isMobile && isLandscape">
-				<div class="pad-util-left">
-					<button class="pad-s">S</button>
+			<div class="virtual-pad virtual-pad--left" v-if="isMobile && isLandscape">
+				<div class="pad-util">
+					<button class="pad-button pad-s">S</button>
 				</div>
-				<div id="joystick" ref="joystick"></div>
+				<div class="pad-stick" ref="joystick"></div>
 			</div>
-			<div id="virtual-pad-right" v-if="isMobile && isLandscape">
-				<div class="pad-util-right">
-					<button class="pad-map">MAP</button>
-	        <button class="pad-shift">SHIFT</button>
+			<div class="virtual-pad virtual-pad--right" v-if="isMobile && isLandscape">
+				<div class="pad-util pad-util--gap">
+					<button class="pad-button pad-map">MAP</button>
+					<button class="pad-button pad-shift">SHIFT</button>
 				</div>
 				<div class="pad-action">
-					<button class="pad-btn pad-a">A</button>
-					<button class="pad-btn pad-c">C</button>
-					<button class="pad-btn pad-z">Z</button>
-					<button class="pad-btn pad-x">X</button>
+					<button class="pad-button pad-button--circle pad-btn pad-a">A</button>
+					<button class="pad-button pad-button--circle pad-btn pad-c">C</button>
+					<button class="pad-button pad-button--circle pad-btn pad-z">Z</button>
+					<button class="pad-button pad-button--circle pad-btn pad-x">X</button>
 				</div>
 			</div>
 		</div>

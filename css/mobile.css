@@ -1,118 +1,94 @@
-#virtual-pad-left {
-    --action-btn-size: 56px;
-    --margin: 12px;
+.virtual-pad{
+    --action-btn-size:56px;
+    --margin:12px;
 
-    position: fixed;
-    left: var(--margin);
-    bottom: var(--margin);
+    position:fixed;
+    bottom:var(--margin);
 
-    pointer-events: auto;
-    user-select: none;
-    touch-action: none;
+    pointer-events:auto;
+    user-select:none;
+    touch-action:none;
 
-    z-index: 1000;
+    z-index:1000;
 }
 
-.pad-util-left {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16px;
+.virtual-pad--left{
+    left:var(--margin);
 }
 
-.pad-s {
-    width: calc(80px);
-    height: 40px;
-
-    border: 2px solid #fff;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.2);
-
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+.virtual-pad--right{
+    right:var(--margin);
 }
 
-#joystick {
-    position: relative;
-    width: calc(var(--action-btn-size) * 3);
-    height: calc(var(--action-btn-size) * 3);
+.pad-util{
+    display:flex;
+    justify-content:center;
+    margin-bottom:16px;
 }
 
-#virtual-pad-right {
-    --action-btn-size: 56px;
-    --margin: 12px;
-
-    position: fixed;
-    right: var(--margin);
-    bottom: var(--margin);
-
-    pointer-events: auto;
-    user-select: none;
-    touch-action: none;
-
-    z-index: 1000;
+.pad-util--gap{
+    gap:8px;
 }
 
-.pad-util-right {
-    --util-gap: 8px;
+.pad-button{
+    height:40px;
 
-    display: flex;
-    margin-bottom: 16px;
-    gap: var(--util-gap);
+    border:2px solid #fff;
+    border-radius:8px;
+    background:rgba(255,255,255,.2);
+
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
 }
 
-.pad-map, .pad-shift {
-    width: calc(var(--action-btn-size) * 3 / 2 - var(--util-gap) / 2);
-    height: 40px;
-
-    border: 2px solid #fff;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.2);
-
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
+.pad-s{
+    width:80px;
 }
 
-.pad-action {
-    position: relative;
-    
-    width: calc(var(--action-btn-size) * 3);
-    height: calc(var(--action-btn-size) * 3);
+.pad-map,
+.pad-shift{
+    width:calc(var(--action-btn-size)*3/2 - 4px);
 }
 
-.pad-btn {
-    position: absolute;
-
-    width: var(--action-btn-size);
-    height: var(--action-btn-size);
-
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+.pad-stick{
+    position:relative;
+    width:calc(var(--action-btn-size)*3);
+    height:calc(var(--action-btn-size)*3);
 }
 
-.pad-a {
-    left: calc(var(--action-btn-size));
-    top: 0;
+.pad-action{
+    position:relative;
+    width:calc(var(--action-btn-size)*3);
+    height:calc(var(--action-btn-size)*3);
 }
 
-.pad-c {
-    left: 0;
-    top: calc(var(--action-btn-size));
+.pad-btn{
+    position:absolute;
+    width:var(--action-btn-size);
+    height:var(--action-btn-size);
 }
 
-.pad-z {
-    right: 0;
-    top: calc(var(--action-btn-size));
+.pad-button--circle{
+    border-radius:50%;
 }
 
-.pad-x {
-    left: calc(var(--action-btn-size));
-    bottom: 0;
+.pad-a{
+    left:var(--action-btn-size);
+    top:0;
+}
+
+.pad-c{
+    left:0;
+    top:var(--action-btn-size);
+}
+
+.pad-z{
+    right:0;
+    top:var(--action-btn-size);
+}
+
+.pad-x{
+    left:var(--action-btn-size);
+    bottom:0;
 }
