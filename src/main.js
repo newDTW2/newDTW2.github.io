@@ -142,6 +142,21 @@ const App = {
             window.addEventListener("scroll", () => {
                 joystick.reposition();
             });
+            joystick.on("move", e => {
+                const x = e.data.vector.x;
+                const y = e.data.vector.y;
+
+                pushing_key_list[37] = x < -0.3 ? 1 : 0; // 左
+                pushing_key_list[39] = x > 0.3 ? 1 : 0; // 右
+                pushing_key_list[38] = y > 0.3 ? 1 : 0; // 上
+                pushing_key_list[40] = y < -0.3 ? 1 : 0; // 下
+            });
+            joystick.on("end", () => {
+                pushing_key_list[37] = 0;
+                pushing_key_list[38] = 0;
+                pushing_key_list[39] = 0;
+                pushing_key_list[40] = 0;
+            });
         }
     },
     watch: {
