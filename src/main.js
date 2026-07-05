@@ -259,6 +259,16 @@ const App = {
                 e.target.value = this.mapButtonId;
             }
         },
+        onPointerDown(e, strIndexVar) {
+            e.target.setPointerCapture(e.pointerId);
+            gamepad_key_list[window[strIndexVar]] = 1;
+        },
+        onPointerUp(strIndexVar) {
+            gamepad_key_list[window[strIndexVar]] = 0;
+        },
+        onPointerCancel(strIndexVar) {
+            gamepad_key_list[window[strIndexVar]] = 0;
+        },
         unlockAllDungeons() {
             var_404 = 1;
             var_704[88] = 1;

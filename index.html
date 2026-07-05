@@ -86,7 +86,14 @@
 			</button>
 			<div class="virtual-pad virtual-pad--left" v-show="isMobile && isLandscape && padEnabled">
 				<div class="pad-util">
-					<button class="pad-button pad-s">S</button>
+					<button
+						class="pad-button pad-s"
+						@pointerdown="onPointerDown($event, 'var_658')"
+						@pointerup="onPointerUp('var_658')"
+						@pointercancel="onPointerCancel('var_658')"
+					>
+						S
+					</button>
 				</div>
 				<div class="pad-stick" ref="joystick"></div>
 			</div>
