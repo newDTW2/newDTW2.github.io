@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="css/mobile.css" />
 </head>
 <body>
-	<div id="main">
+	<!-- onclickがないとスマホでtouch-action: manipulation;が機能しないため -->
+	<div id="main" onclick="void(0)">
 		<div id="canvas-container">
 			<canvas id="c0"></canvas>
 		</div>

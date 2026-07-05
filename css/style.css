@@ -6,6 +6,9 @@ html, body {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
+
+  /* ダブルタップによる拡大禁止 */
+  touch-action: manipulation;
 }
 
 body {
