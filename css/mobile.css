@@ -1,3 +1,10 @@
+.pad-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 1001;
+}
+
 .virtual-pad {
   --action-btn-size: 56px;
   --margin: 12px;

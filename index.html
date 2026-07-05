@@ -80,13 +80,16 @@
 					</div>
 				</div>
 			</details>
-			<div class="virtual-pad virtual-pad--left" v-if="isMobile && isLandscape">
+			<button class="pad-toggle" @click="togglePad" v-if="isMobile && isLandscape">
+				{{ padEnabled ? "PAD ON" : "PAD OFF" }}
+			</button>
+			<div class="virtual-pad virtual-pad--left" v-show="isMobile && isLandscape && padEnabled">
 				<div class="pad-util">
 					<button class="pad-button pad-s">S</button>
 				</div>
 				<div class="pad-stick" ref="joystick"></div>
 			</div>
-			<div class="virtual-pad virtual-pad--right" v-if="isMobile && isLandscape">
+			<div class="virtual-pad virtual-pad--right" v-show="isMobile && isLandscape && padEnabled">
 				<div class="pad-util pad-util--gap">
 					<button class="pad-button pad-map">MAP</button>
 					<button class="pad-button pad-shift">SHIFT</button>

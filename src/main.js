@@ -85,6 +85,7 @@ const App = {
         return {
             isMobile: navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent)),
             isLandscape: [90, 270].includes(screen.orientation.angle),
+            padEnabled: false,
             attackButtonId,
             dashButtonId,
             commandButtonId,
@@ -147,9 +148,12 @@ const App = {
         isLandscape: {
             immediate: true,
             handler(newVal) {
+                if (!newVal && this.padEnabled) {
+                    this.togglePad();
+                }
                 this.resizeCanvas();
             }
-        }
+        },
     },
     methods: {
         resizeCanvas() {
@@ -165,6 +169,10 @@ const App = {
                 canvas.style.minWidth = "";
                 canvas.style.maxWidth = "";
             }
+        },
+        togglePad() {
+            this.padEnabled = !this.padEnabled;
+            document.body.style.overflow = this.padEnabled ? "hidden" : "";
         },
         onChangeAttackButtonId(e) {
             const strVal = e.target.value;
