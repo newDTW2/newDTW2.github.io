@@ -266,8 +266,12 @@ const App = {
         onPointerUp(strIndexVar) {
             gamepad_key_list[window[strIndexVar]] = 0;
         },
-        onPointerCancel(strIndexVar) {
-            gamepad_key_list[window[strIndexVar]] = 0;
+        onPointerDownMap(e) {
+            e.target.setPointerCapture(e.pointerId);
+            gamepad_key_list[32] = 1;
+        },
+        onPointerUpMap() {
+            gamepad_key_list[32] = 0;
         },
         unlockAllDungeons() {
             var_404 = 1;

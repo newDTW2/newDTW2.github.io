@@ -90,7 +90,7 @@
 						class="pad-button pad-s"
 						@pointerdown="onPointerDown($event, 'var_658')"
 						@pointerup="onPointerUp('var_658')"
-						@pointercancel="onPointerCancel('var_658')"
+						@pointercancel="onPointerUp('var_658')"
 					>
 						S
 					</button>
@@ -99,14 +99,56 @@
 			</div>
 			<div class="virtual-pad virtual-pad--right" v-show="isMobile && isLandscape && padEnabled">
 				<div class="pad-util pad-util--gap">
-					<button class="pad-button pad-map">MAP</button>
-					<button class="pad-button pad-shift">SHIFT</button>
+					<button
+						class="pad-button pad-map"
+						@pointerdown="onPointerDownMap($event)"
+						@pointerup="onPointerUpMap()"
+						@pointercancel="onPointerUpMap()"
+					>
+						MAP
+					</button>
+					<button
+						class="pad-button pad-shift"
+						@pointerdown="onPointerDown($event, 'var_659')"
+						@pointerup="onPointerUp('var_659')"
+						@pointercancel="onPointerUp('var_659')"
+					>
+						SHIFT
+					</button>
 				</div>
 				<div class="pad-action">
-					<button class="pad-button pad-button--circle pad-btn pad-a">A</button>
-					<button class="pad-button pad-button--circle pad-btn pad-c">C</button>
-					<button class="pad-button pad-button--circle pad-btn pad-z">Z</button>
-					<button class="pad-button pad-button--circle pad-btn pad-x">X</button>
+					<button
+						class="pad-button pad-button--circle pad-btn pad-a"
+						@pointerdown="onPointerDown($event, 'var_657')"
+						@pointerup="onPointerUp('var_657')"
+						@pointercancel="onPointerUp('var_657')"
+					>
+						A
+					</button>
+					<button
+						class="pad-button pad-button--circle pad-btn pad-c"
+						@pointerdown="onPointerDown($event, 'var_660')"
+						@pointerup="onPointerUp('var_660')"
+						@pointercancel="onPointerUp('var_660')"
+					>
+						C
+					</button>
+					<button
+						class="pad-button pad-button--circle pad-btn pad-z"
+						@pointerdown="onPointerDown($event, 'var_655')"
+						@pointerup="onPointerUp('var_655')"
+						@pointercancel="onPointerUp('var_655')"
+					>
+						Z
+					</button>
+					<button
+						class="pad-button pad-button--circle pad-btn pad-x"
+						@pointerdown="onPointerDown($event, 'var_656')"
+						@pointerup="onPointerUp('var_656')"
+						@pointercancel="onPointerUp('var_656')"
+					>
+						X
+					</button>
 				</div>
 			</div>
 		</div>
