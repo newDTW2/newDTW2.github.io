@@ -1,3 +1,7 @@
+html, body {
+  overscroll-behavior: none;
+}
+
 body {
   margin: 8px 8px 16px 8px;
   background-color: black;

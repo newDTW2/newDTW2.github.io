@@ -144,11 +144,10 @@ const App = {
 
             const pads = document.querySelectorAll(".virtual-pad");
             function updatePadOpacity() {
-                const max = 50;
-                const opacity = Math.max(0, 1 - window.scrollY / max);
+                const shouldDisplay = window.scrollY <= 20;
                 pads.forEach(pad => {
-                    pad.style.opacity = opacity;
-                    pad.style.pointerEvents = opacity > 0.1 ? "auto" : "none";
+                    pad.style.opacity = shouldDisplay ? 1 : 0;
+                    pad.style.pointerEvents = shouldDisplay ? "auto" : "none";
                 });
             }
             window.addEventListener("scroll", updatePadOpacity);
