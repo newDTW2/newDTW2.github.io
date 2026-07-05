@@ -141,17 +141,6 @@ const App = {
             window.addEventListener("scroll", () => {
                 joystick.reposition();
             });
-
-            const pads = document.querySelectorAll(".virtual-pad");
-            function updatePadOpacity() {
-                const shouldDisplay = window.scrollY <= 20;
-                pads.forEach(pad => {
-                    pad.style.opacity = shouldDisplay ? 1 : 0;
-                    pad.style.pointerEvents = shouldDisplay ? "auto" : "none";
-                });
-            }
-            window.addEventListener("scroll", updatePadOpacity);
-            updatePadOpacity();
         }
     },
     watch: {
