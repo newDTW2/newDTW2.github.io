@@ -10,6 +10,8 @@
   touch-action: none;
 
   z-index: 1000;
+
+  transition: opacity 0.15s linear;
 }
 
 .virtual-pad--left {
