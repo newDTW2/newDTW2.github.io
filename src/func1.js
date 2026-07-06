@@ -40,391 +40,391 @@ function func101() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(101);
         if (var_675 == 0) {
-            var_665 = "0.mid";
+            var_665 = "0.ogg";
         }
         if (var_675 == 100) {
-            var_665 = "116.mid";
+            var_665 = "116.ogg";
             var_676 = "The Beatles [Get Back]";
         }
         if (var_675 == 101) {
-            var_665 = "101.mid";
+            var_665 = "101.ogg";
             var_676 = "Michel Polnareff [Tout tout pour ma cherie]";
         }
         if (var_675 == 102) {
-            var_665 = "099.mid";
+            var_665 = "099.ogg";
             var_676 = "King Crimson [RED]";
         }
         if (var_675 == 103) {
-            var_665 = "103.mid";
+            var_665 = "103.ogg";
             var_676 = "Pink Floyd [Echoes]";
         }
         if (var_675 == 104) {
-            var_665 = "104.mid";
+            var_665 = "104.ogg";
             var_676 = "The Band [The Night They Drove Old Dixie Down]";
         }
         if (var_675 == 105) {
-            var_665 = "105.mid";
+            var_665 = "105.ogg";
             var_676 = "Red Hot Chili Peppers [Give It Away]";
         }
         if (var_675 == 106) {
-            var_665 = "106.mid";
+            var_665 = "106.ogg";
             var_676 = "Pink Floyd [Shine on You Crasy Diamond]";
         }
         if (var_675 == 107) {
-            var_665 = "107.mid";
+            var_665 = "107.ogg";
             var_676 = "The Beatles [Good Night]";
         }
         if (var_675 == 108) {
-            var_665 = "108.mid";
+            var_665 = "108.ogg";
             var_676 = "The Rolling Stones [Brown Sugar] (album[Sticky Fingers])";
         }
         if (var_675 == 109) {
-            var_665 = "109.mid";
+            var_665 = "109.ogg";
             var_676 = "Paula Abdul [Forever Your Girl]";
         }
         if (var_675 == 111) {
-            var_665 = "111.mid";
+            var_665 = "111.ogg";
             var_676 = "DIO [I Speed At Night]";
         }
         if (var_675 == 112) {
-            var_665 = "112.mid";
+            var_665 = "112.ogg";
             var_676 = "Queen [Killer Queen]";
         }
         if (var_675 == 113) {
-            var_665 = "113.mid";
+            var_665 = "113.ogg";
             var_676 = "The Clash [Rock The Casbah]";
         }
         if (var_675 == 114) {
-            var_665 = "114.mid";
+            var_665 = "114.ogg";
             var_676 = "White Snake [Love Aint No Stranger]";
         }
         if (var_675 == 115) {
-            var_665 = "115.mid";
+            var_665 = "115.ogg";
             var_676 = "Prince [Gold](album[Gold Experience])";
         }
         if (var_675 == 116) {
-            var_665 = "116.mid";
+            var_665 = "116.ogg";
             var_676 = "The Beatles [Get Back]";
         }
         if (var_675 == 117) {
-            var_665 = "117.mid";
+            var_665 = "117.ogg";
             var_676 = "Captain & Tennille [Love Will Keep Us Together]";
         }
         if (var_675 == 118) {
-            var_665 = "118.mid";
+            var_665 = "118.ogg";
             var_676 = "Van Halen [Pretty Woman](album[DIVER DOWN])";
         }
         if (var_675 == 119) {
-            var_665 = "119.mid";
+            var_665 = "119.ogg";
             var_676 = "Spice Girls [Wannabe]";
         }
         if (var_675 == 120) {
-            var_665 = "120.mid";
+            var_665 = "120.ogg";
             var_676 = "Dolly Parton [Jolene]";
         }
         if (var_675 == 121) {
-            var_665 = "121.mid";
+            var_665 = "121.ogg";
             var_676 = "JIMI HENDRIX [Purple Haze]";
         }
         if (var_675 == 122) {
-            var_665 = "122.mid";
+            var_665 = "122.ogg";
             var_676 = "Chaka Khan [Aint Nobody]";
         }
         if (var_675 == 123) {
-            var_665 = "123.mid";
+            var_665 = "123.ogg";
             var_676 = "Cream [Crossroads]";
         }
         if (var_675 == 124) {
-            var_665 = "124.mid";
+            var_665 = "124.ogg";
             var_676 = "Moody Blues [I Know Your Out There Somewhere]";
         }
         if (var_675 == 200) {
-            var_665 = "200.mid";
+            var_665 = "200.ogg";
             var_676 = "Curtis Mayfield [Superfly]";
         }
         if (var_675 == 201) {
-            var_665 = "201.mid";
+            var_665 = "201.ogg";
             var_676 = "The Beatles [Girl] (album [RUBBER SOUL])";
         }
         if (var_675 == 202) {
-            var_665 = "202.mid";
+            var_665 = "202.ogg";
             var_676 = "The Beatles [While My Guiter Gentry Weeps]";
         }
         if (var_675 == 203) {
-            var_665 = "203.mid";
+            var_665 = "203.ogg";
             var_676 = "Iggy Pop [The Passengers]";
         }
         if (var_675 == 204) {
-            var_665 = "204.mid";
+            var_665 = "204.ogg";
             var_676 = "Queen [Sheer Heart Attack]";
         }
         if (var_675 == 205) {
-            var_665 = "205.mid";
+            var_665 = "205.ogg";
             var_676 = "Kraftwerk [The Model]";
         }
         if (var_675 == 206) {
-            var_665 = "206.mid";
+            var_665 = "206.ogg";
             var_676 = "OASIS [Wonderwall]";
         }
         if (var_675 == 207) {
-            var_665 = "207.mid";
+            var_665 = "207.ogg";
             var_676 = "The Grateful Dead [Dark Star]";
         }
         if (var_675 == 300) {
-            var_665 = "300.mid";
+            var_665 = "300.ogg";
             var_676 = "Pearl jam [Alive]";
         }
         if (var_675 == 301) {
-            var_665 = "301.mid";
+            var_665 = "301.ogg";
             var_676 = "Neil Young [Heart of Gold](albam[HARVEST])";
         }
         if (var_675 == 302) {
-            var_665 = "302.mid";
+            var_665 = "302.ogg";
             var_676 = "AC/DC [Highway To Hell]";
         }
         if (var_675 == 303) {
-            var_665 = "303.mid";
+            var_665 = "303.ogg";
             var_676 = "[Enter the Dragon] ";
         }
         if (var_675 == 304) {
-            var_665 = "304.mid";
+            var_665 = "304.ogg";
             var_676 = "Weather Report [Birdland]";
         }
         if (var_675 == 305) {
-            var_665 = "305.mid";
+            var_665 = "305.ogg";
             var_676 = "Cinderella [Gypsyroad]";
         }
         if (var_675 == 306) {
-            var_665 = "306.mid";
+            var_665 = "306.ogg";
             var_676 = "Manhattan Transfer [Boy from NewYork City]";
         }
         if (var_675 == 308) {
-            var_665 = "308.mid";
+            var_665 = "308.ogg";
             var_676 = "Devo [Beautiful World]";
         }
         if (var_675 == 309) {
-            var_665 = "309.mid";
+            var_665 = "309.ogg";
             var_676 = "Soft Machine [Facelift]";
         }
         if (var_675 == 310) {
-            var_665 = "310.mid";
+            var_665 = "310.ogg";
             var_676 = "Nena [99 luftballons]";
         }
         if (var_675 == 311) {
-            var_665 = "311.mid";
+            var_665 = "311.ogg";
             var_676 = "Cheap Trick [Dream Police]";
         }
         if (var_675 == 312) {
-            var_665 = "312.mid";
+            var_665 = "312.ogg";
             var_676 = "Aerosmith [Walk This Way]";
         }
         if (var_675 == 313) {
-            var_665 = "313.mid";
+            var_665 = "313.ogg";
             var_676 = "Deep Purple [Highway Star]";
         }
         if (var_675 == 314) {
-            var_665 = "314.mid";
+            var_665 = "314.ogg";
             var_676 = "Stray Cats [Stray Cat Strut]";
         }
         if (var_675 == 315) {
-            var_665 = "315.mid";
+            var_665 = "315.ogg";
             var_676 = "King Crimson [Epitaph]";
         }
         if (var_675 == 316) {
-            var_665 = "316.mid";
+            var_665 = "316.ogg";
             var_676 = "Survivor [Eye of the Tiger]";
         }
         if (var_675 == 317) {
-            var_665 = "317.mid";
+            var_665 = "317.ogg";
             var_676 = "Kiss [Detroit Rock City]";
         }
         if (var_675 == 318) {
-            var_665 = "318.mid";
+            var_665 = "318.ogg";
             var_676 = "The Rolling Stones [Jumpin' Jack Flash ]";
         }
         if (var_675 == 319) {
-            var_665 = "319.mid";
+            var_665 = "319.ogg";
             var_676 = "Boyz II Men [End of the Road]";
         }
         if (var_675 == 320) {
-            var_665 = "320.mid";
+            var_665 = "320.ogg";
             var_676 = "Metallica [ATTITUDE]";
         }
         if (var_675 == 393) {
-            var_665 = "990.mid";
+            var_665 = "990.ogg";
             var_676 = "Queen [Bohemian Rhapsody]";
         }
         if (var_675 == 394) {
-            var_665 = "112.mid";
+            var_665 = "112.ogg";
             var_676 = "Queen [Killer Queen]";
         }
         if (var_675 == 395) {
-            var_665 = "395.mid";
+            var_665 = "395.ogg";
             var_676 = "Queen [Another One Bite the Dust]";
         }
         if (var_675 == 396) {
-            var_665 = "396.mid";
+            var_665 = "396.ogg";
             var_676 = "Led Zeppelin [Stairway To Heaven]";
         }
         if (var_675 == 397) {
-            var_665 = "304.mid";
+            var_665 = "304.ogg";
             var_676 = "Weather Report [Birdland] (album[HEAVY WEATHER])";
         }
         if (var_675 == 398) {
-            var_665 = "116.mid";
+            var_665 = "116.ogg";
             var_676 = "The Beatles [Get Back]";
         }
         if (var_675 == 399) {
-            var_665 = "115.mid";
+            var_665 = "115.ogg";
             var_676 = "Prince [Gold](album[Gold Experience])";
         }
         if (var_675 == 400) {
-            var_665 = "400.mid";
+            var_665 = "400.ogg";
             var_676 = "Sting [English Man In New York]";
         }
         if (var_675 == 401) {
-            var_665 = "401.mid";
+            var_665 = "401.ogg";
             var_676 = "Foo Fighters [Everlong]";
         }
         if (var_675 == 402) {
-            var_665 = "402.mid";
+            var_665 = "402.ogg";
             var_676 = "Hall and Oates [Kiss on my List]";
         }
         if (var_675 == 403) {
-            var_665 = "403.mid";
+            var_665 = "403.ogg";
             var_676 = "Sex Pistols [Anarchy in the UK]";
         }
         if (var_675 == 404) {
-            var_665 = "404.mid";
+            var_665 = "404.ogg";
             var_676 = "Petshop Boys [West End Girls]";
         }
         if (var_675 == 405) {
-            var_665 = "405.mid";
+            var_665 = "405.ogg";
             var_676 = "Police [Roxanne]";
         }
         if (var_675 == 406) {
-            var_665 = "405.mid";
+            var_665 = "405.ogg";
             var_676 = "Police [Roxanne]";
         }
         if (var_675 == 407) {
-            var_665 = "407.mid";
+            var_665 = "407.ogg";
             var_676 = "Sting [Shape of My Heart]";
         }
         if (var_675 == 408) {
-            var_665 = "408.mid";
+            var_665 = "408.ogg";
             var_676 = "Michael Jackson [Man in the Mirror]";
         }
         if (var_675 == 409) {
-            var_665 = "409.mid";
+            var_665 = "409.ogg";
             var_676 = "Steely Dan [Babylon Sisters]";
         }
         if (var_675 == 411) {
-            var_665 = "411.mid";
+            var_665 = "411.ogg";
             var_676 = "Eagles [Desperado]";
         }
         if (var_675 == 412) {
-            var_665 = "412.mid";
+            var_665 = "412.ogg";
             var_676 = "Bob Dylan [Knocking on Heavens Door]";
         }
         if (var_675 == 413) {
-            var_665 = "0.mid";
+            var_665 = "0.ogg";
             var_676 = "nothing";
         }
         if (var_675 == 414) {
-            var_665 = "414.mid";
+            var_665 = "414.ogg";
             var_676 = "Chuck Berry [Johnny B. Goode]";
         }
         if (var_675 == 977) {
-            var_665 = "105.mid";
+            var_665 = "105.ogg";
             var_676 = "Red Hot Chili Peppers [Give It Away]";
         }
         if (var_675 == 978) {
-            var_665 = "978.mid";
+            var_665 = "978.ogg";
             var_676 = "Pink Floyd [Atom Heart Mother]";
         }
         if (var_675 == 979) {
-            var_665 = "315.mid";
+            var_665 = "315.ogg";
             var_676 = "King Crimson [Epitaph]";
         }
         if (var_675 == 980) {
-            var_665 = "980.mid";
+            var_665 = "980.ogg";
             var_676 = "The Pixies [Where Is My Mind]";
         }
         if (var_675 == 981) {
-            var_665 = "981.mid";
+            var_665 = "981.ogg";
             var_676 = "Madonna [Like a Virgin]";
         }
         if (var_675 == 982) {
-            var_665 = "115.mid";
+            var_665 = "115.ogg";
             var_676 = "Prince [Gold](album[Gold Experience])";
         }
         if (var_675 == 983) {
-            var_665 = "203.mid";
+            var_665 = "203.ogg";
             var_676 = "Iggy Pop [The Passengers]";
         }
         if (var_675 == 984) {
-            var_665 = "313.mid";
+            var_665 = "313.ogg";
             var_676 = "Deep Purple [Highway Star]";
         }
         if (var_675 == 985) {
-            var_665 = "985.mid";
+            var_665 = "985.ogg";
             var_676 = "Deep Purple [Speed King]";
         }
         if (var_675 == 986) {
-            var_665 = "986.mid";
+            var_665 = "986.ogg";
             var_676 = "ENYA [Orinoco Flow]";
         }
         if (var_675 == 987) {
-            var_665 = "987.mid";
+            var_665 = "987.ogg";
             var_676 = "Bach italien";
         }
         if (var_675 == 988) {
-            var_665 = "988.mid";
+            var_665 = "988.ogg";
             var_676 = "Eagles [Hotel California]";
         }
         if (var_675 == 989) {
-            var_665 = "989.mid";
+            var_665 = "989.ogg";
             // var_676 = "T.rex [20th Century Boy]";
             var_676 = "	Mr.President [Coco Jamboo]";
         }
         if (var_675 == 990) {
-            var_665 = "990.mid";
+            var_665 = "990.ogg";
             var_676 = "Queen [Bohemian Rhapsody]";
         }
         if (var_675 == 991) {
-            var_665 = "991.mid";
+            var_665 = "991.ogg";
             var_676 = "Beach Boys [Surfin' USA]";
         }
         if (var_675 == 992) {
-            var_665 = "992.mid";
+            var_665 = "992.ogg";
             var_676 = "Beach Boys [Good Vibrations]";
         }
         if (var_675 == 993) {
-            var_665 = "993.mid";
+            var_665 = "993.ogg";
             var_676 = "REO Speedwagon [Keep On Lovin You]";
         }
         if (var_675 == 994) {
-            var_665 = "994.mid";
+            var_665 = "994.ogg";
             var_676 = "Led Zeppelin [Kashmir]";
         }
         if (var_675 == 565) {
-            var_665 = "995.mid";
+            var_665 = "995.ogg";
             var_676 = "Handel [Messiah]";
         }
         if (var_675 == 996) {
-            var_665 = "996.mid";
+            var_665 = "996.ogg";
             var_676 = "Prince [1999]";
         }
         if (var_675 == 997) {
-            var_665 = "997.mid";
+            var_665 = "997.ogg";
             var_676 = "Ben E King [Stand by Me]";
         }
         if (var_675 == 998) {
-            var_665 = "998.mid";
+            var_665 = "998.ogg";
             var_676 = "Bad Company [Bad Company]";
         }
         if (var_675 == 999) {
-            var_665 = "999.mid";
+            var_665 = "999.ogg";
             var_676 = "Louis Armstrong [What a Wonderful World]";
         }
         return;
@@ -477,7 +477,7 @@ function func102() {
 function func103() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(103);
-        var_665 = "0.mid";
+        var_665 = "0.ogg";
         yield func101();
         for (var cnt1 = 0; cnt1 < 10; ++cnt1) {
             DMINIT();
@@ -565,7 +565,7 @@ function func109() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(109);
         DMINIT();
-        var_665 = "102.mid";
+        var_665 = "102.ogg";
         exist(var_665);
         var_679 = strsize;
         var_680 = sdim(var_679);

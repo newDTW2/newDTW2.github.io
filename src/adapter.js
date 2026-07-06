@@ -130,7 +130,7 @@ function bload(file_name, data_size = null, offset = null) {
     if (file_name.split(".")[1] == "wav") {
         return loadSound("se/" + file_name);
     }
-    if (file_name.split(".")[1] == "mid") {
+    if (file_name.split(".")[1] == "ogg") {
         return file_name;
     }
     if (file_name.split(".")[1] != "dat") {
