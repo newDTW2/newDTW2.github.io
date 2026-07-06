@@ -604,11 +604,14 @@ function DSSETVOLUME(se_id, volume) {
 function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
 function DMINIT() { }
-function DMLOADMEMORY(music_id, data0, data1) {
-    // 音楽の再生
+function DMLOADMEMORY(file_name, data0, data1) {
+    const bgm = loadSound("bgm/" + file_name, { loop: true });
+    playSound(bgm, bgm.volume);
 }
 function DMPLAY(data0, data1) { }
-function DMSTOP() { }
+function DMSTOP() {
+    Howler.stop();
+}
 function ck_joystick(data0, data1 = null) {
     return 0;
 }
