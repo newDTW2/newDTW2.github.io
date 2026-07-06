@@ -605,6 +605,7 @@ function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
 function DMINIT() { }
 function DMLOADMEMORY(file_name, data0, data1) {
+    Howler.stop();
     const bgm = loadSound("bgm/" + file_name, { loop: true });
     playSound(bgm, bgm.volume);
 }
