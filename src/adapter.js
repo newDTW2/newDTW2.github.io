@@ -31,6 +31,7 @@ var alpha_mode = 0;
 var alpha_color = "#ffffff";
 var files = {};
 var se = [];
+var currentBgm = null;
 var canvasContainer = document.getElementById("canvas-container");
 var pre_pos = [0, 0];
 function InitInput() {
@@ -605,13 +606,13 @@ function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
 function DMINIT() { }
 function DMLOADMEMORY(file_name, data0, data1) {
-    Howler.stop();
-    const bgm = loadSound("bgm/" + file_name, { loop: true });
-    playSound(bgm, bgm.volume);
+    currentBgm?.then(bgm => bgm.stop());
+    currentBgm = loadSound("bgm/" + file_name, { loop: true });
+    playSound(currentBgm, currentBgm.volume);
 }
 function DMPLAY(data0, data1) { }
 function DMSTOP() {
-    Howler.stop();
+    currentBgm.then(bgm => bgm.stop());
 }
 function ck_joystick(data0, data1 = null) {
     return 0;
