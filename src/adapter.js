@@ -606,13 +606,19 @@ function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
 function DMINIT() { }
 function DMLOADMEMORY(file_name, data0, data1) {
-    currentBgm?.then(bgm => bgm.stop());
+    currentBgm?.then(bgm => {
+        bgm.stop();
+        bgm.unload();
+    });
     currentBgm = loadSound("bgm/" + file_name, { loop: true });
     playSound(currentBgm, currentBgm.volume);
 }
 function DMPLAY(data0, data1) { }
 function DMSTOP() {
-    currentBgm.then(bgm => bgm.stop());
+    currentBgm?.then(bgm => {
+        bgm.stop();
+        bgm.unload();
+    });
 }
 function ck_joystick(data0, data1 = null) {
     return 0;
