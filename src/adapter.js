@@ -602,7 +602,7 @@ function DSPLAY(audio_id = null) {
 function DSSETVOLUME(se_id, volume) { }
 function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) {
-    currentBgm?.then(bgm => bgm.volume(var_61 / 100))
+    currentBgm?.then(bgm => bgm.volume(var_61 / 100));
 }
 function DMINIT() { }
 function DMLOADMEMORY(file_name, data0, data1) {
