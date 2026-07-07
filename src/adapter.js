@@ -601,7 +601,9 @@ function DSPLAY(audio_id = null) {
 }
 function DSSETVOLUME(se_id, volume) { }
 function DSGETMASTERVOLUME() { }
-function DSSETMASTERVOLUME(data0) { }
+function DSSETMASTERVOLUME(data0) {
+    currentBgm?.then(bgm => bgm.volume(var_61 / 100))
+}
 function DMINIT() { }
 function DMLOADMEMORY(file_name, data0, data1) {
     currentBgm?.then(bgm => {
@@ -609,7 +611,7 @@ function DMLOADMEMORY(file_name, data0, data1) {
         bgm.unload();
     });
     currentBgm = loadSound("bgm/" + file_name, { loop: true });
-    playSound(currentBgm, currentBgm.volume);
+    playSound(currentBgm, var_61 / 100);
 }
 function DMPLAY(data0, data1) { }
 function DMSTOP() {

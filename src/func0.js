@@ -291,7 +291,7 @@ function func004() {
         yield func082();
         yield func083();
         DSGETMASTERVOLUME();
-        var_61 = stat;
+        var_61 = 60;
         gsel(0);
         var_18 = 255;
         for (var cnt1 = 0; cnt1 < 25; ++cnt1) {
