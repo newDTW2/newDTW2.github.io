@@ -597,11 +597,9 @@ function DSPLAY(audio_id = null) {
     if (!audio_id) {
         return;
     }
-    playSound(se[audio_id], se[audio_id].volume);
+    playSound(se[audio_id], var_669 / 100);
 }
-function DSSETVOLUME(se_id, volume) {
-    se[se_id].volume = volume / 100;
-}
+function DSSETVOLUME(se_id, volume) { }
 function DSGETMASTERVOLUME() { }
 function DSSETMASTERVOLUME(data0) { }
 function DMINIT() { }
