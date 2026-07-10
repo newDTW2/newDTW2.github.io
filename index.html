@@ -90,25 +90,25 @@
 			>
 				<button
 					class="pad-button pad-system-button"
-					@pointerdown="onPointerDown($event, 'var_Q')"
-					@pointerup="onPointerUp('var_Q')"
-					@pointercancel="onPointerUp('var_Q')"
+					@pointerdown="onPointerDown2($event, 16), onPointerDown2($event, 81)"
+					@pointerup="onPointerUp2(16), onPointerUp2(81)"
+					@pointercancel="onPointerUp2(16), onPointerUp2(81)"
 				>
 					Q
 				</button>
 				<button
 					class="pad-button pad-system-button"
-					@pointerdown="onPointerDown($event, 'var_Y')"
-					@pointerup="onPointerUp('var_Y')"
-					@pointercancel="onPointerUp('var_Y')"
+					@pointerdown="onPointerDown2($event, 89)"
+					@pointerup="onPointerUp2(89)"
+					@pointercancel="onPointerUp2(89)"
 				>
 					Y
 				</button>
 				<button
 					class="pad-button pad-system-button"
-					@pointerdown="onPointerDown($event, 'var_AT')"
-					@pointerup="onPointerUp('var_AT')"
-					@pointercancel="onPointerUp('var_AT')"
+					@pointerdown="onPointerDown2($event, 192)"
+					@pointerup="onPointerUp2(192)"
+					@pointercancel="onPointerUp2(192)"
 				>
 					@
 				</button>

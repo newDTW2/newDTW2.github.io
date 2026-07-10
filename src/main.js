@@ -266,6 +266,13 @@ const App = {
         onPointerUp(strIndexVar) {
             gamepad_key_list[window[strIndexVar]] = 0;
         },
+        onPointerDown2(e, code) {
+            e.target.setPointerCapture(e.pointerId);
+            gamepad_key_list[code] = 1;
+        },
+        onPointerUp2(code) {
+            gamepad_key_list[code] = 0;
+        },
         onPointerDownMap(e) {
             e.target.setPointerCapture(e.pointerId);
             gamepad_key_list[32] = 1;
