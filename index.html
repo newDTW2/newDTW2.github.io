@@ -84,6 +84,35 @@
 			<button class="pad-toggle" @click="togglePad" v-if="isMobile && isLandscape">
 				{{ padEnabled ? "PAD ON" : "PAD OFF" }}
 			</button>
+			<div
+				class="pad-system"
+				v-show="isMobile && isLandscape && padEnabled"
+			>
+				<button
+					class="pad-button pad-system-button"
+					@pointerdown="onPointerDown($event, 'var_Q')"
+					@pointerup="onPointerUp('var_Q')"
+					@pointercancel="onPointerUp('var_Q')"
+				>
+					Q
+				</button>
+				<button
+					class="pad-button pad-system-button"
+					@pointerdown="onPointerDown($event, 'var_Y')"
+					@pointerup="onPointerUp('var_Y')"
+					@pointercancel="onPointerUp('var_Y')"
+				>
+					Y
+				</button>
+				<button
+					class="pad-button pad-system-button"
+					@pointerdown="onPointerDown($event, 'var_AT')"
+					@pointerup="onPointerUp('var_AT')"
+					@pointercancel="onPointerUp('var_AT')"
+				>
+					@
+				</button>
+			</div>
 			<div class="virtual-pad virtual-pad--left" v-show="isMobile && isLandscape && padEnabled">
 				<div class="pad-util">
 					<button
