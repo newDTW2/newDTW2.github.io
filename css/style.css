@@ -1,3 +1,7 @@
+[v-cloak] {
+  display: none !important;
+}
+
 html, body {
   /* スマホにて、下スクロールによるページリロードを封じる */
   overscroll-behavior: none;
