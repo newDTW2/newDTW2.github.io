@@ -69,15 +69,6 @@ let mapButtonIndex = 7;
     requestAnimationFrame(updateGamepad);
 })();
 
-// 自動セーブ
-window.addEventListener("pagehide", e => {
-    if (!e.persisted) {
-        if (localStorage.getItem(var_735)) {
-            func231();
-        }
-    }
-});
-
 // Vue
 
 const App = {
@@ -125,6 +116,26 @@ const App = {
             });
             window.addEventListener("scroll", () => {
                 this.resizeCanvas();
+            });
+        }
+
+        // 自動セーブ
+        if (this.isMobile) {
+            document.addEventListener("visibilitychange", () => {
+                if (document.hidden) {
+                    if (localStorage.getItem(var_735)) {
+                        func231();
+                    }
+                }
+            });
+        }
+        else {
+            window.addEventListener("pagehide", e => {
+                if (!e.persisted) {
+                    if (localStorage.getItem(var_735)) {
+                        func231();
+                    }
+                }
             });
         }
     },
