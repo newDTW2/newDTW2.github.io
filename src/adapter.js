@@ -552,10 +552,10 @@ function screen_(id, display_width, display_height, init_mode, pos_x = null, pos
         display_height = 340;
     }
     buffer(id, display_width, display_height, init_mode);
-    canvases[id].style.top = pos_x;
-    canvases[id].style.left = pos_y;
-    canvasContainer.appendChild(canvases[id]);
-    canvases[id].style.display = "none";
+    // canvases[id].style.top = pos_x;
+    // canvases[id].style.left = pos_y;
+    // canvasContainer.appendChild(canvases[id]);
+    // canvases[id].style.display = "none";
 }
 function sendmsg(data0, data1, data2, data3) { undef_func("sendmsg", [data0, data1, data2, data3]); }
 function sdim(length1, length2 = null, length3 = null) {
