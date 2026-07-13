@@ -126,19 +126,87 @@
 				</div>
 				<table class="pad-action pad-direction">
 					<tr>
-						<td><button class="pad-button"></button></td>
-						<td><button class="pad-button">↑</button></td>
-						<td><button class="pad-button"></button></td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(-1, -1, $event)"
+								@pointerup="move(-1, -1)"
+								@pointercancel="move(-1, -1)"
+							>
+							</button>
+						</td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(0, -1, $event)"
+								@pointerup="move(0, -1)"
+								@pointercancel="move(0, -1)"
+							>
+								↑
+							</button>
+						</td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(1, -1, $event)"
+								@pointerup="move(1, -1)"
+								@pointercancel="move(1, -1)"
+							>
+							</button>
+						</td>
 					</tr>
 					<tr>
-						<td><button class="pad-button">←</button></td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(-1, 0, $event)"
+								@pointerup="move(-1, 0)"
+								@pointercancel="move(-1, 0)"
+							>
+								←
+							</button>
+						</td>
 						<td></td>
-						<td><button class="pad-button">→</button></td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(1, 0, $event)"
+								@pointerup="move(1, 0)"
+								@pointercancel="move(1, 0)"
+							>
+								→
+							</button>
+						</td>
 					</tr>
 					<tr>
-						<td><button class="pad-button"></button></td>
-						<td><button class="pad-button">↓</button></td>
-						<td><button class="pad-button"></button></td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(-1, 1, $event)"
+								@pointerup="move(-1, 1)"
+								@pointercancel="move(-1, 1)"
+							>
+							</button>
+						</td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(0, 1, $event)"
+								@pointerup="move(0, 1)"
+								@pointercancel="move(0, 1)"
+							>
+								↓
+							</button>
+						</td>
+						<td>
+							<button
+								class="pad-button"
+								@pointerdown="move(1, 1, $event)"
+								@pointerup="move(1, 1)"
+								@pointercancel="move(1, 1)"
+							>
+							</button>
+						</td>
 					</tr>
 				</table>
 			</div>
