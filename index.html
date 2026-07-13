@@ -124,7 +124,23 @@
 						S
 					</button>
 				</div>
-				<div class="pad-stick" ref="joystick"></div>
+				<table class="pad-action pad-direction">
+					<tr>
+						<td><button class="pad-button"></button></td>
+						<td><button class="pad-button">↑</button></td>
+						<td><button class="pad-button"></button></td>
+					</tr>
+					<tr>
+						<td><button class="pad-button">←</button></td>
+						<td></td>
+						<td><button class="pad-button">→</button></td>
+					</tr>
+					<tr>
+						<td><button class="pad-button"></button></td>
+						<td><button class="pad-button">↓</button></td>
+						<td><button class="pad-button"></button></td>
+					</tr>
+				</table>
 			</div>
 			<div class="virtual-pad virtual-pad--right" v-show="isMobile && isLandscape && padEnabled">
 				<div class="pad-util pad-util--gap">
