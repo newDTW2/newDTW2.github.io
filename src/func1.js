@@ -1708,25 +1708,25 @@ function func142() {
                 yield func142();
                 return;
             }
-            if (var_64 == 1) {
+            else if (var_64 == 1) {
                 var_64 = 0;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
             }
-            if (var_64 == 2) {
+            else if (var_64 == 2) {
                 var_64 = 1;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
             }
-            if (var_64 == 3) {
+            else if (var_64 == 3) {
                 var_64 = 2;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
             }
-            if (var_64 == 4) {
+            else if (var_64 == 4) {
                 var_64 = 3;
                 DSPLAY(100);
                 yield func143();
@@ -1742,25 +1742,25 @@ function func142() {
                 yield func142();
                 return;
             }
-            if (var_64 == 3) {
+            else if (var_64 == 3) {
                 var_64 = 4;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
             }
-            if (var_64 == 2) {
+            else if (var_64 == 2) {
                 var_64 = 3;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
             }
-            if (var_64 == 1) {
+            else if (var_64 == 1) {
                 var_64 = 0;
                 DSPLAY(100);
                 yield func143();
                 yield wait(10);
             }
-            if (var_64 == 0) {
+            else if (var_64 == 0) {
                 var_64 = 1;
                 DSPLAY(100);
                 yield func143();
