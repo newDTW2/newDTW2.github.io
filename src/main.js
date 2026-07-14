@@ -544,3 +544,11 @@ const App = {
 };
 
 Vue.createApp(App).mount("#app");
+
+// debug
+
+window.addEventListener("error", e => {
+    const point = `${e.filename.split("/").pop()}:${e.lineno}`;
+    const message = e.message;
+    alert(`【Error】\n${point}\n${message}`);
+});
