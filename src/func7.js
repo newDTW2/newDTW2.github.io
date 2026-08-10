@@ -3821,7 +3821,7 @@ function func755() {
         yield func627();
         var_3144 = 0;
         for (var cnt1 = 0; cnt1 < 10; ++cnt1) {
-            if (var_977[var_3144] == 0) {
+            if (!var_977[var_3144]) {
                 break;
             }
             var_437 = var_977[var_3144];
