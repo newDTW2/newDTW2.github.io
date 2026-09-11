@@ -23,9 +23,9 @@ CORSエラーが発生するため、実行にはローカルサーバーなど�
 
 | キー | 操作 |
 | :---: | :--- |
-| <kbd>F2</kbd> / <kbd>F3</kbd> | BGM音量を調整 |
-| <kbd>F4</kbd> / <kbd>F5</kbd> | 効果音音量を調整 |
-| <kbd>F7</kbd> | BGM ON/OFF |
+| <kbd>F2</kbd> / <kbd>F3</kbd> | BGM音量の調整 |
+| <kbd>F4</kbd> / <kbd>F5</kbd> | 効果音音量の調整 |
+| <kbd>F7</kbd> | BGMのON/OFF |
 
 <kbd>F1</kbd>, <kbd>F6</kbd>, <kbd>F12</kbd> は現在使用していません。
 
