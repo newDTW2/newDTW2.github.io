@@ -53,6 +53,7 @@ function func004() {
         }
         var_8 = 0;
         var_9 = 0;
+        var_10 = 0;
         exist("00.dat");
         if (strsize >= 1) {
             var_10 = bload("00.dat", null, 20);
