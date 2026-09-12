@@ -120,9 +120,9 @@ function await_(time) {
 
     return new Promise((resolve) => {
         setTimeout(() => {
-        // タイマー終了時に現在時刻を更新
-        lastWaitTime = Date.now();
-        resolve();
+            // タイマー終了時に現在時刻を更新
+            lastWaitTime = Date.now();
+            resolve();
         }, waitTime);
     });
 }
