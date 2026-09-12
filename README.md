@@ -27,7 +27,7 @@ CORSエラーが発生するため、実行にはローカルサーバーなど�
 | <kbd>F4</kbd> / <kbd>F5</kbd> | 効果音音量の調整 |
 | <kbd>F7</kbd> | BGMのON/OFF |
 
-<kbd>F1</kbd>, <kbd>F6</kbd>, <kbd>F12</kbd> は現在使用していません。
+※ <kbd>F1</kbd>, <kbd>F6</kbd>, <kbd>F12</kbd> はオミットしました。
 
 ## 主な変更点
 - 引き継ぎ前のバグ修正
