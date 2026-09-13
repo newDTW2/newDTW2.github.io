@@ -17,19 +17,22 @@ InitInput();
 window.onload = func001;
 
 const canvas = document.getElementById("c0");
+const isMobile = navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent));
 
 // 高画質化
 // 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        const context = canvas.getContext("2d");
-        const dpr = devicePixelRatio || 1;
-        canvas.width = 680 * dpr;
-        canvas.height = 680 * dpr;
-        context.setTransform(dpr * 2, 0, 0, dpr * 2, 0, 0);
-        context.imageSmoothingEnabled = false;
-    }, 300);
-});
+if (!isMobile) {
+    window.addEventListener("load", () => {
+        setTimeout(() => {
+            const context = canvas.getContext("2d");
+            const dpr = devicePixelRatio || 1;
+            canvas.width = 680 * dpr;
+            canvas.height = 680 * dpr;
+            context.setTransform(dpr * 2, 0, 0, dpr * 2, 0, 0);
+            context.imageSmoothingEnabled = false;
+        }, 300);
+    });
+}
 
 let attackButtonIndex = 2;
 let dashButtonIndex = 1;
@@ -74,7 +77,7 @@ let mapButtonIndex = 7;
 const App = {
     data() {
         return {
-            isMobile: navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent)),
+            isMobile: isMobile,
             isLandscape: [90, 270].includes(screen.orientation.angle),
             padEnabled: false,
             attackButtonIndex,

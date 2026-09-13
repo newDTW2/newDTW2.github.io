@@ -202,7 +202,10 @@ function func004() {
         yield func138();
         buffer(9);
         yield picload("img_item.gif");
-        {
+        if (isMobile) {
+            buffer(10, 340, 200);
+        }
+        else {
             const dpr = devicePixelRatio || 1;
             const scale = 2 * dpr;
             buffer(10, 340 * scale, 200 * scale);
@@ -5441,7 +5444,7 @@ function func048() {
             var_496 = 63;
         }
         const dpr = devicePixelRatio || 1;
-        const scale = 2 * dpr;
+        const scale = isMobile ? 1 : 2 * dpr;
         pos(0, 252);
         gzoom(40, 60, 10, 0 * scale, var_496 * scale, 40 * scale, 60 * scale);
         pos(40, 252);
