@@ -610,7 +610,8 @@ function DMLOADMEMORY(file_name, data0, data1) {
         bgm.stop();
         bgm.unload();
     });
-    currentBgm = loadSound("bgm/" + file_name, { loop: true });
+    const path = "bgm/" + (isMobile ? "low/" : "") + file_name;
+    currentBgm = loadSound(path, { loop: true });
     playSound(currentBgm, var_61 / 100);
 }
 function DMPLAY(data0, data1) { }
