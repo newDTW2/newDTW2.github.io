@@ -258,7 +258,8 @@ function exist(file_name) {
 function font(font_type, font_size, font_style = null) {
     font_style = font_style || 0;
     var font_style_list = ["", "bold", "italic"];
-    context.font = font_style_list[font_style] + " " + font_size + "px '" + font_type + "', monospace";
+    const subFontType = font_type.endsWith("Ｐゴシック") ? "sans-serif" : "monospace";
+    context.font = `${font_style_list[font_style]} ${font_size}px '${font_type}', ${subFontType}`;
     line_size = font_size;
 }
 function dialog(data0, data1, data2 = null) { undef_func("dialog", [data0, data1]); }
