@@ -10332,53 +10332,56 @@ function func485() {
             if (var_2131 >= 80 && var_2131 <= 89) {
                 var_2129 = var_2127 * 9 + var_2126;
             }
+
+            const mtmsg = text => measureText(text, "ＭＳ ゴシック", 16, 1);
+
             if (var_2131 <= 9) {
                 if (var_2149 == 0) {
-                    var_2128 = 15;
+                    var_2128 = var_2125 - ((mtmsg("[　　　　]") - mtmsg("全角カナ")) / 2);
                 }
                 if (var_2149 == 1) {
-                    var_2128 = var_2130 * 3 + 22;
+                    var_2128 = var_2125 + mtmsg("全角カナ　") - ((mtmsg("[　　]") - mtmsg("消す")) / 2);
                 }
                 if (var_2149 == 2) {
-                    var_2128 = var_2130 * 6 - 3;
+                    var_2128 = var_2125 + mtmsg("全角カナ　消す　") - ((mtmsg("[　　　]") - mtmsg("やめる")) / 2);
                 }
                 if (var_2149 == 3) {
-                    var_2128 = var_2130 * 8 + 11;
+                    var_2128 = var_2125 + mtmsg("全角カナ　消す　やめる　") - ((mtmsg("[　　]") - mtmsg("履歴")) / 2);
                 }
                 if (var_2149 == 4) {
-                    var_2128 = var_2130 * 10 + 11;
+                    var_2128 = var_2125 + mtmsg("全角カナ　消す　やめる　履歴　") - ((mtmsg("[　　]") - mtmsg("決定")) / 2);
                 }
             }
             if (var_2131 >= 10) {
                 if (var_2149 == 0) {
-                    var_2128 = 16;
+                    var_2128 = var_2125 - ((mtmsg("[　]") - mtmsg("あ")) / 2);
                 }
                 if (var_2149 == 1) {
-                    var_2128 = var_2130 + 16;
+                    var_2128 = var_2125 + mtmsg("あ ") - ((mtmsg("[　]") - mtmsg("い")) / 2);
                 }
                 if (var_2149 == 2) {
-                    var_2128 = var_2130 * 2 + 16;
+                    var_2128 = var_2125 + mtmsg("あ い ") - ((mtmsg("[　]") - mtmsg("う")) / 2);
                 }
                 if (var_2149 == 3) {
-                    var_2128 = var_2130 * 3 + 16;
+                    var_2128 = var_2125 + mtmsg("あ い う ") - ((mtmsg("[　]") - mtmsg("え")) / 2);
                 }
                 if (var_2149 == 4) {
-                    var_2128 = var_2130 * 4 + 16;
+                    var_2128 = var_2125 + mtmsg("あ い う え ") - ((mtmsg("[　]") - mtmsg("お")) / 2);
                 }
                 if (var_2149 == 5) {
-                    var_2128 = var_2130 * 7 + 6;
+                    var_2128 = var_2125 + mtmsg("あ い う え お　　　") - ((mtmsg("[　]") - mtmsg("は")) / 2);
                 }
                 if (var_2149 == 6) {
-                    var_2128 = var_2130 * 8 + 6;
+                    var_2128 = var_2125 + mtmsg("あ い う え お　　　は ") - ((mtmsg("[　]") - mtmsg("ひ")) / 2);
                 }
                 if (var_2149 == 7) {
-                    var_2128 = var_2130 * 9 + 6;
+                    var_2128 = var_2125 + mtmsg("あ い う え お　　　は ひ ") - ((mtmsg("[　]") - mtmsg("ふ")) / 2);
                 }
                 if (var_2149 == 8) {
-                    var_2128 = var_2130 * 10 + 6;
+                    var_2128 = var_2125 + mtmsg("あ い う え お　　　は ひ ふ ") - ((mtmsg("[　]") - mtmsg("へ")) / 2);
                 }
                 if (var_2149 == 9) {
-                    var_2128 = var_2130 * 11 + 6;
+                    var_2128 = var_2125 + mtmsg("あ い う え お　　　は ひ ふ へ ") - ((mtmsg("[　]") - mtmsg("ほ")) / 2);
                 }
             }
             pos(var_2128, var_2129);
