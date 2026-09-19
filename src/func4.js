@@ -10008,7 +10008,7 @@ function func484() {
                         var_2139 = 1;
                     }
                     if (var_2132 == 1) {
-                        var_2139 = 2;
+                        var_2139 = isMobile ? 0 : 2;
                     }
                     if (var_2132 == 2) {
                         var_2139 = 0;
