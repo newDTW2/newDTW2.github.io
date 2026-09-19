@@ -3614,13 +3614,14 @@ function func342() {
         mes("/");
         pos(var_59, var_41 + 3);
         mes("G");
-        font("ＭＳ Ｐゴシック", 20, 1);
+        font("ＭＳ Ｐゴシック", isMobile ? 15 : 20, 1);
         color(1, 1, 1);
+        const offset = isMobile ? 3 : 0;
         if (var_91 < 10) {
-            pos(var_42 - 1, var_41);
+            pos(var_42 - 1, var_41 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43 - 1, var_41);
+            pos(var_43 - 1, var_41 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3628,44 +3629,44 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46 - 1, var_41);
+        pos(var_46 - 1, var_41 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48 - 1, var_41);
+            pos(var_48 - 1, var_41 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49 - 1, var_41);
+            pos(var_49 - 1, var_41 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50 - 1, var_41);
+            pos(var_50 - 1, var_41 + offset);
         }
         mes(var_211);
-        pos(var_52 - 1, var_41);
+        pos(var_52 - 1, var_41 + offset);
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53 - 1, var_41);
+            pos(var_53 - 1, var_41 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54 - 1, var_41);
+            pos(var_54 - 1, var_41 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55 - 1, var_41);
+            pos(var_55 - 1, var_41 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56 - 1, var_41);
+            pos(var_56 - 1, var_41 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57 - 1, var_41);
+            pos(var_57 - 1, var_41 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58 - 1, var_41);
+            pos(var_58 - 1, var_41 + offset);
         }
         mes(var_415);
         if (var_91 < 10) {
-            pos(var_42 + 2, var_41);
+            pos(var_42 + 2, var_41 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43 + 2, var_41);
+            pos(var_43 + 2, var_41 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3673,44 +3674,44 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46 + 2, var_41);
+        pos(var_46 + 2, var_41 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48 + 2, var_41);
+            pos(var_48 + 2, var_41 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49 + 2, var_41);
+            pos(var_49 + 2, var_41 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50 + 2, var_41);
+            pos(var_50 + 2, var_41 + offset);
         }
         mes(var_211);
-        pos(var_52 + 2, var_41);
+        pos(var_52 + 2, var_41 + offset);
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53 + 2, var_41);
+            pos(var_53 + 2, var_41 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54 + 2, var_41);
+            pos(var_54 + 2, var_41 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55 + 2, var_41);
+            pos(var_55 + 2, var_41 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56 + 2, var_41);
+            pos(var_56 + 2, var_41 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57 + 2, var_41);
+            pos(var_57 + 2, var_41 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58 + 2, var_41);
+            pos(var_58 + 2, var_41 + offset);
         }
         mes(var_415);
         if (var_91 < 10) {
-            pos(var_42, var_41 - 1);
+            pos(var_42, var_41 - 1 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43, var_41 - 1);
+            pos(var_43, var_41 - 1 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3718,44 +3719,44 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46, var_41 - 1);
+        pos(var_46, var_41 - 1 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48, var_41 - 1);
+            pos(var_48, var_41 - 1 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49, var_41 - 1);
+            pos(var_49, var_41 - 1 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50, var_41 - 1);
+            pos(var_50, var_41 - 1 + offset);
         }
         mes(var_211);
-        pos(var_52, var_41 - 1);
+        pos(var_52, var_41 - 1 + offset);
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53, var_41 - 1);
+            pos(var_53, var_41 - 1 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54, var_41 - 1);
+            pos(var_54, var_41 - 1 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55, var_41 - 1);
+            pos(var_55, var_41 - 1 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56, var_41 - 1);
+            pos(var_56, var_41 - 1 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57, var_41 - 1);
+            pos(var_57, var_41 - 1 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58, var_41 - 1);
+            pos(var_58, var_41 - 1 + offset);
         }
         mes(var_415);
         if (var_91 < 10) {
-            pos(var_42, var_41 + 1);
+            pos(var_42, var_41 + 1 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43, var_41 + 1);
+            pos(var_43, var_41 + 1 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3763,44 +3764,44 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46, var_41 + 1);
+        pos(var_46, var_41 + 1 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48, var_41 + 1);
+            pos(var_48, var_41 + 1 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49, var_41 + 1);
+            pos(var_49, var_41 + 1 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50, var_41 + 1);
+            pos(var_50, var_41 + 1 + offset);
         }
         mes(var_211);
-        pos(var_52, var_41 + 1);
+        pos(var_52, var_41 + 1 + offset);
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53, var_41 + 1);
+            pos(var_53, var_41 + 1 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54, var_41 + 1);
+            pos(var_54, var_41 + 1 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55, var_41 + 1);
+            pos(var_55, var_41 + 1 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56, var_41 + 1);
+            pos(var_56, var_41 + 1 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57, var_41 + 1);
+            pos(var_57, var_41 + 1 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58, var_41 + 1);
+            pos(var_58, var_41 + 1 + offset);
         }
         mes(var_415);
         if (var_91 < 10) {
-            pos(var_42 + 1, var_41 + 1);
+            pos(var_42 + 1, var_41 + 1 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43 + 1, var_41 + 1);
+            pos(var_43 + 1, var_41 + 1 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3808,44 +3809,44 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46 + 1, var_41 + 1);
+        pos(var_46 + 1, var_41 + 1 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48 + 2, var_41 + 1);
+            pos(var_48 + 2, var_41 + 1 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49 + 2, var_41 + 1);
+            pos(var_49 + 2, var_41 + 1 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50 + 2, var_41 + 1);
+            pos(var_50 + 2, var_41 + 1 + offset);
         }
         mes(var_211);
-        pos(var_52 + 1, var_41 + 1);
+        pos(var_52 + 1, var_41 + 1 + offset);
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53 + 1, var_41 + 1);
+            pos(var_53 + 1, var_41 + 1 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54 + 1, var_41 + 1);
+            pos(var_54 + 1, var_41 + 1 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55 + 1, var_41 + 1);
+            pos(var_55 + 1, var_41 + 1 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56 + 1, var_41 + 1);
+            pos(var_56 + 1, var_41 + 1 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57 + 1, var_41 + 1);
+            pos(var_57 + 1, var_41 + 1 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58 + 1, var_41 + 1);
+            pos(var_58 + 1, var_41 + 1 + offset);
         }
         mes(var_415);
         if (var_91 < 10) {
-            pos(var_42 + 1, var_41 - 1);
+            pos(var_42 + 1, var_41 - 1 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43 + 1, var_41 - 1);
+            pos(var_43 + 1, var_41 - 1 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3853,45 +3854,45 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46 + 1, var_41 - 1);
+        pos(var_46 + 1, var_41 - 1 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48 + 2, var_41 - 1);
+            pos(var_48 + 2, var_41 - 1 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49 + 2, var_41 - 1);
+            pos(var_49 + 2, var_41 - 1 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50 + 2, var_41 - 1);
+            pos(var_50 + 2, var_41 - 1 + offset);
         }
         mes(var_211);
-        pos(var_52 + 1, var_41 - 1);
+        pos(var_52 + 1, var_41 - 1 + offset);
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53 + 1, var_41 - 1);
+            pos(var_53 + 1, var_41 - 1 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54 + 1, var_41 - 1);
+            pos(var_54 + 1, var_41 - 1 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55 + 1, var_41 - 1);
+            pos(var_55 + 1, var_41 - 1 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56 + 1, var_41 - 1);
+            pos(var_56 + 1, var_41 - 1 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57 + 1, var_41 - 1);
+            pos(var_57 + 1, var_41 - 1 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58 + 1, var_41 - 1);
+            pos(var_58 + 1, var_41 - 1 + offset);
         }
         mes(var_415);
         color(255, 255, 255);
         if (var_91 < 10) {
-            pos(var_42, var_41);
+            pos(var_42, var_41 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43, var_41);
+            pos(var_43, var_41 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3899,16 +3900,16 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46, var_41);
+        pos(var_46, var_41 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48, var_41);
+            pos(var_48, var_41 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49, var_41);
+            pos(var_49, var_41 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50, var_41);
+            pos(var_50, var_41 + offset);
         }
         if (var_211 > 0) {
             var_1234 = Math.floor(var_352 / var_211);
@@ -3920,7 +3921,7 @@ function func342() {
             color(220, 0, 0);
         }
         mes(var_211);
-        pos(var_52, var_41);
+        pos(var_52, var_41 + offset);
         if (var_1234 < 2) {
             color(255, 255, 255);
         }
@@ -3929,31 +3930,31 @@ function func342() {
         }
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53, var_41);
+            pos(var_53, var_41 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54, var_41);
+            pos(var_54, var_41 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55, var_41);
+            pos(var_55, var_41 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56, var_41);
+            pos(var_56, var_41 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57, var_41);
+            pos(var_57, var_41 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58, var_41);
+            pos(var_58, var_41 + offset);
         }
         color(255, 255, 255);
         mes(var_415);
         color(255, 255, 255);
         if (var_91 < 10) {
-            pos(var_42 + 1, var_41);
+            pos(var_42 + 1, var_41 + offset);
         }
         if (var_91 >= 10) {
-            pos(var_43 + 1, var_41);
+            pos(var_43 + 1, var_41 + offset);
         }
         if (var_262 == 0) {
             mes(var_91);
@@ -3961,16 +3962,16 @@ function func342() {
         if (var_262 == 1) {
             mes("1");
         }
-        pos(var_46 + 1, var_41);
+        pos(var_46 + 1, var_41 + offset);
         mes(var_840);
         if (var_211 < 10) {
-            pos(var_48 + 1, var_41);
+            pos(var_48 + 1, var_41 + offset);
         }
         if (var_211 >= 10) {
-            pos(var_49 + 1, var_41);
+            pos(var_49 + 1, var_41 + offset);
         }
         if (var_211 >= 100) {
-            pos(var_50 + 1, var_41);
+            pos(var_50 + 1, var_41 + offset);
         }
         if (var_211 > 0) {
             var_1234 = Math.floor(var_352 / var_211);
@@ -3982,7 +3983,7 @@ function func342() {
             color(220, 0, 0);
         }
         mes(var_211);
-        pos(var_52 + 1, var_41);
+        pos(var_52 + 1, var_41 + offset);
         if (var_1234 < 2) {
             color(255, 255, 255);
         }
@@ -3991,22 +3992,22 @@ function func342() {
         }
         mes(var_352);
         if (var_415 < 10) {
-            pos(var_53 + 1, var_41);
+            pos(var_53 + 1, var_41 + offset);
         }
         if (var_415 >= 10) {
-            pos(var_54 + 1, var_41);
+            pos(var_54 + 1, var_41 + offset);
         }
         if (var_415 >= 100) {
-            pos(var_55 + 1, var_41);
+            pos(var_55 + 1, var_41 + offset);
         }
         if (var_415 >= 1000) {
-            pos(var_56 + 1, var_41);
+            pos(var_56 + 1, var_41 + offset);
         }
         if (var_415 >= 10000) {
-            pos(var_57 + 1, var_41);
+            pos(var_57 + 1, var_41 + offset);
         }
         if (var_415 >= 100000) {
-            pos(var_58 + 1, var_41);
+            pos(var_58 + 1, var_41 + offset);
         }
         color(255, 255, 255);
         mes(var_415);

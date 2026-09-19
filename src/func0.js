@@ -7093,13 +7093,14 @@ function func068() {
         pset(23, 311);
         pset(326, 311);
         gmode(2);
-        font("ＭＳ Ｐゴシック", 18, 1);
-        pos(40, 255);
+        font("ＭＳ Ｐゴシック", isMobile ? 16 : 18, 1);
+        const y = isMobile ? 257 : 255;
+        pos(40, y);
         color(255, 255, 255);
         mes("");
         mes("精神力");
         mes("最深階");
-        pos(110, 255);
+        pos(110, y);
         color(255, 255, 255);
         mes("");
         mes("" + var_565 + "/" + var_566);
@@ -7121,12 +7122,12 @@ function func068() {
         if (var_62 != 1 && var_62 != 2 && var_62 != 3 && var_62 != 4 && var_62 != 5) {
             mes("- 階");
         }
-        pos(175, 255);
+        pos(175, y);
         color(255, 255, 255);
         mes("");
         mes("満腹度");
         mes("経験値");
-        pos(255, 255);
+        pos(255, y);
         color(255, 255, 255);
         mes("");
         mes("" + var_350 + "/" + var_567);
