@@ -333,8 +333,8 @@ function gsel(window_id, window_mode = null) {
 }
 
 const gzoom = (function() {
-    let lastFpsTime = performance.now();
-    let fps = 0;
+    let frameCount = 0;
+    let fpsStart = null;
     let heFps = undefined;
 
     return function (dst_size_x, dst_size_y, org_buffer_id, x, y, img_width, img_height, mode) {
@@ -364,16 +364,23 @@ const gzoom = (function() {
         }
         else {
             if (isMobile && target_window_id === 0 && position[0] === 0 && position[1] === 0) {
-                fps++;
                 const now = performance.now();
-                if (now - lastFpsTime >= 1000) {
-                    // console.log(`FPS: ${fps}`);
-                    if (!heFps) {
-                        heFps = document.getElementById("fps");
+                if (fpsStart === null) {
+                    fpsStart = now;
+                    frameCount = 1;
+                } else {
+                    frameCount++;
+                    const elapsed = now - fpsStart;
+                    if (elapsed >= 1000) {
+                        const fps = frameCount * 1000 / elapsed;
+                        // console.log(`FPS: ${fps.toFixed(1)}`);
+                        if (!heFps) {
+                            heFps = document.getElementById("fps");
+                        }
+                        heFps.innerText = `FPS: ${fps.toFixed(1)}`;
+                        frameCount = 0;
+                        fpsStart = now;
                     }
-                    heFps.innerText = `FPS: ${fps}`;
-                    fps = 0;
-                    lastFpsTime = now;
                 }
             }
             context.drawImage(canvases[org_buffer_id], x, y, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
