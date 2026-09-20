@@ -52,7 +52,7 @@
 					<input type="number" min="0" max="99" :value="mapButtonIndex" @change="onChangeMapButtonIndex">
 				</div>
 			</details>
-			<details>
+			<details :open="isMobile">
 				<summary>チート</summary>
 				<div id="cheat">
 					<button @click="unlockAllDungeons">全ダンジョン開放</button>
@@ -83,6 +83,7 @@
 			<button class="pad-toggle" @click="togglePad" v-if="isMobile && isLandscape">
 				{{ padEnabled ? "PAD ON" : "PAD OFF" }}
 			</button>
+			<div id="fps" v-show="isMobile && isLandscape && padEnabled"></div>
 			<div
 				class="pad-system"
 				v-show="isMobile && isLandscape && padEnabled"

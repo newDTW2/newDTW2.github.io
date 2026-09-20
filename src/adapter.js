@@ -331,35 +331,56 @@ function gsel(window_id, window_mode = null) {
     context = contexts[window_id];
     target_window_id = window_id;
 }
-function gzoom(dst_size_x, dst_size_y, org_buffer_id, x, y, img_width, img_height, mode) {
-    if (org_buffer_id == 25) {
-        var ctx = canvases[org_buffer_id].getContext('2d');
-        var imgd = ctx.getImageData(position[0], position[1], img_width, img_height);
-        var pix = imgd.data;
-        for (var i = 0, n = pix.length; i < n; i += 4) {
-            var grayscale = pix[i] * 0.3 + pix[i + 1] * 0.59 + pix[i + 2] * 0.11;
-            pix[i] = grayscale;
-            pix[i + 1] = grayscale;
-            pix[i + 2] = grayscale;
+
+const gzoom = (function() {
+    let lastFpsTime = performance.now();
+    let fps = 0;
+    let heFps = undefined;
+
+    return function (dst_size_x, dst_size_y, org_buffer_id, x, y, img_width, img_height, mode) {
+        if (org_buffer_id == 25) {
+            var ctx = canvases[org_buffer_id].getContext('2d');
+            var imgd = ctx.getImageData(position[0], position[1], img_width, img_height);
+            var pix = imgd.data;
+            for (var i = 0, n = pix.length; i < n; i += 4) {
+                var grayscale = pix[i] * 0.3 + pix[i + 1] * 0.59 + pix[i + 2] * 0.11;
+                pix[i] = grayscale;
+                pix[i + 1] = grayscale;
+                pix[i + 2] = grayscale;
+            }
+
+            var tmp = document.createElement('canvas');
+            tmp.width = img_width;
+            tmp.height = img_height;
+            tmp.getContext('2d').putImageData(imgd, 0, 0);
+
+            context.drawImage(tmp, 0, 0, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
+            return;
         }
+        else if (org_buffer_id == 8 && (x == 760 && y == 920 || x > 400 && y < 350)) {
+            context.globalCompositeOperation = "destination-out";
+            context.drawImage(canvases[org_buffer_id], x, y, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
+            context.globalCompositeOperation = "source-over";
+        }
+        else {
+            if (isMobile && target_window_id === 0 && position[0] === 0 && position[1] === 0) {
+                fps++;
+                const now = performance.now();
+                if (now - lastFpsTime >= 1000) {
+                    // console.log(`FPS: ${fps}`);
+                    if (!heFps) {
+                        heFps = document.getElementById("fps");
+                    }
+                    heFps.innerText = `FPS: ${fps}`;
+                    fps = 0;
+                    lastFpsTime = now;
+                }
+            }
+            context.drawImage(canvases[org_buffer_id], x, y, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
+        }
+    }
+})();
 
-        var tmp = document.createElement('canvas');
-        tmp.width = img_width;
-        tmp.height = img_height;
-        tmp.getContext('2d').putImageData(imgd, 0, 0);
-
-        context.drawImage(tmp, 0, 0, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
-        return;
-    }
-    else if (org_buffer_id == 8 && (x == 760 && y == 920 || x > 400 && y < 350)) {
-        context.globalCompositeOperation = "destination-out";
-        context.drawImage(canvases[org_buffer_id], x, y, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
-        context.globalCompositeOperation = "source-over";
-    }
-    else {
-        context.drawImage(canvases[org_buffer_id], x, y, img_width, img_height, position[0], position[1], dst_size_x, dst_size_y);
-    }
-}
 function input(data0, data1, data2, data3) { undef_func("input", [data0, data1, data2, data3]); }
 function instr(data0, data1, data2) { undef_func("instr", [data0, data1, data2]); return 0; }
 function int(data0) {
