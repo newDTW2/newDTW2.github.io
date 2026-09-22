@@ -12,7 +12,8 @@ var var_27_x;
 var_494 = [];
 var_664 = [];
 var_691 = [];
-var showMovementPath = false;
+let isPressedF = false;
+let showMovementPath = false;
 InitInput();
 window.onload = func001;
 

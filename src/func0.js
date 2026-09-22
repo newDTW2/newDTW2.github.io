@@ -9566,6 +9566,7 @@ function func080(is_key_reset = true) {
         var_238 = getkey(var_659);
         var_252 = getkey(var_660);
         var_261 = getkey(32);
+        isPressedF = getkey(70) === 1;
         var_661 = 15 + var_662;
         ck_joystick(var_663, var_661);
         if (stat != 1 && var_254 == 0 && var_257 == 0 && var_255 == 0 && var_259 == 0 && var_253 == 0 && var_256 == 0 && var_258 == 0 && var_260 == 0 && var_242 == 0 && var_239 == 0 && var_244 == 0 && var_249 == 0 && var_238 == 0 && var_252 == 0 && var_619 == 0 && var_620 == 0 && var_621 == 0 && var_261 == 0) {
