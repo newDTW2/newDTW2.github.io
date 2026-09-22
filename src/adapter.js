@@ -266,10 +266,6 @@ function gcopy(org_buffer_id, x, y, img_width, img_height) {
 function getkey(key_id) {
     return pushing_key_list[key_id] || gamepad_key_list[key_id] || 0;
 }
-function ResetKey(key_id) {
-    pushing_key_list[key_id] = 0;
-    gamepad_key_list[key_id] = 0;
-}
 function getstr(data0, data1, data2, data3) { undef_func("getstr", [data0, data1, data2, data3]); }
 function gettime(data0) {
     const now = new Date();
