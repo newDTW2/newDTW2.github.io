@@ -42,6 +42,7 @@ let turnButtonIndex = 0;
 let diagonalButtonIndex = 5;
 let shootButtonIndex = 4;
 let mapButtonIndex = 7;
+let ffButtonIndex = 6;
 
 // ゲームパッド対応
 // https://w3c.github.io/gamepad/#remapping
@@ -69,6 +70,8 @@ let mapButtonIndex = 7;
         gamepad_key_list[var_659] = gp.buttons[diagonalButtonIndex]?.pressed ? 1 : 0;
         // S 射撃
         gamepad_key_list[var_658] = gp.buttons[shootButtonIndex]?.pressed ? 1 : 0;
+        // F FF
+        gamepad_key_list[70] = gp.buttons[ffButtonIndex]?.pressed ? 1 : 0;
     }
     requestAnimationFrame(updateGamepad);
 })();
@@ -88,6 +91,7 @@ const App = {
             diagonalButtonIndex,
             shootButtonIndex,
             mapButtonIndex,
+            ffButtonIndex,
             showMovementPath,
             アイテムジャンル: "装備DISC",
             アイテムジャンル一覧: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
@@ -112,6 +116,7 @@ const App = {
         diagonalButtonIndex = this.diagonalButtonIndex = Number(localStorage.getItem("diagonalButtonIndex") ?? 5);
         shootButtonIndex = this.shootButtonIndex = Number(localStorage.getItem("shootButtonIndex") ?? 4);
         mapButtonIndex = this.mapButtonIndex = Number(localStorage.getItem("mapButtonIndex") ?? 7);
+        ffButtonIndex = this.ffButtonIndex = Number(localStorage.getItem("ffButtonIndex") ?? 6);
         showMovementPath = this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
 
         if (this.isMobile) {
@@ -244,6 +249,16 @@ const App = {
             }
             else {
                 e.target.value = this.mapButtonIndex;
+            }
+        },
+        onChangeFFButtonIndex(e) {
+            const strVal = e.target.value;
+            if (/^\d+$/.test(strVal)) {
+                ffButtonIndex = Number(strVal);
+                localStorage.setItem("ffButtonIndex", ffButtonIndex);
+            }
+            else {
+                e.target.value = this.ffButtonIndex;
             }
         },
         onPointerDown(e, strIndexVar) {

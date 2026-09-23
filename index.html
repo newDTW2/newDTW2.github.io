@@ -51,6 +51,10 @@
 					<label>地図</label>
 					<input type="number" min="0" max="99" :value="mapButtonIndex" @change="onChangeMapButtonIndex">
 				</div>
+				<div class="pad-button-config">
+					<label>FF</label>
+					<input type="number" min="0" max="99" :value="ffButtonIndex" @change="onChangeFFButtonIndex">
+				</div>
 			</details>
 			<details :open="isMobile">
 				<summary>チート</summary>
