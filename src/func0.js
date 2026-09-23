@@ -980,8 +980,24 @@ function func009() {
         }
         if (isPressedF) {
             yield func051();
-            console.log("TODO func009 フーファイターズ発動！！");
-            yield* activateFF();
+            if (var_224 > 0) {
+                var_225 = 0;
+                for (let i = 0; i < 20; ++i) {
+                    var_221 = 0;
+                    var_197 = 0;
+                    var_231 = 0;
+                    if (var_233[var_225].Var0 == 401) {
+                        var_2258 = var_233[var_225].Var0
+                        yield* activateFF();
+                        return;
+                    }
+                    var_225 = var_225 + 1;
+                }
+            }
+            var_234 = 0;
+            var_220 = 0;
+            var_217 = 1;
+            yield func019();
             return;
         }
         if (var_252 == 1) {
@@ -1464,8 +1480,24 @@ function func012() {
             yield func051();
             var_271 = 0;
             var_272 = 0;
-            console.log("TODO func012 フーファイターズ発動！！");
-            yield* activateFF();
+            if (var_224 > 0) {
+                var_225 = 0;
+                for (let i = 0; i < 20; ++i) {
+                    var_221 = 0;
+                    var_197 = 0;
+                    var_231 = 0;
+                    if (var_233[var_225].Var0 == 401) {
+                        var_2258 = var_233[var_225].Var0
+                        yield* activateFF();
+                        return;
+                    }
+                    var_225 = var_225 + 1;
+                }
+            }
+            var_234 = 0;
+            var_220 = 0;
+            var_217 = 1;
+            yield func019();
             return;
         }
         if (var_244 == 1) {
