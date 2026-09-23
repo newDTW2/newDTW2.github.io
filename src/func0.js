@@ -986,24 +986,17 @@ function func009() {
         if (isPressedF) {
             yield func051();
             if (var_224 > 0) {
-                var_225 = 0;
-                for (let i = 0; i < 20; ++i) {
+                for (let i = 1; i <= var_224; ++i) {
                     var_221 = 0;
                     var_197 = 0;
                     var_231 = 0;
-                    if (var_233[var_225].Var0 == 401) {
-                        var_2258 = var_233[var_225].Var0
+                    if (var_233[i].Var0 === 401) {
+                        var_2258 = var_233[i].Var0
                         yield* activateFF();
                         return;
                     }
-                    var_225 = var_225 + 1;
                 }
             }
-            var_234 = 0;
-            var_220 = 0;
-            var_217 = 1;
-            yield func019();
-            return;
         }
         if (var_253 == 1) {
             var_66 = var_66 - 1;
@@ -1496,24 +1489,17 @@ function func012() {
             var_271 = 0;
             var_272 = 0;
             if (var_224 > 0) {
-                var_225 = 0;
-                for (let i = 0; i < 20; ++i) {
+                for (let i = 1; i <= var_224; ++i) {
                     var_221 = 0;
                     var_197 = 0;
                     var_231 = 0;
-                    if (var_233[var_225].Var0 == 401) {
-                        var_2258 = var_233[var_225].Var0
+                    if (var_233[i].Var0 === 401) {
+                        var_2258 = var_233[i].Var0
                         yield* activateFF();
                         return;
                     }
-                    var_225 = var_225 + 1;
                 }
             }
-            var_234 = 0;
-            var_220 = 0;
-            var_217 = 1;
-            yield func019();
-            return;
         }
         yield func012();
         return;
