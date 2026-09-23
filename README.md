@@ -17,6 +17,7 @@ https://newdtw2.github.io/
 | <kbd>Shift</kbd> | 斜め移動 |
 | <kbd>S</kbd> | 射撃 |
 | <kbd>Space</kbd> | 地図 |
+| <kbd>F</kbd> | FF発動 |
 
 ## 特殊操作方法
 
