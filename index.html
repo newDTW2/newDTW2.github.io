@@ -118,7 +118,7 @@
 				</button>
 			</div>
 			<div class="virtual-pad virtual-pad--left" v-show="isMobile && isLandscape && padEnabled">
-				<div class="pad-util">
+				<div class="pad-util pad-util--gap">
 					<button
 						class="pad-button pad-s"
 						@pointerdown="onPointerDown($event, 'var_658')"
@@ -126,6 +126,14 @@
 						@pointercancel="onPointerUp('var_658')"
 					>
 						S
+					</button>
+					<button
+						class="pad-button pad-f"
+						@pointerdown="onPointerDown2($event, 70)"
+						@pointerup="onPointerUp2(70)"
+						@pointercancel="onPointerUp2(70)"
+					>
+						F
 					</button>
 				</div>
 				<table class="pad-action pad-direction">

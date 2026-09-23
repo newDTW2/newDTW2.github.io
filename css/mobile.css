@@ -77,10 +77,8 @@
     font-weight: bold;
   }
 
-  .pad-s {
-    width: 80px;
-  }
-
+  .pad-s,
+  .pad-f,
   .pad-map,
   .pad-shift {
     width: calc(var(--action-btn-size)*3/2 - 4px);
