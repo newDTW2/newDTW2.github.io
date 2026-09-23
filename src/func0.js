@@ -984,8 +984,8 @@ function func009() {
             return;
         }
         if (isPressedF) {
-            yield func051();
             if (var_224 > 0) {
+                yield func051();
                 for (let i = 1; i <= var_224; ++i) {
                     var_221 = 0;
                     var_197 = 0;
@@ -1485,10 +1485,10 @@ function func012() {
             return;
         }
         if (isPressedF) {
-            yield func051();
-            var_271 = 0;
-            var_272 = 0;
             if (var_224 > 0) {
+                yield func051();
+                var_271 = 0;
+                var_272 = 0;
                 for (let i = 1; i <= var_224; ++i) {
                     var_221 = 0;
                     var_197 = 0;
