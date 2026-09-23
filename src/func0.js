@@ -980,12 +980,8 @@ function func009() {
         }
         if (isPressedF) {
             yield func051();
-            // TODO
             console.log("TODO func009 フーファイターズ発動！！");
-            var_234 = 0;
-            var_220 = 0;
-            var_217 = 1;
-            yield func019();
+            yield* activateFF();
             return;
         }
         if (var_252 == 1) {
@@ -1468,12 +1464,8 @@ function func012() {
             yield func051();
             var_271 = 0;
             var_272 = 0;
-            // TODO
             console.log("TODO func012 フーファイターズ発動！！");
-            var_234 = 0;
-            var_220 = 0;
-            var_217 = 1;
-            yield func019();
+            yield* activateFF();
             return;
         }
         if (var_244 == 1) {
