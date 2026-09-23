@@ -1547,7 +1547,7 @@ function func140() {
         }
         var_628 = 1;
         yield func080();
-        if (var_242 == 1 || var_239 == 1 || var_244 == 1 || var_249 == 1 || var_238 == 1 || var_252 == 1) {
+        if (var_242 == 1 || var_239 == 1 || var_244 == 1 || var_249 == 1 || isPressedF || var_238 == 1 || var_252 == 1) {
             DSPLAY(212);
             yield func178();
             var_599 = 5;

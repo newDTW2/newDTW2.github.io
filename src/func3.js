@@ -3516,6 +3516,9 @@ function func340() {
             if (var_249 == 1) {
                 break;
             }
+            if (isPressedF) {
+                break;
+            }
             if (var_238 == 1) {
                 break;
             }

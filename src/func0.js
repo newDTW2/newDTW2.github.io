@@ -978,6 +978,16 @@ function func009() {
             yield func647();
             return;
         }
+        if (isPressedF) {
+            yield func051();
+            // TODO
+            console.log("TODO func009 フーファイターズ発動！！");
+            var_234 = 0;
+            var_220 = 0;
+            var_217 = 1;
+            yield func019();
+            return;
+        }
         if (var_252 == 1) {
             yield func051();
             yield func010();
@@ -1452,6 +1462,18 @@ function func012() {
             var_225 = var_250;
             var_251 = 1;
             yield func647();
+            return;
+        }
+        if (isPressedF) {
+            yield func051();
+            var_271 = 0;
+            var_272 = 0;
+            // TODO
+            console.log("TODO func012 フーファイターズ発動！！");
+            var_234 = 0;
+            var_220 = 0;
+            var_217 = 1;
+            yield func019();
             return;
         }
         if (var_244 == 1) {
@@ -4657,7 +4679,7 @@ function func032() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(32);
         yield func080();
-        if (var_242 == 1 || var_239 == 1 || var_244 == 1 || var_249 == 1) {
+        if (var_242 == 1 || var_239 == 1 || var_244 == 1 || var_249 == 1 || isPressedF) {
             var_218 = 0;
             yield func033();
             return;
@@ -4693,7 +4715,7 @@ function func032() {
             for (var cnt2 = 0; cnt2 < 5; ++cnt2) {
                 yield func337();
                 yield func080();
-                if (var_242 == 1 || var_239 == 1 || var_244 == 1 || var_249 == 1) {
+                if (var_242 == 1 || var_239 == 1 || var_244 == 1 || var_249 == 1 || isPressedF) {
                     var_218 = 0;
                     yield func033();
                     break;
@@ -5511,7 +5533,7 @@ function func051() {
         for (var cnt1 = 0; cnt1 < 50; ++cnt1) {
             yield func337();
             yield func080();
-            if (var_242 == 0 && var_239 == 0 && var_244 == 0 && var_252 == 0 && var_249 == 0) {
+            if (var_242 == 0 && var_239 == 0 && var_244 == 0 && var_252 == 0 && var_249 == 0 && !isPressedF) {
                 break;
             }
         }
@@ -9217,6 +9239,7 @@ function func080() {
         var_252 = 0;
         var_238 = 0;
         var_249 = 0;
+        isPressedF = false;
         var_619 = 0;
         var_620 = 0;
         var_621 = 0;
@@ -9557,13 +9580,13 @@ function func080() {
         var_239 = getkey(var_656);
         var_244 = getkey(var_657);
         var_249 = getkey(var_658); // 射撃
+        isPressedF = getkey(70) === 1; // F・F
         var_238 = getkey(var_659);
         var_252 = getkey(var_660); // 方向
         var_261 = getkey(32); // マップ
-        isPressedF = getkey(70) === 1;
         var_661 = 15 + var_662;
         ck_joystick(var_663, var_661);
-        if (stat != 1 && var_254 == 0 && var_257 == 0 && var_255 == 0 && var_259 == 0 && var_253 == 0 && var_256 == 0 && var_258 == 0 && var_260 == 0 && var_242 == 0 && var_239 == 0 && var_244 == 0 && var_249 == 0 && var_238 == 0 && var_252 == 0 && var_619 == 0 && var_620 == 0 && var_621 == 0 && var_261 == 0) {
+        if (stat != 1 && var_254 == 0 && var_257 == 0 && var_255 == 0 && var_259 == 0 && var_253 == 0 && var_256 == 0 && var_258 == 0 && var_260 == 0 && var_242 == 0 && var_239 == 0 && var_244 == 0 && var_249 == 0 && !isPressedF && var_238 == 0 && var_252 == 0 && var_619 == 0 && var_620 == 0 && var_621 == 0 && var_261 == 0) {
             if (var_663 == 1) {
                 var_254 = 1;
             }

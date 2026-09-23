@@ -9905,7 +9905,7 @@ function func484() {
                 yield func484();
                 return;
             }
-            if (var_249 == 1 || var_252 == 1) {
+            if (var_249 == 1 || isPressedF || var_252 == 1) {
                 var_2137 = var_2131;
                 var_2131 = 59;
                 if (var_2132 <= 1) {
