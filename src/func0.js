@@ -9556,10 +9556,10 @@ function func080() {
         var_242 = getkey(var_655);
         var_239 = getkey(var_656);
         var_244 = getkey(var_657);
-        var_249 = getkey(var_658);
+        var_249 = getkey(var_658); // 射撃
         var_238 = getkey(var_659);
-        var_252 = getkey(var_660);
-        var_261 = getkey(32);
+        var_252 = getkey(var_660); // 方向
+        var_261 = getkey(32); // マップ
         isPressedF = getkey(70) === 1;
         var_661 = 15 + var_662;
         ck_joystick(var_663, var_661);
