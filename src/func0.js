@@ -978,6 +978,11 @@ function func009() {
             yield func647();
             return;
         }
+        if (var_252 == 1) {
+            yield func051();
+            yield func010();
+            return;
+        }
         if (isPressedF) {
             yield func051();
             if (var_224 > 0) {
@@ -998,11 +1003,6 @@ function func009() {
             var_220 = 0;
             var_217 = 1;
             yield func019();
-            return;
-        }
-        if (var_252 == 1) {
-            yield func051();
-            yield func010();
             return;
         }
         if (var_253 == 1) {
@@ -1476,6 +1476,21 @@ function func012() {
             yield func647();
             return;
         }
+        if (var_244 == 1) {
+            var_271 = 0;
+            var_272 = 0;
+            var_197 = 0;
+            var_195 = 1;
+            var_196 = 1;
+            var_245 = 19;
+            var_246 = 45;
+            var_247 = 1;
+            var_248 = 1;
+            DSPLAY(212);
+            yield func051();
+            yield func053();
+            return;
+        }
         if (isPressedF) {
             yield func051();
             var_271 = 0;
@@ -1498,21 +1513,6 @@ function func012() {
             var_220 = 0;
             var_217 = 1;
             yield func019();
-            return;
-        }
-        if (var_244 == 1) {
-            var_271 = 0;
-            var_272 = 0;
-            var_197 = 0;
-            var_195 = 1;
-            var_196 = 1;
-            var_245 = 19;
-            var_246 = 45;
-            var_247 = 1;
-            var_248 = 1;
-            DSPLAY(212);
-            yield func051();
-            yield func053();
             return;
         }
         yield func012();
