@@ -16,8 +16,8 @@ html, body {
 }
 
 body {
-  margin: 8px 8px 16px 8px;
-  background-color: black;
+  margin: 32px 8px 32px 8px;
+  background-color: #121314;
   color: white;
   font-size: 16px;
 }
