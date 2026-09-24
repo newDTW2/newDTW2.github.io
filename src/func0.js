@@ -991,7 +991,7 @@ function func009() {
                     var_197 = 0;
                     var_231 = 0;
                     if (var_233[i].Var0 === 401) {
-                        var_2258 = var_233[i].Var0
+                        var_2258 = var_233[i].Var0;
                         yield* activateFF();
                         return;
                     }
@@ -1494,7 +1494,7 @@ function func012() {
                     var_197 = 0;
                     var_231 = 0;
                     if (var_233[i].Var0 === 401) {
-                        var_2258 = var_233[i].Var0
+                        var_2258 = var_233[i].Var0;
                         yield* activateFF();
                         return;
                     }
