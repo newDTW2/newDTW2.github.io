@@ -384,8 +384,7 @@ function func101() {
         }
         if (var_675 == 989) {
             var_665 = "989.mp3";
-            // var_676 = "T.rex [20th Century Boy]";
-            var_676 = "	Mr.President [Coco Jamboo]";
+            var_676 = "T.rex [20th Century Boy]";
         }
         if (var_675 == 990) {
             var_665 = "990.mp3";
