@@ -81,6 +81,7 @@ let ffButtonIndex = 6;
 const App = {
     data() {
         return {
+            canCheat: false,
             isMobile: isMobile,
             isLandscape: [90, 270].includes(screen.orientation.angle),
             padEnabled: false,
@@ -109,6 +110,8 @@ const App = {
         };
     },
     created() {
+        this.canCheat = (new URL(window.location.href)).searchParams.has("c");
+
         attackButtonIndex = this.attackButtonIndex = Number(localStorage.getItem("attackButtonIndex") ?? 1);
         dashButtonIndex = this.dashButtonIndex = Number(localStorage.getItem("dashButtonIndex") ?? 0);
         commandButtonIndex = this.commandButtonIndex = Number(localStorage.getItem("commandButtonIndex") ?? 3);
