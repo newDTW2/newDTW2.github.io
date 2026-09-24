@@ -56,15 +56,20 @@
 					<input type="number" min="0" max="99" :value="ffButtonIndex" @change="onChangeFFButtonIndex">
 				</div>
 			</details>
-			<details :open="isMobile">
-				<summary>チート</summary>
-				<div id="cheat">
+			<details>
+				<summary>お助け機能</summary>
+				<div id="otasuke">
 					<button @click="unlockAllDungeons">全ダンジョン開放</button>
 					<button @click="completeEnemyBook">敵図鑑全登録</button>
 					<div class="config">
 						<label for="show-movement-path">移動経路表示</label>
 						<input id="show-movement-path" type="checkbox" :checked="showMovementPath" @change="onChangeShowMovementPath">
 					</div>
+				</div>
+			</details>
+			<details>
+				<summary>チート</summary>
+				<div id="cheat">
 					<div>
 						※ 以下は整合性を無視しているためバグる可能性があります
 					</div>

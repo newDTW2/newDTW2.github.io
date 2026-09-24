@@ -91,6 +91,7 @@ label {
   text-align: right;
 }
 
+#otasuke,
 #cheat {
   display: flex;
   flex-direction: column;
