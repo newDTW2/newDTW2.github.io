@@ -63,18 +63,20 @@
 								<td><kbd>F</kbd></td>
 								<td>FF発動</td>
 							</tr>
-							<tr>
-								<td><kbd>F2</kbd> / <kbd>F3</kbd></td>
-								<td>BGM音量の調整</td>
-							</tr>
-							<tr>
-								<td><kbd>F4</kbd> / <kbd>F5</kbd></td>
-								<td>効果音音量の調整</td>
-							</tr>
-							<tr>
-								<td><kbd>F7</kbd></td>
-								<td>BGMのON/OFF</td>
-							</tr>
+							<template v-if="!isMobile">
+								<tr>
+									<td><kbd>F2</kbd> / <kbd>F3</kbd></td>
+									<td>BGM音量の調整</td>
+								</tr>
+								<tr>
+									<td><kbd>F4</kbd> / <kbd>F5</kbd></td>
+									<td>効果音音量の調整</td>
+								</tr>
+								<tr>
+									<td><kbd>F7</kbd></td>
+									<td>BGMのON/OFF</td>
+								</tr>
+							</template>
 						</tbody>
 					</table>
 				</div>
