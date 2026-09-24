@@ -20,6 +20,65 @@
 			<div style="text-align: center;" v-if="isMobile && !isLandscape">
 				スマホを横にしてください
 			</div>
+			<details>
+				<summary>操作説明</summary>
+				<div id="operation-guide">
+					<table>
+						<thead>
+							<tr>
+								<th>キー</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><kbd>Z</kbd></td>
+								<td>攻撃・決定</td>
+							</tr>
+							<tr>
+								<td><kbd>X</kbd></td>
+								<td>ダッシュ・キャンセル</td>
+							</tr>
+							<tr>
+								<td><kbd>A</kbd></td>
+								<td>コマンドウィンドウ</td>
+							</tr>
+							<tr>
+								<td><kbd>C</kbd></td>
+								<td>向き変更</td>
+							</tr>
+							<tr>
+								<td><kbd>Shift</kbd></td>
+								<td>斜め移動・ソート</td>
+							</tr>
+							<tr>
+								<td><kbd>S</kbd></td>
+								<td>射撃</td>
+							</tr>
+							<tr>
+								<td><kbd>Space</kbd></td>
+								<td>地図</td>
+							</tr>
+							<tr>
+								<td><kbd>F</kbd></td>
+								<td>FF発動</td>
+							</tr>
+							<tr>
+								<td><kbd>F2</kbd> / <kbd>F3</kbd></td>
+								<td>BGM音量の調整</td>
+							</tr>
+							<tr>
+								<td><kbd>F4</kbd> / <kbd>F5</kbd></td>
+								<td>効果音音量の調整</td>
+							</tr>
+							<tr>
+								<td><kbd>F7</kbd></td>
+								<td>BGMのON/OFF</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</details>
 			<details v-if="!isMobile">
 				<summary>ゲームパッド設定</summary>
 				<div style="margin-bottom: 8px;">参考：<a href="https://hardwaretester.com/gamepad" target="_blank" rel="noopener noreferrer">Hexgaming ゲームパッド テスター</a></div>
