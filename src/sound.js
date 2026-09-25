@@ -25,7 +25,9 @@ function loadSound(path, _option = null) {
             onplayerror(id, message) {
                 if (option.html5) {
                     sound.once("unlock", () => {
-                        sound.play();
+                        if (!sound.playing()) {
+                            sound.play();
+                        }
                     });
                 }
                 else {
