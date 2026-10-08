@@ -433,6 +433,7 @@ function func102() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(102);
         if (var_632 >= 1) {
+            shouldPlayBgm = false;
             color(255, 255, 255);
             pos(2, 320);
             font("MS UI Gothic", 12);
@@ -440,6 +441,7 @@ function func102() {
             return;
         }
         if (var_633 >= 1) {
+            shouldPlayBgm = true;
             color(255, 255, 255);
             pos(2, 320);
             font("MS UI Gothic", 12);

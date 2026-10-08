@@ -20,6 +20,8 @@ window.onload = func001;
 const canvas = document.getElementById("c0");
 const isMobile = navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent));
 
+let shouldPlayBgm = true;
+
 // 高画質化
 // 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
 if (!isMobile) {
