@@ -134,24 +134,14 @@ const App = {
         }
 
         // 自動セーブ
-        if (this.isMobile) {
-            document.addEventListener("visibilitychange", () => {
-                if (document.hidden) {
-                    if (localStorage.getItem(var_735)) {
-                        func231();
-                    }
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                if (localStorage.getItem(var_735)) {
+                    var_205 = 1;
+                    func231();
                 }
-            });
-        }
-        else {
-            window.addEventListener("pagehide", e => {
-                if (!e.persisted) {
-                    if (localStorage.getItem(var_735)) {
-                        func231();
-                    }
-                }
-            });
-        }
+            }
+        });
     },
     mounted() {
         // noop
