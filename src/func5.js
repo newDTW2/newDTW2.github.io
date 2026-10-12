@@ -2937,7 +2937,7 @@ function func511() {
             var_2299 = 1;
             var_1845 = 1;
             yield func556();
-            var_83[var_673].Var11 = 1;
+            var_83[var_673].Var11 = 0;
             var_2299 = 0;
             var_1845 = 0;
             if (var_2110 == 0) {
@@ -2969,7 +2969,7 @@ function func511() {
                 var_2299 = 1;
                 var_1845 = 1;
                 yield func556();
-                var_83[var_673].Var11 = 1;
+                var_83[var_673].Var11 = 0;
                 var_2299 = 0;
                 var_1845 = 0;
             }
