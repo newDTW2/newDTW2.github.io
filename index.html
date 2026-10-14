@@ -137,7 +137,14 @@
 			</details>
 			<details>
 				<summary>セーブファイルのインポート/エクスポート</summary>
-				<button style="margin-right: 8px;" @click="importSaveFile">インポート</button>
+				<input
+					ref="saveFileInput"
+					type="file"
+					accept=".json"
+					style="display: none;"
+					@change="importSaveFile"
+				>
+				<button style="margin-right: 8px;" @click="$refs.saveFileInput.click()">インポート</button>
 				<button @click="exportSaveFile">エクスポート</button>
 			</details>
 			<details v-if="canCheat">
