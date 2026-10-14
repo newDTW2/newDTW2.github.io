@@ -84,6 +84,7 @@ const App = {
     data() {
         return {
             canCheat: false,
+            canSave: true,
             isMobile: isMobile,
             isLandscape: [90, 270].includes(screen.orientation.angle),
             padEnabled: false,
@@ -136,7 +137,7 @@ const App = {
         // 自動セーブ
         document.addEventListener("visibilitychange", () => {
             if (document.hidden) {
-                if (localStorage.getItem(var_735)) {
+                if (this.canSave && localStorage.getItem(var_735)) {
                     var_205 = 1;
                     func231();
                 }
@@ -485,6 +486,49 @@ const App = {
         onChangeShowMovementPath(e) {
             showMovementPath = e.target.checked;
             localStorage.setItem("showMovementPath", showMovementPath);
+        },
+        async importSaveFile(e) {
+            if (!confirm("既存データが無くなりますがよろしいですか？")) return;
+
+            try {
+                const file = e.target.files[0];
+                const text = await file.text();
+                const data = JSON.parse(text);
+
+                localStorage.clear();
+
+                for (const [key, value] of Object.entries(data)) {
+                    localStorage.setItem(key, value);
+                }
+
+                this.canSave = false;
+                location.reload();
+            }
+            catch (error) {
+                alert("インポートに失敗しました");
+            }
+        },
+        exportSaveFile() {
+            const data = {};
+
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                data[key] = localStorage.getItem(key);
+            }
+
+            const blob = new Blob(
+                [JSON.stringify(data, null, 2)],
+                { type: "application/json;charset=utf-8" }
+            );
+
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+
+            a.href = url;
+            a.download = "diavolo.json";
+            a.click();
+
+            URL.revokeObjectURL(url);
         },
         onChangeアイテムジャンル(アイテムジャンル) {
             this.アイテムジャンル = アイテムジャンル;
