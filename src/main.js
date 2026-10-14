@@ -483,7 +483,7 @@ const App = {
             var_1038 = i;
         },
         onChangeShowMovementPath(e) {
-            showMovementPath = event.target.checked;
+            showMovementPath = e.target.checked;
             localStorage.setItem("showMovementPath", showMovementPath);
         },
         onChangeアイテムジャンル(アイテムジャンル) {
