@@ -135,6 +135,11 @@
 					</div>
 				</div>
 			</details>
+			<details>
+				<summary>セーブファイルのインポート/エクスポート</summary>
+				<button style="margin-right: 8px;" @click="importSaveFile">インポート</button>
+				<button @click="exportSaveFile">エクスポート</button>
+			</details>
 			<details v-if="canCheat">
 				<summary>チート</summary>
 				<div id="cheat">

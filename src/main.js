@@ -483,8 +483,14 @@ const App = {
             var_1038 = i;
         },
         onChangeShowMovementPath(e) {
-            showMovementPath = event.target.checked;
+            showMovementPath = e.target.checked;
             localStorage.setItem("showMovementPath", showMovementPath);
+        },
+        importSaveFile() {
+            // TODO
+        },
+        exportSaveFile() {
+            // TODO
         },
         onChangeアイテムジャンル(アイテムジャンル) {
             this.アイテムジャンル = アイテムジャンル;
