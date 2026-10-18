@@ -12,13 +12,15 @@ var var_27_x;
 var_494 = [];
 var_664 = [];
 var_691 = [];
-let isPressedF = false;
+
 InitInput();
 
 const canvas = document.getElementById("c0");
 const isMobile = navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent));
 
+let isPressedF = false;
 let shouldPlayBgm = true;
+let specialRule = localStorage.getItem("specialRule") ?? "通常";
 
 // 高画質化
 // 参考元：https://github.com/zawatton/newDTW.github.io/blob/25f9a3b/public/index.html
@@ -99,6 +101,14 @@ const App = {
                 コミック: コミック一覧
             },
             currentFloor: 1,
+            specialRule,
+            specialRuleDescription: {
+                "通常": "・通常の「ディアボロの試練」です。",
+                "3部縛り": "・装備DISCは3部のみ出現する\n・射撃DISCは3部のみ出現する\n・コミックは3部のみ出現する",
+                "4部縛り": "・装備DISCは4部のみ出現する\n・射撃DISCは4部のみ出現する\n・コミックは4部のみ出現する",
+                "5部縛り": "・装備DISCは5部のみ出現する\n・射撃DISCは5部のみ出現する\n・コミックは5部のみ出現する",
+                "6部縛り": "・装備DISCは6部のみ出現する\n・射撃DISCは6部のみ出現する\n・コミックは6部のみ出現する",
+            }
         };
     },
     created() {

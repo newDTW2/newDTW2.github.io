@@ -1969,6 +1969,8 @@ function func828() {
         return;
     });
 }
+
+// 「ディアボロの試練」開始
 function func829() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(829);
@@ -1992,6 +1994,10 @@ function func829() {
         if (var_62 == 3 && var_91 > var_379) {
             var_379 = var_91;
         }
+        
+        specialRule = vm.specialRule;
+        localStorage.setItem("specialRule", specialRule);
+
         var_405 = 0;
         var_344 = 0;
         var_373 = 5;

@@ -132,3 +132,8 @@ label {
   gap: 8px;
   align-items: flex-start;
 }
+
+#special-rule .description {
+  white-space: pre-line;
+}
+

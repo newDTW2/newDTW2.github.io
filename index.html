@@ -154,16 +154,14 @@
 						「ディアボロの試練」にルールを追加します。<br>
 						※ ヴェネチアホテルに戻らないと適応されません。
 					</div>
-					<select>
-						<option>通常</option>
-						<option>3部縛り</option>
-						<option>4部縛り</option>
-						<option>5部縛り</option>
-						<option>6部縛り</option>
+					<select v-model="specialRule">
+						<option value="通常">通常</option>
+						<option value="3部縛り">3部縛り</option>
+						<option value="4部縛り">4部縛り</option>
+						<option value="5部縛り">5部縛り</option>
+						<option value="6部縛り">6部縛り</option>
 					</select>
-					<div>
-						通常の「ディアボロの試練」です。
-					</div>
+					<div class="description">{{ specialRuleDescription[specialRule] }}</div>
 				</div>
 			</details>
 			<details v-if="canCheat">
