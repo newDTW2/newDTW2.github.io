@@ -35,18 +35,9 @@ if (!isMobile) {
     });
 }
 
-let attackButtonIndex = 2;
-let dashButtonIndex = 1;
-let commandButtonIndex = 3;
-let turnButtonIndex = 0;
-let diagonalButtonIndex = 5;
-let shootButtonIndex = 4;
-let mapButtonIndex = 7;
-let ffButtonIndex = 6;
-
 // ゲームパッド対応
 // https://w3c.github.io/gamepad/#remapping
-(function updateGamepad() {
+function updateGamepad() {
     const gp = navigator.getGamepads()[0];
     if (gp) {
         // アナログスティック
@@ -57,24 +48,24 @@ let ffButtonIndex = 6;
         gamepad_key_list[var_650] = gp.axes[1] >  0.5 ? 1 : 0;
 
         // Z 攻撃・選択
-        gamepad_key_list[var_655] = gp.buttons[attackButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[var_655] = gp.buttons[vm.attackButtonIndex]?.pressed ? 1 : 0;
         // X キャンセル
-        gamepad_key_list[var_656] = gp.buttons[dashButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[var_656] = gp.buttons[vm.dashButtonIndex]?.pressed ? 1 : 0;
         // A メニュー
-        gamepad_key_list[var_657] = gp.buttons[commandButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[var_657] = gp.buttons[vm.commandButtonIndex]?.pressed ? 1 : 0;
         // Space 地図
-        gamepad_key_list[32] = gp.buttons[mapButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[32] = gp.buttons[vm.mapButtonIndex]?.pressed ? 1 : 0;
         // C 方向
-        gamepad_key_list[var_660] = gp.buttons[turnButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[var_660] = gp.buttons[vm.turnButtonIndex]?.pressed ? 1 : 0;
         // Shift 斜め移動補助
-        gamepad_key_list[var_659] = gp.buttons[diagonalButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[var_659] = gp.buttons[vm.diagonalButtonIndex]?.pressed ? 1 : 0;
         // S 射撃
-        gamepad_key_list[var_658] = gp.buttons[shootButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[var_658] = gp.buttons[vm.shootButtonIndex]?.pressed ? 1 : 0;
         // F FF
-        gamepad_key_list[70] = gp.buttons[ffButtonIndex]?.pressed ? 1 : 0;
+        gamepad_key_list[70] = gp.buttons[vm.ffButtonIndex]?.pressed ? 1 : 0;
     }
     requestAnimationFrame(updateGamepad);
-})();
+}
 
 // Vue
 
@@ -86,14 +77,14 @@ const App = {
             isMobile: isMobile,
             isLandscape: [90, 270].includes(screen.orientation.angle),
             padEnabled: false,
-            attackButtonIndex,
-            dashButtonIndex,
-            commandButtonIndex,
-            turnButtonIndex,
-            diagonalButtonIndex,
-            shootButtonIndex,
-            mapButtonIndex,
-            ffButtonIndex,
+            attackButtonIndex: 2,
+            dashButtonIndex: 1,
+            commandButtonIndex: 3,
+            turnButtonIndex: 0,
+            diagonalButtonIndex: 5,
+            shootButtonIndex: 4,
+            mapButtonIndex: 7,
+            ffButtonIndex: 6,
             showMovementPath: false,
             アイテムジャンル: "装備DISC",
             アイテムジャンル一覧: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
@@ -113,14 +104,14 @@ const App = {
     created() {
         this.canCheat = (new URL(window.location.href)).searchParams.has("c");
 
-        attackButtonIndex = this.attackButtonIndex = Number(localStorage.getItem("attackButtonIndex") ?? 1);
-        dashButtonIndex = this.dashButtonIndex = Number(localStorage.getItem("dashButtonIndex") ?? 0);
-        commandButtonIndex = this.commandButtonIndex = Number(localStorage.getItem("commandButtonIndex") ?? 3);
-        turnButtonIndex = this.turnButtonIndex = Number(localStorage.getItem("turnButtonIndex") ?? 2);
-        diagonalButtonIndex = this.diagonalButtonIndex = Number(localStorage.getItem("diagonalButtonIndex") ?? 5);
-        shootButtonIndex = this.shootButtonIndex = Number(localStorage.getItem("shootButtonIndex") ?? 4);
-        mapButtonIndex = this.mapButtonIndex = Number(localStorage.getItem("mapButtonIndex") ?? 7);
-        ffButtonIndex = this.ffButtonIndex = Number(localStorage.getItem("ffButtonIndex") ?? 6);
+        this.attackButtonIndex = Number(localStorage.getItem("attackButtonIndex") ?? 1);
+        this.dashButtonIndex = Number(localStorage.getItem("dashButtonIndex") ?? 0);
+        this.commandButtonIndex = Number(localStorage.getItem("commandButtonIndex") ?? 3);
+        this.turnButtonIndex = Number(localStorage.getItem("turnButtonIndex") ?? 2);
+        this.diagonalButtonIndex = Number(localStorage.getItem("diagonalButtonIndex") ?? 5);
+        this.shootButtonIndex = Number(localStorage.getItem("shootButtonIndex") ?? 4);
+        this.mapButtonIndex = Number(localStorage.getItem("mapButtonIndex") ?? 7);
+        this.ffButtonIndex = Number(localStorage.getItem("ffButtonIndex") ?? 6);
         this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
 
         if (this.isMobile) {
@@ -143,6 +134,7 @@ const App = {
         });
     },
     mounted() {
+        updateGamepad();
         func001();
     },
     watch: {
@@ -178,8 +170,8 @@ const App = {
         onChangeAttackButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                attackButtonIndex = Number(strVal);
-                localStorage.setItem("attackButtonIndex", attackButtonIndex);
+                this.attackButtonIndex = Number(strVal);
+                localStorage.setItem("attackButtonIndex", this.attackButtonIndex);
             }
             else {
                 e.target.value = this.attackButtonIndex;
@@ -188,8 +180,8 @@ const App = {
         onChangeDashButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                dashButtonIndex = Number(strVal);
-                localStorage.setItem("dashButtonIndex", dashButtonIndex);
+                this.dashButtonIndex = Number(strVal);
+                localStorage.setItem("dashButtonIndex", this.dashButtonIndex);
             }
             else {
                 e.target.value = this.dashButtonIndex;
@@ -198,8 +190,8 @@ const App = {
         onChangeCommandButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                commandButtonIndex = Number(strVal);
-                localStorage.setItem("commandButtonIndex", commandButtonIndex);
+                this.commandButtonIndex = Number(strVal);
+                localStorage.setItem("commandButtonIndex", this.commandButtonIndex);
             }
             else {
                 e.target.value = this.commandButtonIndex;
@@ -208,8 +200,8 @@ const App = {
         onChangeTurnButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                turnButtonIndex = Number(strVal);
-                localStorage.setItem("turnButtonIndex", turnButtonIndex);
+                this.turnButtonIndex = Number(strVal);
+                localStorage.setItem("turnButtonIndex", this.turnButtonIndex);
             }
             else {
                 e.target.value = this.turnButtonIndex;
@@ -218,8 +210,8 @@ const App = {
         onChangeDiagonalButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                diagonalButtonIndex = Number(strVal);
-                localStorage.setItem("diagonalButtonIndex", diagonalButtonIndex);
+                this.diagonalButtonIndex = Number(strVal);
+                localStorage.setItem("diagonalButtonIndex", this.diagonalButtonIndex);
             }
             else {
                 e.target.value = this.diagonalButtonIndex;
@@ -228,8 +220,8 @@ const App = {
         onChangeShootButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                shootButtonIndex = Number(strVal);
-                localStorage.setItem("shootButtonIndex", shootButtonIndex);
+                this.shootButtonIndex = Number(strVal);
+                localStorage.setItem("shootButtonIndex", this.shootButtonIndex);
             }
             else {
                 e.target.value = this.shootButtonIndex;
@@ -238,8 +230,8 @@ const App = {
         onChangeMapButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                mapButtonIndex = Number(strVal);
-                localStorage.setItem("mapButtonIndex", mapButtonIndex);
+                this.mapButtonIndex = Number(strVal);
+                localStorage.setItem("mapButtonIndex", this.mapButtonIndex);
             }
             else {
                 e.target.value = this.mapButtonIndex;
@@ -248,8 +240,8 @@ const App = {
         onChangeFFButtonIndex(e) {
             const strVal = e.target.value;
             if (/^\d+$/.test(strVal)) {
-                ffButtonIndex = Number(strVal);
-                localStorage.setItem("ffButtonIndex", ffButtonIndex);
+                this.ffButtonIndex = Number(strVal);
+                localStorage.setItem("ffButtonIndex", this.ffButtonIndex);
             }
             else {
                 e.target.value = this.ffButtonIndex;
