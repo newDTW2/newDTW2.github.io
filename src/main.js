@@ -584,6 +584,10 @@ const App = {
                             var_858 = 0;
                         }
                     }
+
+                    // 識別済みにする
+                    item.Var14 = 1;
+                    var_862[item.Var0][0] = 1;
                     break;
                 }
             }
