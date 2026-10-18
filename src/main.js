@@ -13,9 +13,7 @@ var_494 = [];
 var_664 = [];
 var_691 = [];
 let isPressedF = false;
-let showMovementPath = false;
 InitInput();
-window.onload = func001;
 
 const canvas = document.getElementById("c0");
 const isMobile = navigator.userAgentData?.mobile ?? (/iPhone|Android.+Mobile/.test(navigator.userAgent));
@@ -96,7 +94,7 @@ const App = {
             shootButtonIndex,
             mapButtonIndex,
             ffButtonIndex,
-            showMovementPath,
+            showMovementPath: false,
             アイテムジャンル: "装備DISC",
             アイテムジャンル一覧: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
             アイテム: 装備DISC一覧[0],
@@ -123,7 +121,7 @@ const App = {
         shootButtonIndex = this.shootButtonIndex = Number(localStorage.getItem("shootButtonIndex") ?? 4);
         mapButtonIndex = this.mapButtonIndex = Number(localStorage.getItem("mapButtonIndex") ?? 7);
         ffButtonIndex = this.ffButtonIndex = Number(localStorage.getItem("ffButtonIndex") ?? 6);
-        showMovementPath = this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
+        this.showMovementPath = localStorage.getItem("showMovementPath") === "true";
 
         if (this.isMobile) {
             window.addEventListener("orientationchange", () => {
@@ -145,7 +143,7 @@ const App = {
         });
     },
     mounted() {
-        // noop
+        func001();
     },
     watch: {
         isLandscape: {
@@ -484,8 +482,8 @@ const App = {
             var_1038 = i;
         },
         onChangeShowMovementPath(e) {
-            showMovementPath = e.target.checked;
-            localStorage.setItem("showMovementPath", showMovementPath);
+            this.showMovementPath = e.target.checked;
+            localStorage.setItem("showMovementPath", this.showMovementPath);
         },
         async importSaveFile(e) {
             if (!confirm("既存データが無くなりますがよろしいですか？")) return;
@@ -601,7 +599,7 @@ const App = {
     },
 };
 
-Vue.createApp(App).mount("#app");
+const vm = Vue.createApp(App).mount("#app");
 
 // debug
 

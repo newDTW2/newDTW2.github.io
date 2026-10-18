@@ -2678,7 +2678,7 @@ function func331() {
                     var_1173 = var_1173 + 1;
                 }
                 // 移動経路の描画
-                if (showMovementPath) {
+                if (vm.showMovementPath) {
                     color(240, 240, 20);
                 }
                 if (var_71[var_1171][var_1172] != 0 && var_71[var_1171][var_1172] != 13) {
