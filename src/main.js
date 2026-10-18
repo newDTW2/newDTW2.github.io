@@ -86,10 +86,10 @@ const App = {
             mapButtonIndex: 7,
             ffButtonIndex: 6,
             showMovementPath: false,
-            アイテムジャンル: "装備DISC",
-            アイテムジャンル一覧: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
-            アイテム: 装備DISC一覧[0],
-            アイテム一覧: {
+            itemType: "装備DISC",
+            itemTypeList: ["装備DISC", "射撃DISC", "記憶DISC", "食べ物", "消費アイテム", "壺", "コミック"],
+            item: 装備DISC一覧[0],
+            itemDic: {
                 装備DISC: 装備DISC一覧,
                 射撃DISC: 射撃DISC一覧,
                 記憶DISC: 記憶DISC一覧,
@@ -520,30 +520,30 @@ const App = {
 
             URL.revokeObjectURL(url);
         },
-        onChangeアイテムジャンル(アイテムジャンル) {
-            this.アイテムジャンル = アイテムジャンル;
-            this.アイテム = this.アイテム一覧[アイテムジャンル][0];
+        onChangeアイテムジャンル(itemType) {
+            this.itemType = itemType;
+            this.item = this.itemDic[itemType][0];
         },
         onChangeアイテム(index) {
-            this.アイテム = this.アイテム一覧[this.アイテムジャンル][index];
+            this.item = this.itemDic[this.itemType][index];
         },
         addItem() {
             for (let i = 1; i <= 20; i++) {
                 const item = var_233[i];
                 if (item.Var0 === 0) {
                     var_224++;
-                    item.Var0 = this.アイテム.id;
-                    if (this.アイテムジャンル === "装備DISC") {
-                        item.Var5 = this.アイテム.Var5;
-                        item.Var16 = this.アイテム.Var16;
-                        item.Var20 = this.アイテム.id;
+                    item.Var0 = this.item.id;
+                    if (this.itemType === "装備DISC") {
+                        item.Var5 = this.item.Var5;
+                        item.Var16 = this.item.Var16;
+                        item.Var20 = this.item.id;
                         this.Var14 = 0;
                         item.Var19 = 1;
                     }
-                    else if (this.アイテムジャンル === "射撃DISC") {
+                    else if (this.itemType === "射撃DISC") {
                         item.Var3 = 5;
                     }
-                    else if (this.アイテムジャンル === "壺") {
+                    else if (this.itemType === "壺") {
                         item.Var7 = 6;
                         item.Var6 = var_858;
 
