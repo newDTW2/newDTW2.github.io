@@ -147,11 +147,33 @@
 				<button style="margin-right: 8px;" @click="$refs.saveFileInput.click()">インポート</button>
 				<button @click="exportSaveFile">エクスポート</button>
 			</details>
+			<details>
+				<summary>特殊ルール</summary>
+				<div id="special-rule">
+					<div>
+						「ディアボロの試練」にルールを追加します。<br>
+						※ ヴェネチアホテルに戻らないと適応されません。
+					</div>
+					<div class="config">
+						<select>
+							<option>通常</option>
+							<option>3部縛り</option>
+							<option>4部縛り</option>
+							<option>5部縛り</option>
+							<option>6部縛り</option>
+						</select>
+						<button>適応</button>
+					</div>
+					<div>
+						通常の「ディアボロの試練」です。
+					</div>
+				</div>
+			</details>
 			<details v-if="canCheat">
 				<summary>チート</summary>
 				<div id="cheat">
 					<div>
-						※ 以下は整合性を無視しているためバグる可能性があります
+						※ 以下は整合性を無視しているためバグる可能性があります。
 					</div>
 					<div class="config item-add-config">
 						<select @change="onChangeアイテムジャンル($event.target.value)">
