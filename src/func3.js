@@ -17441,7 +17441,7 @@ function func385() {
             var_78[var_866]["Var" + cnt1] = 0;
         }
         if (var_1735 == 1) {
-            if (var_62 == 1) {
+            if (var_62 == 1) { // ホテルの外
                 var_1772 = rnd(100);
                 if (var_1772 >= 0 && var_1772 < 15) {
                     var_78[var_866].Var0 = 116;
@@ -17554,7 +17554,7 @@ function func385() {
                     var_78[var_866].Var5 = 3;
                 }
             }
-            if (var_62 != 1) {
+            if (var_62 != 1) { // ホテルの外以外
                 var_1773 = rnd(100);
                 if (var_1773 >= 0 && var_1773 < 50) {
                     var_1772 = rnd(100);
