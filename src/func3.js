@@ -17434,6 +17434,8 @@ function func384() {
         return;
     });
 }
+
+// アイテム出現
 function func385() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(385);
