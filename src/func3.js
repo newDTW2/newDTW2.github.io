@@ -18505,7 +18505,7 @@ function func385() {
                 var_862[var_1771][0] = 1;
             }
         }
-        // 不明
+        // お金
         if (var_1735 == 0) {
             var_78[var_866].Var0 = 1;
             yield func436();
