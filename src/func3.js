@@ -17562,42 +17562,42 @@ function func385() {
                 if (var_1773 >= 0 && var_1773 < 50) {
                     var_1772 = rnd(100);
                     if (var_1772 >= 0 && var_1772 < 20) {
-                        var_78[var_866].Var0 = 116;
+                        var_78[var_866].Var0 = 116; // ハーミットパープル
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 4;
                     }
                     if (var_1772 >= 20 && var_1772 < 40) {
-                        var_78[var_866].Var0 = 124;
+                        var_78[var_866].Var0 = 124; // ムーディー・ブルース
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 4;
                     }
                     if (var_1772 >= 40 && var_1772 < 60) {
-                        var_78[var_866].Var0 = 103;
+                        var_78[var_866].Var0 = 103; // エコーズACT3
                         var_78[var_866].Var16 = 20;
                         var_78[var_866].Var5 = 5;
                     }
                     if (var_1772 >= 60 && var_1772 < 80) {
-                        var_78[var_866].Var0 = 107;
+                        var_78[var_866].Var0 = 107; // デス・13
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 80 && var_1772 < 85) {
-                        var_78[var_866].Var0 = 207;
+                        var_78[var_866].Var0 = 207; // グレイトフル・デッド
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 85 && var_1772 < 90) {
-                        var_78[var_866].Var0 = 201;
+                        var_78[var_866].Var0 = 201; // イエローテンパラス
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 90 && var_1772 < 95) {
-                        var_78[var_866].Var0 = 105;
+                        var_78[var_866].Var0 = 105; // チリペッパー
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 95 && var_1772 < 100) {
-                        var_78[var_866].Var0 = 104;
+                        var_78[var_866].Var0 = 104; // ザ・ハンド
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
@@ -17605,62 +17605,62 @@ function func385() {
                 if (var_1773 >= 50 && var_1773 < 68) {
                     var_1772 = rnd(100);
                     if (var_1772 >= 0 && var_1772 < 15) {
-                        var_78[var_866].Var0 = 106;
+                        var_78[var_866].Var0 = 106; // クレイジー・D
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 15 && var_1772 < 20) {
-                        var_78[var_866].Var0 = 114;
+                        var_78[var_866].Var0 = 114; // ホワイトスネイク
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 4;
                     }
                     if (var_1772 >= 20 && var_1772 < 31) {
-                        var_78[var_866].Var0 = 113;
+                        var_78[var_866].Var0 = 113; // クラッシュ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 31 && var_1772 < 42) {
-                        var_78[var_866].Var0 = 122;
+                        var_78[var_866].Var0 = 122; // アヌビス神
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 5;
                     }
                     if (var_1772 >= 42 && var_1772 < 53) {
-                        var_78[var_866].Var0 = 117;
+                        var_78[var_866].Var0 = 117; // ダークブルームーン
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 53 && var_1772 < 64) {
-                        var_78[var_866].Var0 = 121;
+                        var_78[var_866].Var0 = 121; // パープルヘイズ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 4;
                     }
                     if (var_1772 >= 64 && var_1772 < 75) {
-                        var_78[var_866].Var0 = 318;
+                        var_78[var_866].Var0 = 318; // ジャンピンJフラッシュ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 75 && var_1772 < 80) {
-                        var_78[var_866].Var0 = 118;
+                        var_78[var_866].Var0 = 118; // ダイバーダウン
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 2;
                     }
                     if (var_1772 >= 80 && var_1772 < 85) {
-                        var_78[var_866].Var0 = 317;
+                        var_78[var_866].Var0 = 317; // キッス
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 4;
                     }
                     if (var_1772 >= 85 && var_1772 < 90) {
-                        var_78[var_866].Var0 = 319;
+                        var_78[var_866].Var0 = 319; // ボーイⅡマン
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 90 && var_1772 < 95) {
-                        var_78[var_866].Var0 = 115;
+                        var_78[var_866].Var0 = 115; // G・エクスペリエンス
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 95 && var_1772 < 100) {
-                        var_78[var_866].Var0 = 313;
+                        var_78[var_866].Var0 = 313; // ハイウェイ・スター
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
@@ -17668,47 +17668,47 @@ function func385() {
                 if (var_1773 >= 68 && var_1773 < 80) {
                     var_1772 = rnd(100);
                     if (var_1772 >= 0 && var_1772 < 20) {
-                        var_78[var_866].Var0 = 119;
+                        var_78[var_866].Var0 = 119; // スパイスガール
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 20 && var_1772 < 40) {
-                        var_78[var_866].Var0 = 203;
+                        var_78[var_866].Var0 = 203; // ザ・フール
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 40 && var_1772 < 60) {
-                        var_78[var_866].Var0 = 200;
+                        var_78[var_866].Var0 = 200; // スーパーフライ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 60 && var_1772 < 75) {
-                        var_78[var_866].Var0 = 205;
+                        var_78[var_866].Var0 = 205; // クラフトワーク
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 75 && var_1772 < 80) {
-                        var_78[var_866].Var0 = 206;
+                        var_78[var_866].Var0 = 206; // オアシス
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 80 && var_1772 < 85) {
-                        var_78[var_866].Var0 = 304;
+                        var_78[var_866].Var0 = 304; // ウェザー・リポート
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 85 && var_1772 < 90) {
-                        var_78[var_866].Var0 = 120;
+                        var_78[var_866].Var0 = 120; // ストーン・フリー
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 2;
                     }
                     if (var_1772 >= 90 && var_1772 < 95) {
-                        var_78[var_866].Var0 = 202;
+                        var_78[var_866].Var0 = 202; // ホワイトアルバム
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 2;
                     }
                     if (var_1772 >= 95 && var_1772 < 100) {
-                        var_78[var_866].Var0 = 204;
+                        var_78[var_866].Var0 = 204; // シアハートアタック
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 2;
                     }
@@ -17716,77 +17716,77 @@ function func385() {
                 if (var_1773 >= 80 && var_1773 < 98) {
                     var_1772 = rnd(100);
                     if (var_1772 >= 0 && var_1772 < 20) {
-                        var_78[var_866].Var0 = 306;
+                        var_78[var_866].Var0 = 306; // マンハッタントランスファー
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 4;
                     }
                     if (var_1772 >= 20 && var_1772 < 40) {
-                        var_78[var_866].Var0 = 300;
+                        var_78[var_866].Var0 = 300; // パール・ジャム
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 40 && var_1772 < 50) {
-                        var_78[var_866].Var0 = 311;
+                        var_78[var_866].Var0 = 311; // チープトリック
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 5;
                     }
                     if (var_1772 >= 50 && var_1772 < 60) {
-                        var_78[var_866].Var0 = 310;
+                        var_78[var_866].Var0 = 310; // エンプレス
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 5;
                     }
                     if (var_1772 >= 60 && var_1772 < 70) {
-                        var_78[var_866].Var0 = 302;
+                        var_78[var_866].Var0 = 302; // ハイウェイ・トゥ・ヘル
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 70 && var_1772 < 80) {
-                        var_78[var_866].Var0 = 320;
+                        var_78[var_866].Var0 = 320; // メタリカ
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 80 && var_1772 < 89) {
-                        var_78[var_866].Var0 = 316;
+                        var_78[var_866].Var0 = 316; // サバイバー
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 89 && var_1772 < 91) {
-                        var_78[var_866].Var0 = 314;
+                        var_78[var_866].Var0 = 314; // ストレイ・キャット
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 >= 91 && var_1772 < 93) {
-                        var_78[var_866].Var0 = 308;
+                        var_78[var_866].Var0 = 308; // エボニー・デビル
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 2;
                     }
                     if (var_1772 >= 93 && var_1772 < 95) {
-                        var_78[var_866].Var0 = 395;
+                        var_78[var_866].Var0 = 395; // バイツァ・ダスト
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 3;
                     }
                     if (var_1772 == 95) {
-                        var_78[var_866].Var0 = 315;
+                        var_78[var_866].Var0 = 315; // エピタフ
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 96) {
-                        var_78[var_866].Var0 = 303;
+                        var_78[var_866].Var0 = 303; // ドラゴンズドリーム
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 97) {
-                        var_78[var_866].Var0 = 305;
+                        var_78[var_866].Var0 = 305; // シンデレラ
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 98) {
-                        var_78[var_866].Var0 = 301;
+                        var_78[var_866].Var0 = 301; // ハーヴェスト
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 99) {
-                        var_78[var_866].Var0 = 312;
+                        var_78[var_866].Var0 = 312; // エアロスミス
                         var_78[var_866].Var16 = 5;
                         var_78[var_866].Var5 = 1;
                     }
@@ -17794,42 +17794,42 @@ function func385() {
                 if (var_1773 >= 98 && var_1773 < 100) {
                     var_1772 = rnd(8);
                     if (var_1772 == 0) {
-                        var_78[var_866].Var0 = 123;
+                        var_78[var_866].Var0 = 123; // クリーム
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 1) {
-                        var_78[var_866].Var0 = 109;
+                        var_78[var_866].Var0 = 109; // マジシャンズレッド
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 2) {
-                        var_78[var_866].Var0 = 112;
+                        var_78[var_866].Var0 = 112; // キラー・クィーン
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 3) {
-                        var_78[var_866].Var0 = 101;
+                        var_78[var_866].Var0 = 101; // シルバーチャリオッツ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 4) {
-                        var_78[var_866].Var0 = 108;
+                        var_78[var_866].Var0 = 108; // スティッキーフィンガーズ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 5) {
-                        var_78[var_866].Var0 = 100;
+                        var_78[var_866].Var0 = 100; // スタープラチナ
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 6) {
-                        var_78[var_866].Var0 = 111;
+                        var_78[var_866].Var0 = 111; // ザ・ワールド
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
                     if (var_1772 == 7) {
-                        var_78[var_866].Var0 = 102;
+                        var_78[var_866].Var0 = 102; // キング・クリムゾン
                         var_78[var_866].Var16 = 10;
                         var_78[var_866].Var5 = 1;
                     }
@@ -17837,7 +17837,7 @@ function func385() {
             }
             yield func387();
             if (var_1746 == 1) {
-                var_78[var_866].Var0 = 399;
+                var_78[var_866].Var0 = 399; // G・E・レクイエム
                 var_78[var_866].Var16 = 10;
                 var_78[var_866].Var5 = 1;
                 var_78[var_866].Var4 = 3;
@@ -17847,7 +17847,7 @@ function func385() {
                 var_1746 = 0;
             }
             if (var_1750 == 1) {
-                var_78[var_866].Var0 = 393;
+                var_78[var_866].Var0 = 393; // ボヘミアンラプソディ
                 var_78[var_866].Var16 = 10;
                 var_78[var_866].Var5 = 1;
                 var_78[var_866].Var4 = 3;
@@ -17875,48 +17875,48 @@ function func385() {
             if (var_1774 <= 2) {
                 var_1773 = rnd(100);
                 if (var_1773 >= 0 && var_1773 < 70) {
-                    var_78[var_866].Var0 = 401;
+                    var_78[var_866].Var0 = 401; // フー・ファイターズ
                 }
                 if (var_1773 >= 70 && var_1773 < 85) {
-                    var_78[var_866].Var0 = 400;
+                    var_78[var_866].Var0 = 400; // ハイエロファントグリーン
                 }
                 if (var_1773 >= 85 && var_1773 < 90) {
-                    var_78[var_866].Var0 = 411;
+                    var_78[var_866].Var0 = 411; // タワー・オブ・グレー
                 }
                 if (var_1773 >= 90 && var_1773 < 95) {
-                    var_78[var_866].Var0 = 403;
+                    var_78[var_866].Var0 = 403; // セックス・ピストルズ
                 }
                 if (var_1773 >= 95 && var_1773 < 100) {
-                    var_78[var_866].Var0 = 402;
+                    var_78[var_866].Var0 = 402; // エンペラー
                 }
             }
             if (var_1774 >= 3) {
                 var_1773 = rnd(100);
                 if (var_1773 >= 0 && var_1773 < 25) {
-                    var_78[var_866].Var0 = 409;
+                    var_78[var_866].Var0 = 409; // ラバーズ
                 }
                 if (var_1773 >= 25 && var_1773 < 50) {
-                    var_78[var_866].Var0 = 405;
+                    var_78[var_866].Var0 = 405; // エコーズAct2
                 }
                 if (var_1773 >= 50 && var_1773 < 70) {
-                    var_78[var_866].Var0 = 408;
+                    var_78[var_866].Var0 = 408; // マン・イン・ザ・ミラー
                 }
                 if (var_1773 >= 70 && var_1773 < 80) {
-                    var_78[var_866].Var0 = 406;
+                    var_78[var_866].Var0 = 406; // エコーズAct1
                 }
                 if (var_1773 >= 80 && var_1773 < 90) {
-                    var_78[var_866].Var0 = 404;
+                    var_78[var_866].Var0 = 404; // ホルス神
                 }
                 if (var_1773 >= 90 && var_1773 < 100) {
-                    var_78[var_866].Var0 = 412;
+                    var_78[var_866].Var0 = 412; // ヘブンズドアー
                 }
             }
             var_1772 = rnd(3);
             var_78[var_866].Var3 = var_1772 + 3;
-            if (var_78[var_866].Var0 == 400) {
+            if (var_78[var_866].Var0 == 400) { // ハイエロファントグリーン
                 var_1775 = rnd(100);
                 if (var_1775 == 1) {
-                    var_78[var_866].Var0 = 407;
+                    var_78[var_866].Var0 = 407; // ハイエロファントエメラルド
                 }
             }
             var_1771 = var_78[var_866].Var0;
