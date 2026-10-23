@@ -17442,6 +17442,7 @@ function func385() {
         for (var cnt1 = 0; cnt1 < 30; ++cnt1) {
             var_78[var_866]["Var" + cnt1] = 0;
         }
+        // 装備DISC
         if (var_1735 == 1) {
             if (var_62 == 1) { // ホテルの外
                 var_1772 = rnd(100);
@@ -17868,6 +17869,7 @@ function func385() {
                 yield func388();
             }
         }
+        // 射撃DISC
         if (var_1735 == 3) {
             var_1774 = rnd(5);
             if (var_1774 <= 2) {
@@ -17920,6 +17922,7 @@ function func385() {
             var_1771 = var_78[var_866].Var0;
             var_862[var_1771][0] = 1;
         }
+        // 記憶DISC
         if (var_1735 == 5) {
             var_1773 = rnd(25);
             if (var_62 == 1) {
@@ -18042,6 +18045,7 @@ function func385() {
                 var_862[var_1771][0] = 1;
             }
         }
+        // カエル, オレンジ
         if (var_1735 == 4) {
             var_1773 = rnd(100);
             if (var_1773 == 0) {
@@ -18075,6 +18079,7 @@ function func385() {
             var_1771 = var_78[var_866].Var0;
             var_862[var_1771][0] = 1;
         }
+        // 食べ物
         if (var_1735 == 6) {
             var_1777 = rnd(10);
             if (var_1777 < 7) {
@@ -18124,6 +18129,7 @@ function func385() {
             var_1771 = var_78[var_866].Var0;
             var_862[var_1771][0] = 1;
         }
+        // コミック
         if (var_1735 == 9) {
             var_1773 = rnd(100);
             if (var_1773 >= 0 && var_1773 <= 6) {
@@ -18355,6 +18361,7 @@ function func385() {
             var_1771 = var_78[var_866].Var0;
             var_862[var_1771][0] = 1;
         }
+        // 壺
         if (var_1735 == 10) {
             yield func395();
             var_1773 = rnd(100);
@@ -18498,6 +18505,7 @@ function func385() {
                 var_862[var_1771][0] = 1;
             }
         }
+        // 不明
         if (var_1735 == 0) {
             var_78[var_866].Var0 = 1;
             yield func436();
