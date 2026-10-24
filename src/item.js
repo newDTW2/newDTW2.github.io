@@ -85,64 +85,411 @@ const 記憶DISC一覧 = [
 ];
 
 const 装備DISC一覧 = [
-    {id: 100, name: "ｽﾀｰ･ﾌﾟﾗﾁﾅのDISC", part: [3, 4, 6], Var16: 10, Var5: 1},
-    {id: 101, name: "ｼﾙﾊﾞｰﾁｬﾘｵｯﾂのDISC", part: [3, 5], Var16: 10, Var5: 1},
-    {id: 102, name: "ｷﾝｸﾞ･ｸﾘﾑｿﾞﾝのDISC", part: [5], Var16: 10, Var5: 1},
-    {id: 103, name: "ｴｺｰｽﾞACT3のDISC", part: [4, 5], Var16: 20, Var5: 5},
-    {id: 104, name: "ｻﾞ･ﾊﾝﾄﾞのDISC", part: [4], Var16: 10, Var5: 3},
-    {id: 105, name: "ﾁﾘﾍﾟｯﾊﾟｰのDISC", part: [4], Var16: 10, Var5: 3},
-    {id: 106, name: "ｸﾚｲｼﾞｰ･DのDISC", part: [4], Var16: 10, Var5: 3},
-    {id: 107, name: "ﾃﾞｽ･13のDISC", part: [3], Var16: 10, Var5: 3},
-    {id: 108, name: "ｽﾃｨｯｷｰﾌｨﾝｶﾞｰｽﾞのDISC", part: [5], Var16: 10, Var5: 1},
-    {id: 109, name: "ﾏｼﾞｼｬﾝｽﾞﾚｯﾄﾞのDISC", part: [3], Var16: 10, Var5: 1},
-    {id: 111, name: "ｻﾞ･ﾜｰﾙﾄﾞのDISC", part: [3], Var16: 10, Var5: 1},
-    {id: 112, name: "ｷﾗｰ･ｸｨｰﾝのDISC", part: [4], Var16: 10, Var5: 1},
-    {id: 113, name: "ｸﾗｯｼｭのDISC", part: [5], Var16: 10, Var5: 3},
-    {id: 114, name: "ﾎﾜｲﾄｽﾈｲｸのDISC", part: [6], Var16: 10, Var5: 4},
-    {id: 115, name: "G･ｴｸｽﾍﾟﾘｴﾝｽのDISC", part: [5], Var16: 10, Var5: 3},
-    {id: 116, name: "ﾊｰﾐｯﾄﾊﾟｰﾌﾟﾙのDISC", part: [3, 4], Var16: 10, Var5: 4},
-    {id: 117, name: "ﾀﾞｰｸﾌﾞﾙｰﾑｰﾝのDISC", part: [3], Var16: 10, Var5: 3},
-    {id: 118, name: "ﾀﾞｲﾊﾞｰﾀﾞｳﾝのDISC", part: [6], Var16: 10, Var5: 2},
-    {id: 119, name: "ｽﾊﾟｲｽ･ｶﾞｰﾙのDISC", part: [5], Var16: 10, Var5: 3},
-    {id: 120, name: "ｽﾄｰﾝ･ﾌﾘｰのDISC", part: [6], Var16: 10, Var5: 2},
-    {id: 121, name: "ﾊﾟｰﾌﾟﾙ･ﾍｲｽﾞのDISC", part: [5], Var16: 10, Var5: 4},
-    {id: 122, name: "ｱﾇﾋﾞｽ神のDISC", part: [3], Var16: 10, Var5: 5},
-    {id: 123, name: "ｸﾘｰﾑのDISC", part: [3], Var16: 10, Var5: 1},
-    {id: 124, name: "ﾑｰﾃﾞｨｰﾌﾞﾙｰｽのDISC", part: [5], Var16: 10, Var5: 4},
-    {id: 200, name: "ｽｰﾊﾟｰﾌﾗｲのDISC", part: [4], Var16: 10, Var5: 3},
-    {id: 201, name: "ｲｴﾛｰﾃﾝﾊﾟﾗﾝｽのDISC", part: [3], Var16: 10, Var5: 3},
-    {id: 202, name: "ﾎﾜｲﾄｱﾙﾊﾞﾑのDISC", part: [5], Var16: 10, Var5: 2},
-    {id: 203, name: "ｻﾞ･ﾌｰﾙのDISC", part: [3], Var16: 10, Var5: 3},
-    {id: 204, name: "ｼｱｰﾊｰﾄｱﾀｯｸのDISC", part: [4], Var16: 10, Var5: 2},
-    {id: 205, name: "ｸﾗﾌﾄﾜｰｸのDISC", part: [5], Var16: 10, Var5: 3},
-    {id: 206, name: "ｵｱｼｽのDISC", part: [5], Var16: 10, Var5: 3},
-    {id: 207, name: "ｸﾞﾚｲﾄﾌﾙ･ﾃﾞｯﾄﾞのDISC", part: [5], Var16: 10, Var5: 3},
-    {id: 300, name: "ﾊﾟｰﾙ･ｼﾞｬﾑのDISC", part: [4], Var16: 5, Var5: 3},
-    {id: 301, name: "ﾊｰｳﾞｪｽﾄのDISC", part: [4], Var16: 5, Var5: 1},
-    {id: 302, name: "ﾊｲｳｪｲ･ﾄｩ･ﾍﾙのDISC", part: [6], Var16: 5, Var5: 3},
-    {id: 303, name: "ﾄﾞﾗｺﾞﾝｽﾞﾄﾞﾘｰﾑのDISC", part: [6], Var16: 5, Var5: 1},
-    {id: 304, name: "ｳｪｻﾞｰﾘﾎﾟｰﾄのDISC", part: [6], Var16: 10, Var5: 3},
-    {id: 305, name: "ｼﾝﾃﾞﾚﾗのDISC", part: [4], Var16: 5, Var5: 1},
-    {id: 306, name: "ﾏﾝﾊｯﾀﾝﾄﾗﾝｽﾌｧｰのDISC", part: [6], Var16: 5, Var5: 4},
-    {id: 308, name: "ｴﾎﾞﾆｰ･ﾃﾞﾋﾞﾙのDISC", part: [3], Var16: 5, Var5: 2},
-    {id: 310, name: "ｴﾝﾌﾟﾚｽのDISC", part: [3], Var16: 5, Var5: 5},
-    {id: 311, name: "ﾁｰﾌﾟ･ﾄﾘｯｸのDISC", part: [4], Var16: 5, Var5: 5},
-    {id: 312, name: "ｴｱﾛｽﾐｽのDISC", part: [5], Var16: 5, Var5: 1},
-    {id: 313, name: "ﾊｲｳｪｲ･ｽﾀｰのDISC", part: [4], Var16: 10, Var5: 1},
-    {id: 314, name: "ｽﾄﾚｲ･ｷｬｯﾄのDISC", part: [4], Var16: 5, Var5: 3},
-    {id: 315, name: "ｴﾋﾟﾀﾌのDISC", part: [5], Var16: 5, Var5: 1},
-    {id: 316, name: "ｻﾊﾞｲﾊﾞｰのDISC", part: [6], Var16: 5, Var5: 3},
-    {id: 317, name: "ｷｯｽのDISC", part: [6], Var16: 10, Var5: 4},
-    {id: 318, name: "ｼﾞｬﾝﾋﾟﾝJﾌﾗｯｼｭのDISC", part: [6], Var16: 10, Var5: 3},
-    {id: 319, name: "ﾎﾞｰｲIIﾏﾝのDISC", part: [4], Var16: 10, Var5: 3},
-    {id: 320, name: "ﾒﾀﾘｶのDISC", part: [5], Var16: 5, Var5: 3},
-    {id: 393, name: "ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC", part: [6], Var16: 10, Var5: 1},
-    {id: 394, name: "ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC", part: [4], Var16: 10, Var5: 1}, // TODO Var16の正しい値は？
-    {id: 395, name: "ﾊﾞｲﾂｧ･ﾀﾞｽﾄのDISC", part: [4], Var16: 5, Var5: 3},
-    {id: 396, name: "ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC", part: [6], Var16: 10, Var5: 0}, // TODO Var16の正しい値は？
-    {id: 397, name: "ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC", part: [6], Var16: 10, Var5: 2}, // TODO Var16の正しい値は？
-    {id: 398, name: "ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC", part: [3, 4, 6], Var16: 10, Var5: 0}, // TODO Var16の正しい値は？
-    {id: 399, name: "G･E･ﾚｸｲｴﾑのDISC", part: [5], Var16: 10, Var5: 1},
+    {
+        id: 100,
+        name: "ｽﾀｰ･ﾌﾟﾗﾁﾅのDISC",
+        part: [3, 4, 6],
+        Var16: 10, Var5: 1,
+        rarity: "UR"
+    },
+    {
+        id: 101,
+        name: "ｼﾙﾊﾞｰﾁｬﾘｵｯﾂのDISC",
+        part: [3, 5],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 102,
+        name: "ｷﾝｸﾞ･ｸﾘﾑｿﾞﾝのDISC",
+        part: [5],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 103,
+        name: "ｴｺｰｽﾞACT3のDISC",
+        part: [4, 5],
+        Var16: 20, Var5: 5,
+        rarity: ""
+    },
+    {
+        id: 104,
+        name: "ｻﾞ･ﾊﾝﾄﾞのDISC",
+        part: [4],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 105,
+        name: "ﾁﾘﾍﾟｯﾊﾟｰのDISC",
+        part: [4],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 106,
+        name: "ｸﾚｲｼﾞｰ･DのDISC",
+        part: [4],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 107,
+        name: "ﾃﾞｽ･13のDISC",
+        part: [3],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 108,
+        name: "ｽﾃｨｯｷｰﾌｨﾝｶﾞｰｽﾞのDISC",
+        part: [5],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 109,
+        name: "ﾏｼﾞｼｬﾝｽﾞﾚｯﾄﾞのDISC",
+        part: [3],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 111,
+        name: "ｻﾞ･ﾜｰﾙﾄﾞのDISC",
+        part: [3],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 112,
+        name: "ｷﾗｰ･ｸｨｰﾝのDISC",
+        part: [4],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 113,
+        name: "ｸﾗｯｼｭのDISC",
+        part: [5],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 114,
+        name: "ﾎﾜｲﾄｽﾈｲｸのDISC",
+        part: [6],
+        Var16: 10, Var5: 4,
+        rarity: ""
+    },
+    {
+        id: 115,
+        name: "G･ｴｸｽﾍﾟﾘｴﾝｽのDISC",
+        part: [5],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 116,
+        name: "ﾊｰﾐｯﾄﾊﾟｰﾌﾟﾙのDISC",
+        part: [3, 4],
+        Var16: 10, Var5: 4,
+        rarity: ""
+    },
+    {
+        id: 117,
+        name: "ﾀﾞｰｸﾌﾞﾙｰﾑｰﾝのDISC",
+        part: [3],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 118,
+        name: "ﾀﾞｲﾊﾞｰﾀﾞｳﾝのDISC",
+        part: [6],
+        Var16: 10, Var5: 2,
+        rarity: ""
+    },
+    {
+        id: 119,
+        name: "ｽﾊﾟｲｽ･ｶﾞｰﾙのDISC",
+        part: [5],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 120,
+        name: "ｽﾄｰﾝ･ﾌﾘｰのDISC",
+        part: [6],
+        Var16: 10, Var5: 2,
+        rarity: ""
+    },
+    {
+        id: 121,
+        name: "ﾊﾟｰﾌﾟﾙ･ﾍｲｽﾞのDISC",
+        part: [5],
+        Var16: 10, Var5: 4,
+        rarity: ""
+    },
+    {
+        id: 122,
+        name: "ｱﾇﾋﾞｽ神のDISC",
+        part: [3],
+        Var16: 10, Var5: 5,
+        rarity: ""
+    },
+    {
+        id: 123,
+        name: "ｸﾘｰﾑのDISC",
+        part: [3],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 124,
+        name: "ﾑｰﾃﾞｨｰﾌﾞﾙｰｽのDISC",
+        part: [5],
+        Var16: 10, Var5: 4,
+        rarity: ""
+    },
+    {
+        id: 200,
+        name: "ｽｰﾊﾟｰﾌﾗｲのDISC",
+        part: [4],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 201,
+        name: "ｲｴﾛｰﾃﾝﾊﾟﾗﾝｽのDISC",
+        part: [3],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 202,
+        name: "ﾎﾜｲﾄｱﾙﾊﾞﾑのDISC",
+        part: [5],
+        Var16: 10, Var5: 2,
+        rarity: ""
+    },
+    {
+        id: 203,
+        name: "ｻﾞ･ﾌｰﾙのDISC",
+        part: [3],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 204,
+        name: "ｼｱｰﾊｰﾄｱﾀｯｸのDISC",
+        part: [4],
+        Var16: 10, Var5: 2,
+        rarity: ""
+    },
+    {
+        id: 205,
+        name: "ｸﾗﾌﾄﾜｰｸのDISC",
+        part: [5],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 206,
+        name: "ｵｱｼｽのDISC",
+        part: [5],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 207,
+        name: "ｸﾞﾚｲﾄﾌﾙ･ﾃﾞｯﾄﾞのDISC",
+        part: [5],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 300,
+        name: "ﾊﾟｰﾙ･ｼﾞｬﾑのDISC",
+        part: [4],
+        Var16: 5, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 301,
+        name: "ﾊｰｳﾞｪｽﾄのDISC",
+        part: [4],
+        Var16: 5, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 302,
+        name: "ﾊｲｳｪｲ･ﾄｩ･ﾍﾙのDISC",
+        part: [6],
+        Var16: 5, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 303,
+        name: "ﾄﾞﾗｺﾞﾝｽﾞﾄﾞﾘｰﾑのDISC",
+        part: [6],
+        Var16: 5, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 304,
+        name: "ｳｪｻﾞｰﾘﾎﾟｰﾄのDISC",
+        part: [6],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 305,
+        name: "ｼﾝﾃﾞﾚﾗのDISC",
+        part: [4],
+        Var16: 5, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 306,
+        name: "ﾏﾝﾊｯﾀﾝﾄﾗﾝｽﾌｧｰのDISC",
+        part: [6],
+        Var16: 5, Var5: 4,
+        rarity: ""
+    },
+    {
+        id: 308,
+        name: "ｴﾎﾞﾆｰ･ﾃﾞﾋﾞﾙのDISC",
+        part: [3],
+        Var16: 5, Var5: 2,
+        rarity: ""
+    },
+    {
+        id: 310,
+        name: "ｴﾝﾌﾟﾚｽのDISC",
+        part: [3],
+        Var16: 5, Var5: 5,
+        rarity: ""
+    },
+    {
+        id: 311,
+        name: "ﾁｰﾌﾟ･ﾄﾘｯｸのDISC",
+        part: [4],
+        Var16: 5, Var5: 5,
+        rarity: ""
+    },
+    {
+        id: 312,
+        name: "ｴｱﾛｽﾐｽのDISC",
+        part: [5],
+        Var16: 5, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 313,
+        name: "ﾊｲｳｪｲ･ｽﾀｰのDISC",
+        part: [4],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 314,
+        name: "ｽﾄﾚｲ･ｷｬｯﾄのDISC",
+        part: [4],
+        Var16: 5, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 315,
+        name: "ｴﾋﾟﾀﾌのDISC",
+        part: [5],
+        Var16: 5, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 316,
+        name: "ｻﾊﾞｲﾊﾞｰのDISC",
+        part: [6],
+        Var16: 5, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 317,
+        name: "ｷｯｽのDISC",
+        part: [6],
+        Var16: 10, Var5: 4,
+        rarity: ""
+    },
+    {
+        id: 318,
+        name: "ｼﾞｬﾝﾋﾟﾝJﾌﾗｯｼｭのDISC",
+        part: [6],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 319,
+        name: "ﾎﾞｰｲIIﾏﾝのDISC",
+        part: [4],
+        Var16: 10, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 320,
+        name: "ﾒﾀﾘｶのDISC",
+        part: [5],
+        Var16: 5, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 393,
+        name: "ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC",
+        part: [6],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
+    {
+        id: 394,
+        name: "ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC",
+        part: [4],
+        Var16: 10, Var5: 1, // TODO Var16の正しい値は？
+    },
+    {
+        id: 395,
+        name: "ﾊﾞｲﾂｧ･ﾀﾞｽﾄのDISC",
+        part: [4],
+        Var16: 5, Var5: 3,
+        rarity: ""
+    },
+    {
+        id: 396,
+        name: "ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC",
+        part: [6],
+        Var16: 10, Var5: 0, // TODO Var16の正しい値は？
+        rarity: ""
+    },
+    {
+        id: 397,
+        name: "ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC",
+        part: [6],
+        Var16: 10, Var5: 2, // TODO Var16の正しい値は？
+        rarity: ""
+    },
+    {
+        id: 398,
+        name: "ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC",
+        part: [3, 4, 6],
+        Var16: 10, Var5: 0, // TODO Var16の正しい値は？
+        rarity: ""
+    },
+    {
+        id: 399,
+        name: "G･E･ﾚｸｲｴﾑのDISC",
+        part: [5],
+        Var16: 10, Var5: 1,
+        rarity: ""
+    },
 ];
 
 function 装備DISCをランダムに取得(part) {
