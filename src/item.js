@@ -546,24 +546,109 @@ function 装備DISCをランダムに取得(part) {
 }
 
 const 射撃DISC一覧 = [
-    {id: 400, name: "ﾊｲｴﾛﾌｧﾝﾄｸﾞﾘｰﾝのDISC", part: [3]},
-    {id: 401, name: "ﾌｰ･ﾌｧｲﾀｰｽﾞのDISC", part: [6]},
-    {id: 402, name: "ｴﾝﾍﾟﾗｰのDISC", part: [3]},
-    {id: 403, name: "ｾｯｸｽﾋﾟｽﾄﾙｽﾞのDISC", part: [5]},
-    {id: 404, name: "ﾎﾙｽ神のDISC", part: [3]},
-    {id: 405, name: "ｴｺｰｽﾞACT2のDISC", part: [4]},
-    {id: 406, name: "ｴｺｰｽﾞACT1のDISC", part: [4, 5]},
-    {id: 407, name: "ﾊｲｴﾛﾌｧﾝﾄｴﾒﾗﾙﾄﾞのDISC", part: [3]},
-    {id: 408, name: "ﾏﾝ･ｲﾝ･ｻﾞ･ﾐﾗｰのDISC", part: [5]},
-    {id: 409, name: "ﾗﾊﾞｰｽﾞのDISC", part: [3]},
-    {id: 411, name: "ﾀﾜｰ･ｵﾌﾞ･ｸﾞﾚｰのDISC", part: [3]},
-    {id: 412, name: "ﾍﾌﾞﾝｽﾞﾄﾞｱｰのDISC", part: [4]},
-    {id: 414, name: "ﾀｽｸのDISC", part: [7]},
+    {
+        id: 400,
+        name: "ﾊｲｴﾛﾌｧﾝﾄｸﾞﾘｰﾝのDISC",
+        part: [3],
+        weight: 9
+    },
+    {
+        id: 401,
+        name: "ﾌｰ･ﾌｧｲﾀｰｽﾞのDISC",
+        part: [6],
+        weight: 42
+    },
+    {
+        id: 402,
+        name: "ｴﾝﾍﾟﾗｰのDISC",
+        part: [3],
+        weight: 3
+    },
+    {
+        id: 403,
+        name: "ｾｯｸｽﾋﾟｽﾄﾙｽﾞのDISC",
+        part: [5],
+        weight: 3
+    },
+    {
+        id:404,
+        name: "ﾎﾙｽ神のDISC",
+        part: [3],
+        weight: 4
+    },
+    {
+        id:405,
+        name: "ｴｺｰｽﾞACT2のDISC",
+        part: [4],
+        weight: 10
+    },
+    {
+        id:406,
+        name: "ｴｺｰｽﾞACT1のDISC",
+        part: [4, 5],
+        weight: 4
+    },
+    {
+        id:407,
+        name: "ﾊｲｴﾛﾌｧﾝﾄｴﾒﾗﾙﾄﾞのDISC",
+        part: [3],
+        weight: 0
+    },
+    {
+        id:408,
+        name: "ﾏﾝ･ｲﾝ･ｻﾞ･ﾐﾗｰのDISC",
+        part: [5],
+        weight: 8
+    },
+    {
+        id:409,
+        name: "ﾗﾊﾞｰｽﾞのDISC",
+        part: [3],
+        weight: 10
+    },
+    {
+        id:411,
+        name: "ﾀﾜｰ･ｵﾌﾞ･ｸﾞﾚｰのDISC",
+        part: [3],
+        weight: 3
+    },
+    {
+        id:412,
+        name: "ﾍﾌﾞﾝｽﾞﾄﾞｱｰのDISC",
+        part: [4],
+        weight: 4
+    },
+    {
+        id:414,
+        name: "ﾀｽｸのDISC",
+        part: [7],
+        weight: 0
+    },
 ];
 
 function 射撃DISCをランダムに取得(part) {
-    const 対象一覧 = 射撃DISC一覧.filter(disc => disc.part.includes(part));
-    return 対象一覧[rnd(対象一覧.length)];
+    const 対象一覧 = 射撃DISC一覧.filter(
+        disc => disc.part.includes(part) && disc.weight > 0
+    );
+
+    const 重み合計 = 対象一覧.reduce(
+        (sum, disc) => sum + disc.weight,
+        0
+    );
+
+    if (重み合計 === 0) {
+        throw new Error("生成できる射撃DISCがない！");
+    }
+
+    let 抽選値 = rnd(重み合計);
+
+    for (const disc of 対象一覧) {
+        抽選値 -= disc.weight;
+
+        if (抽選値 < 0) {
+            return disc;
+        }
+    }
 }
 
 const 壺一覧 = [
