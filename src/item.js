@@ -494,18 +494,49 @@ const 装備DISC一覧 = [
 ];
 
 function 装備DISCをランダムに取得(part) {
-    const 床落ちしていない装備DISCのID一覧 = [
-        393, // ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC
-        394, // ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC
-        396, // ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC
-        397, // ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC
-        398, // ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC
-        399, // G･E･ﾚｸｲｴﾑのDISC
-    ];
-    const 対象一覧 = 装備DISC一覧.filter(disc =>
+    let rarity;
+
+    if (rnd(20) === 0) {
+        rarity = "R";
+    }
+    else if (rnd(50) === 0) {
+        rarity = "SR";
+    }
+    else if (rnd(100) === 0) {
+        rarity = "SSR";
+    }
+    else if (rnd(150) === 0) {
+        rarity = "UR";
+    }
+    else {
+        rarity = "N";
+    }
+
+    let 対象一覧 = 装備DISC一覧.filter(disc =>
         disc.part.includes(part) &&
-        !床落ちしていない装備DISCのID一覧.includes(disc.id)
+        disc.rarity === rarity
     );
+
+    // そのレアリティのDISCがなければNから選ぶ
+    if (対象一覧.length === 0) {
+        対象一覧 = 装備DISC一覧.filter(disc =>
+            disc.part.includes(part) &&
+            disc.rarity === "N"
+        );
+    }
+
+    // Nも存在しない場合は、その部のX以外から選ぶ
+    if (対象一覧.length === 0) {
+        対象一覧 = 装備DISC一覧.filter(disc =>
+            disc.part.includes(part) &&
+            disc.rarity !== "X"
+        );
+    }
+
+    if (対象一覧.length === 0) {
+        throw new Error("生成できるアイテムがない！");
+    }
+
     return 対象一覧[rnd(対象一覧.length)];
 }
 
