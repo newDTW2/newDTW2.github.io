@@ -145,6 +145,22 @@ const 装備DISC一覧 = [
     {id: 399, name: "G･E･ﾚｸｲｴﾑのDISC", part: [5], Var16: 10, Var5: 1},
 ];
 
+function 装備DISCをランダムに取得(part) {
+    const 床落ちしていない装備DISCのID一覧 = [
+        393, // ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC
+        394, // ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC
+        396, // ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC
+        397, // ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC
+        398, // ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC
+        399, // G･E･ﾚｸｲｴﾑのDISC
+    ];
+    const 対象一覧 = 装備DISC一覧.filter(disc =>
+        disc.part.includes(part) &&
+        !床落ちしていない装備DISCのID一覧.includes(disc.id)
+    );
+    return 対象一覧[rnd(対象一覧.length)];
+}
+
 const 射撃DISC一覧 = [
     {id: 400, name: "ﾊｲｴﾛﾌｧﾝﾄｸﾞﾘｰﾝのDISC", part: [3]},
     {id: 401, name: "ﾌｰ･ﾌｧｲﾀｰｽﾞのDISC", part: [6]},
@@ -160,6 +176,11 @@ const 射撃DISC一覧 = [
     {id: 412, name: "ﾍﾌﾞﾝｽﾞﾄﾞｱｰのDISC", part: [4]},
     {id: 414, name: "ﾀｽｸのDISC", part: [7]},
 ];
+
+function 射撃DISCをランダムに取得(part) {
+    const 対象一覧 = 射撃DISC一覧.filter(disc => disc.part.includes(part));
+    return 対象一覧[rnd(対象一覧.length)];
+}
 
 const 壺一覧 = [
     {id: 800, name: "ｴﾆｸﾞﾏの紙"},
