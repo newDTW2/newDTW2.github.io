@@ -314,7 +314,7 @@ const 装備DISC一覧 = [
         name: "ﾊﾟｰﾙ･ｼﾞｬﾑのDISC",
         part: [4],
         Var16: 5, Var5: 3,
-        rarity: "N"
+        rarity: "R"
     },
     {
         id: 301,
