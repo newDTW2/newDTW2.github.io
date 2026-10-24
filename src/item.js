@@ -97,398 +97,399 @@ const 装備DISC一覧 = [
         name: "ｼﾙﾊﾞｰﾁｬﾘｵｯﾂのDISC",
         part: [3, 5],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 102,
         name: "ｷﾝｸﾞ･ｸﾘﾑｿﾞﾝのDISC",
         part: [5],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 103,
         name: "ｴｺｰｽﾞACT3のDISC",
         part: [4, 5],
         Var16: 20, Var5: 5,
-        rarity: ""
+        rarity: "N"
     },
     {
         id: 104,
         name: "ｻﾞ･ﾊﾝﾄﾞのDISC",
         part: [4],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 105,
         name: "ﾁﾘﾍﾟｯﾊﾟｰのDISC",
         part: [4],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 106,
         name: "ｸﾚｲｼﾞｰ･DのDISC",
         part: [4],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 107,
         name: "ﾃﾞｽ･13のDISC",
         part: [3],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "N"
     },
     {
         id: 108,
         name: "ｽﾃｨｯｷｰﾌｨﾝｶﾞｰｽﾞのDISC",
         part: [5],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 109,
         name: "ﾏｼﾞｼｬﾝｽﾞﾚｯﾄﾞのDISC",
         part: [3],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 111,
         name: "ｻﾞ･ﾜｰﾙﾄﾞのDISC",
         part: [3],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 112,
         name: "ｷﾗｰ･ｸｨｰﾝのDISC",
         part: [4],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 113,
         name: "ｸﾗｯｼｭのDISC",
         part: [5],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 114,
         name: "ﾎﾜｲﾄｽﾈｲｸのDISC",
         part: [6],
         Var16: 10, Var5: 4,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 115,
         name: "G･ｴｸｽﾍﾟﾘｴﾝｽのDISC",
         part: [5],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 116,
         name: "ﾊｰﾐｯﾄﾊﾟｰﾌﾟﾙのDISC",
         part: [3, 4],
         Var16: 10, Var5: 4,
-        rarity: ""
+        rarity: "N"
     },
     {
         id: 117,
         name: "ﾀﾞｰｸﾌﾞﾙｰﾑｰﾝのDISC",
         part: [3],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 118,
         name: "ﾀﾞｲﾊﾞｰﾀﾞｳﾝのDISC",
         part: [6],
         Var16: 10, Var5: 2,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 119,
         name: "ｽﾊﾟｲｽ･ｶﾞｰﾙのDISC",
         part: [5],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 120,
         name: "ｽﾄｰﾝ･ﾌﾘｰのDISC",
         part: [6],
         Var16: 10, Var5: 2,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 121,
         name: "ﾊﾟｰﾌﾟﾙ･ﾍｲｽﾞのDISC",
         part: [5],
         Var16: 10, Var5: 4,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 122,
         name: "ｱﾇﾋﾞｽ神のDISC",
         part: [3],
         Var16: 10, Var5: 5,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 123,
         name: "ｸﾘｰﾑのDISC",
         part: [3],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 124,
         name: "ﾑｰﾃﾞｨｰﾌﾞﾙｰｽのDISC",
         part: [5],
         Var16: 10, Var5: 4,
-        rarity: ""
+        rarity: "N"
     },
     {
         id: 200,
         name: "ｽｰﾊﾟｰﾌﾗｲのDISC",
         part: [4],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 201,
         name: "ｲｴﾛｰﾃﾝﾊﾟﾗﾝｽのDISC",
         part: [3],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 202,
         name: "ﾎﾜｲﾄｱﾙﾊﾞﾑのDISC",
         part: [5],
         Var16: 10, Var5: 2,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 203,
         name: "ｻﾞ･ﾌｰﾙのDISC",
         part: [3],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 204,
         name: "ｼｱｰﾊｰﾄｱﾀｯｸのDISC",
         part: [4],
         Var16: 10, Var5: 2,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 205,
         name: "ｸﾗﾌﾄﾜｰｸのDISC",
         part: [5],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 206,
         name: "ｵｱｼｽのDISC",
         part: [5],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 207,
         name: "ｸﾞﾚｲﾄﾌﾙ･ﾃﾞｯﾄﾞのDISC",
         part: [5],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "R"
     },
     {
         id: 300,
         name: "ﾊﾟｰﾙ･ｼﾞｬﾑのDISC",
         part: [4],
         Var16: 5, Var5: 3,
-        rarity: ""
+        rarity: "N"
     },
     {
         id: 301,
         name: "ﾊｰｳﾞｪｽﾄのDISC",
         part: [4],
         Var16: 5, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 302,
         name: "ﾊｲｳｪｲ･ﾄｩ･ﾍﾙのDISC",
         part: [6],
         Var16: 5, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 303,
         name: "ﾄﾞﾗｺﾞﾝｽﾞﾄﾞﾘｰﾑのDISC",
         part: [6],
         Var16: 5, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 304,
         name: "ｳｪｻﾞｰﾘﾎﾟｰﾄのDISC",
         part: [6],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 305,
         name: "ｼﾝﾃﾞﾚﾗのDISC",
         part: [4],
         Var16: 5, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 306,
         name: "ﾏﾝﾊｯﾀﾝﾄﾗﾝｽﾌｧｰのDISC",
         part: [6],
         Var16: 5, Var5: 4,
-        rarity: ""
+        rarity: "N"
     },
     {
         id: 308,
         name: "ｴﾎﾞﾆｰ･ﾃﾞﾋﾞﾙのDISC",
         part: [3],
         Var16: 5, Var5: 2,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 310,
         name: "ｴﾝﾌﾟﾚｽのDISC",
         part: [3],
         Var16: 5, Var5: 5,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 311,
         name: "ﾁｰﾌﾟ･ﾄﾘｯｸのDISC",
         part: [4],
         Var16: 5, Var5: 5,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 312,
         name: "ｴｱﾛｽﾐｽのDISC",
         part: [5],
         Var16: 5, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 313,
         name: "ﾊｲｳｪｲ･ｽﾀｰのDISC",
         part: [4],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 314,
         name: "ｽﾄﾚｲ･ｷｬｯﾄのDISC",
         part: [4],
         Var16: 5, Var5: 3,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 315,
         name: "ｴﾋﾟﾀﾌのDISC",
         part: [5],
         Var16: 5, Var5: 1,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 316,
         name: "ｻﾊﾞｲﾊﾞｰのDISC",
         part: [6],
         Var16: 5, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 317,
         name: "ｷｯｽのDISC",
         part: [6],
         Var16: 10, Var5: 4,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 318,
         name: "ｼﾞｬﾝﾋﾟﾝJﾌﾗｯｼｭのDISC",
         part: [6],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 319,
         name: "ﾎﾞｰｲIIﾏﾝのDISC",
         part: [4],
         Var16: 10, Var5: 3,
-        rarity: ""
+        rarity: "SSR"
     },
     {
         id: 320,
         name: "ﾒﾀﾘｶのDISC",
         part: [5],
         Var16: 5, Var5: 3,
-        rarity: ""
+        rarity: "SR"
     },
     {
         id: 393,
         name: "ﾎﾞﾍﾐｱﾝﾗﾌﾟｿﾃﾞｨのDISC",
         part: [6],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "X"
     },
     {
         id: 394,
         name: "ｷﾗｰﾀｲｶﾞｰｸｲｰﾝのDISC",
         part: [4],
         Var16: 10, Var5: 1, // TODO Var16の正しい値は？
+        rarity: "X"
     },
     {
         id: 395,
         name: "ﾊﾞｲﾂｧ･ﾀﾞｽﾄのDISC",
         part: [4],
         Var16: 5, Var5: 3,
-        rarity: ""
+        rarity: "UR"
     },
     {
         id: 396,
         name: "ﾒｲﾄﾞ･ｲﾝ･ﾍﾌﾞﾝのDISC",
         part: [6],
         Var16: 10, Var5: 0, // TODO Var16の正しい値は？
-        rarity: ""
+        rarity: "X"
     },
     {
         id: 397,
         name: "ﾍﾋﾞｰ･ｳｪｻﾞｰのDISC",
         part: [6],
         Var16: 10, Var5: 2, // TODO Var16の正しい値は？
-        rarity: ""
+        rarity: "X"
     },
     {
         id: 398,
         name: "ｽﾀﾌﾟﾗｻﾞﾜｰﾙﾄﾞのDISC",
         part: [3, 4, 6],
         Var16: 10, Var5: 0, // TODO Var16の正しい値は？
-        rarity: ""
+        rarity: "X"
     },
     {
         id: 399,
         name: "G･E･ﾚｸｲｴﾑのDISC",
         part: [5],
         Var16: 10, Var5: 1,
-        rarity: ""
+        rarity: "X"
     },
 ];
 
