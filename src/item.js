@@ -494,50 +494,55 @@ const 装備DISC一覧 = [
 ];
 
 function 装備DISCをランダムに取得(part) {
-    let rarity;
-
-    if (rnd(20) === 0) {
-        rarity = "R";
-    }
-    else if (rnd(50) === 0) {
-        rarity = "SR";
-    }
-    else if (rnd(100) === 0) {
-        rarity = "SSR";
-    }
-    else if (rnd(150) === 0) {
-        rarity = "UR";
-    }
-    else {
-        rarity = "N";
-    }
-
-    let 対象一覧 = 装備DISC一覧.filter(disc =>
+    const 部の対象一覧 = 装備DISC一覧.filter(disc =>
         disc.part.includes(part) &&
-        disc.rarity === rarity
+        disc.rarity !== "X"
     );
 
-    // そのレアリティのDISCがなければNから選ぶ
-    if (対象一覧.length === 0) {
-        対象一覧 = 装備DISC一覧.filter(disc =>
-            disc.part.includes(part) &&
-            disc.rarity === "N"
-        );
+    const 出現率 = {
+        R: 1 / 20,
+        SR: 1 / 50,
+        SSR: 1 / 100,
+        UR: 1 / 150,
+    };
+
+    const レア一覧 = 部の対象一覧.filter(
+        disc => 出現率[disc.rarity] !== undefined
+    );
+
+    const N一覧 = 部の対象一覧.filter(
+        disc => disc.rarity === "N"
+    );
+
+    const レア合計確率 = レア一覧.reduce(
+        (sum, disc) => sum + 出現率[disc.rarity],
+        0
+    );
+
+    if (レア合計確率 > 1) {
+        throw new Error("レアDISCの出現確率の合計が100%を超えている！");
     }
 
-    // Nも存在しない場合は、その部のX以外から選ぶ
-    if (対象一覧.length === 0) {
-        対象一覧 = 装備DISC一覧.filter(disc =>
-            disc.part.includes(part) &&
-            disc.rarity !== "X"
-        );
-    }
-
-    if (対象一覧.length === 0) {
+    if (N一覧.length === 0 && レア合計確率 < 1) {
         throw new Error("生成できるアイテムがない！");
     }
 
-    return 対象一覧[rnd(対象一覧.length)];
+    let 抽選値 = Math.random();
+    let 累積確率 = 0;
+
+    for (const disc of レア一覧) {
+        累積確率 += 出現率[disc.rarity];
+
+        if (抽選値 < 累積確率) {
+            return disc;
+        }
+    }
+
+    if (N一覧.length === 0) {
+        return レア一覧[rnd(レア一覧.length)];
+    }
+
+    return N一覧[rnd(N一覧.length)];
 }
 
 const 射撃DISC一覧 = [
