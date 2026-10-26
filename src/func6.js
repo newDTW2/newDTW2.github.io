@@ -21346,6 +21346,12 @@ function func681() {
             var_211 = var_352;
         }
         var_2201 = 1;
+
+        if (var_62 === 3 && specialRule === "牙（タスク）" && var_840 % 2 === 1) {
+            var_565 = Math.min(var_565 + 1, 99);
+            var_566 = Math.min(var_566 + 1, 99);
+        }
+
         return;
     });
 }
