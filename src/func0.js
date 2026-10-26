@@ -972,7 +972,7 @@ function func009() {
             yield func053();
             return;
         }
-        if (var_249 == 1) {
+        if (var_249 == 1) { // 射撃
             var_225 = var_250;
             var_251 = 1;
             yield func647();
@@ -1462,7 +1462,7 @@ function func012() {
             yield func635();
             return;
         }
-        if (var_249 == 1) {
+        if (var_249 == 1) { // 射撃
             var_271 = 0;
             var_272 = 0;
             var_225 = var_250;

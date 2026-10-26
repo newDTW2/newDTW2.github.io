@@ -14305,27 +14305,30 @@ function func646() {
 function func647() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(647);
-        if (var_251 == 1 && var_410 == 0) {
-            var_293 = "";
-            var_294 = "";
-            var_295 = "";
-            var_296 = "";
-            var_297 = "";
-            var_298 = "";
-            var_299 = 0;
-            var_293 = "射撃DISCを装備していないぞ";
-            var_25_x = var_25[1];
-            var_26_x = var_26[1];
-            var_27_x = var_27[1];
-            var_198 = 1;
-            var_300 = 0;
-            yield func047();
-            for (var cnt2 = 0; cnt2 < 3; ++cnt2) {
-                yield func337();
+
+        if (!(var_62 === 3 && specialRule === "牙（タスク）" && var_249 === 1)) {
+            if (var_251 == 1 && var_410 == 0) {
+                var_293 = "";
+                var_294 = "";
+                var_295 = "";
+                var_296 = "";
+                var_297 = "";
+                var_298 = "";
+                var_299 = 0;
+                var_293 = "射撃DISCを装備していないぞ";
+                var_25_x = var_25[1];
+                var_26_x = var_26[1];
+                var_27_x = var_27[1];
+                var_198 = 1;
+                var_300 = 0;
+                yield func047();
+                for (var cnt2 = 0; cnt2 < 3; ++cnt2) {
+                    yield func337();
+                }
+                var_251 = 0;
+                yield func009();
+                return;
             }
-            var_251 = 0;
-            yield func009();
-            return;
         }
         if (var_171 == 1) {
             yield func424();
@@ -14335,7 +14338,12 @@ function func647() {
             }
         }
         var_251 = 0;
-        var_340 = var_233[var_225].Var0;
+        if (var_62 === 3 && specialRule === "牙（タスク）" && var_249 === 1) {
+            var_340 = 414;
+        }
+        else {
+            var_340 = var_233[var_225].Var0;
+        }
         if (var_220 == 1) {
             var_340 = var_486[var_682][var_225][0];
         }
@@ -14714,7 +14722,9 @@ function func647() {
             yield func337();
         }
         if (var_234 == 0 && var_1223 == 0 && var_1267 == 0 && var_340 != 487 && var_340 != 488 && var_340 != 489 && var_340 != 490) {
-            yield func421();
+            if (!(var_62 === 3 && specialRule === "牙（タスク）" && var_249 === 1)) {
+                yield func421();
+            }
         }
         if (var_234 == 1 && var_1223 == 0 && var_1267 == 0 && var_340 != 487 && var_340 != 488 && var_340 != 489 && var_340 != 490) {
             var_234 = 0;
