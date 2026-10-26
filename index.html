@@ -155,11 +155,13 @@
 						※ ヴェネチアホテルに戻らないと適応されません。
 					</div>
 					<select v-model="specialRule">
-						<option value="通常">通常</option>
-						<option value="3部縛り">3部縛り</option>
-						<option value="4部縛り">4部縛り</option>
-						<option value="5部縛り">5部縛り</option>
-						<option value="6部縛り">6部縛り</option>
+						<option
+							v-for="rule in Object.keys(specialRuleDescription)"
+							:key="rule"
+							:value="rule"
+						>
+							{{ rule }}
+						</option>
 					</select>
 					<div class="description">{{ specialRuleDescription[specialRule] }}</div>
 				</div>

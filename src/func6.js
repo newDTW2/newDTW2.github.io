@@ -13169,6 +13169,11 @@ function func638() {
         if (var_209 >= 65525) {
             var_209 = 65525;
         }
+
+        if (var_62 === 3 && specialRule === "牙（タスク）") {
+            var_209 = 1;
+        }
+
         return;
     });
 }
