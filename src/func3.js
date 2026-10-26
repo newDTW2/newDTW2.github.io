@@ -17122,10 +17122,10 @@ function func384() {
                         var_1736 = rnd(11);
                     }
                     if (var_1736 == 0) {
-                        var_1735 = 1; // 射撃DISC
+                        var_1735 = 1; // 装備DISC
                     }
                     if (var_1736 == 1) {
-                        var_1735 = 1; // 射撃DISC
+                        var_1735 = 1; // 装備DISC
                     }
                     if (var_1736 == 2) {
                         var_1735 = 3; // 射撃DISC
@@ -17160,36 +17160,63 @@ function func384() {
                 }
             }
             if (var_1734 == 0) {
-                var_1736 = rnd(100);
-                if (var_1736 >= 0 && var_1736 < 22) {
-                    var_1735 = 0; // お金
+                /* 基準
+                const アイテム種別出現確率 = {
+                    "お金": { type: 0, weight: 24 },
+                    "食べ物": { type: 6, weight: 6 },
+                    "装備DISC": { type: 1, weight: 13 },
+                    "記憶DISC": { type: 5, weight: 26 },
+                    "射撃DISC": { type: 3, weight: 13 },
+                    "カエル・オレンジ": { type: 4, weight: 5 },
+                    "コミック": { type: 9, weight: 9 },
+                    "壺": { type: 10, weight: 4 },
+                };
+                */
+                if (var_62 === 3 && specialRule === "牙（タスク）") {
+                    var_1735 = アイテム種別をランダムに取得({
+                        "お金": { type: 0, weight: 23 },
+                        "食べ物": { type: 6, weight: 6 },
+                        "装備DISC": { type: 1, weight: 10 },
+                        "記憶DISC": { type: 5, weight: 20 },
+                        "射撃DISC": { type: 3, weight: 21 },
+                        "カエル・オレンジ": { type: 4, weight: 5 },
+                        "コミック": { type: 9, weight: 6 },
+                        "壺": { type: 10, weight: 4 },
+                        "鉄球": { type: 11, weight: 5 }
+                    });
                 }
-                if (var_1736 >= 22 && var_1736 < 28) {
-                    var_1735 = 6; // 食べ物
-                }
-                if (var_1736 >= 28 && var_1736 < 41) {
-                    var_1735 = 1; // 射撃DISC
-                }
-                if (var_1736 >= 41 && var_1736 < 67) {
-                    var_1735 = 5; // 記憶DISC
-                }
-                if (var_1736 >= 67 && var_1736 < 80) {
-                    var_1735 = 3; // 射撃DISC
-                }
-                if (var_1736 >= 80 && var_1736 < 85) {
-                    var_1735 = 4; // カエル, オレンジ
-                }
-                if (var_1736 >= 85 && var_1736 < 94) {
-                    var_1735 = 9; // コミック
-                }
-                if (var_1736 >= 94 && var_1736 < 98) {
-                    var_1735 = 10; // 壺
-                }
-                if (var_1736 >= 98 && var_1736 < 100) {
-                    var_1735 = 0; // お金
-                }
-                if (var_156[393] == 1 && var_1736 < 5) {
-                    var_1735 = 9; // コミック
+                else {
+                    var_1736 = rnd(100);
+                    if (var_1736 >= 0 && var_1736 < 22) {
+                        var_1735 = 0; // お金
+                    }
+                    if (var_1736 >= 22 && var_1736 < 28) {
+                        var_1735 = 6; // 食べ物
+                    }
+                    if (var_1736 >= 28 && var_1736 < 41) {
+                        var_1735 = 1; // 装備DISC
+                    }
+                    if (var_1736 >= 41 && var_1736 < 67) {
+                        var_1735 = 5; // 記憶DISC
+                    }
+                    if (var_1736 >= 67 && var_1736 < 80) {
+                        var_1735 = 3; // 射撃DISC
+                    }
+                    if (var_1736 >= 80 && var_1736 < 85) {
+                        var_1735 = 4; // カエル, オレンジ
+                    }
+                    if (var_1736 >= 85 && var_1736 < 94) {
+                        var_1735 = 9; // コミック
+                    }
+                    if (var_1736 >= 94 && var_1736 < 98) {
+                        var_1735 = 10; // 壺
+                    }
+                    if (var_1736 >= 98 && var_1736 < 100) {
+                        var_1735 = 0; // お金
+                    }
+                    if (var_156[393] == 1 && var_1736 < 5) {
+                        var_1735 = 9; // コミック
+                    }
                 }
                 if (var_62 == 1 && var_1735 == 10) {
                     var_1736 = rnd(8);
@@ -18173,6 +18200,11 @@ function func385() {
         // コミック
         if (var_1735 == 9) {
             var_1773 = rnd(100);
+            if (var_62 === 3 && specialRule === "牙（タスク）") {
+                if (var_1773 >= 0 && var_1773 <= 82) {
+                    var_1773 = 83;
+                }
+            }
             if (var_1773 >= 0 && var_1773 <= 6) {
                 var_1779 = rnd(5);
                 var_1779 = var_1779 + 901; // 1部
@@ -18575,6 +18607,10 @@ function func385() {
             var_78[var_866].Var0 = 1;
             yield func436();
             var_78[var_866].Var13 = var_1783;
+        }
+        // 鉄球（特殊ルール用）
+        if (var_1735 === 11) {
+            var_78[var_866].Var0 = 726;
         }
         return;
     });
