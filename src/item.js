@@ -571,55 +571,55 @@ const 射撃DISC一覧 = [
         weight: 3
     },
     {
-        id:404,
+        id: 404,
         name: "ﾎﾙｽ神のDISC",
         part: [3],
         weight: 4
     },
     {
-        id:405,
+        id: 405,
         name: "ｴｺｰｽﾞACT2のDISC",
         part: [4],
         weight: 10
     },
     {
-        id:406,
+        id: 406,
         name: "ｴｺｰｽﾞACT1のDISC",
         part: [4, 5],
         weight: 4
     },
     {
-        id:407,
+        id: 407,
         name: "ﾊｲｴﾛﾌｧﾝﾄｴﾒﾗﾙﾄﾞのDISC",
         part: [3],
         weight: 0
     },
     {
-        id:408,
+        id: 408,
         name: "ﾏﾝ･ｲﾝ･ｻﾞ･ﾐﾗｰのDISC",
         part: [5],
         weight: 8
     },
     {
-        id:409,
+        id: 409,
         name: "ﾗﾊﾞｰｽﾞのDISC",
         part: [3],
         weight: 10
     },
     {
-        id:411,
+        id: 411,
         name: "ﾀﾜｰ･ｵﾌﾞ･ｸﾞﾚｰのDISC",
         part: [3],
         weight: 3
     },
     {
-        id:412,
+        id: 412,
         name: "ﾍﾌﾞﾝｽﾞﾄﾞｱｰのDISC",
         part: [4],
         weight: 4
     },
     {
-        id:414,
+        id: 414,
         name: "ﾀｽｸのDISC",
         part: [7],
         weight: 0
