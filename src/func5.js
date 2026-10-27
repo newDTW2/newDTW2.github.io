@@ -31872,6 +31872,9 @@ function func598() {
         if (var_128 >= 1) {
             yield func023();
         }
+        if (var_62 === 3 && specialRule === "Do or Die") {
+            var_209 = 999;
+        }
         var_211 = var_211 - var_209;
         var_208 = var_208 + var_209;
         if (var_211 <= 0) {
@@ -31936,6 +31939,9 @@ function func599() {
         var_83[var_673].Var18 = 0;
         if (var_128 >= 1) {
             yield func023();
+        }
+        if (var_62 === 3 && specialRule === "Do or Die") {
+            var_209 = 999;
         }
         var_211 = var_211 - var_209;
         var_208 = var_208 + var_209;

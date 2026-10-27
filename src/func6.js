@@ -918,6 +918,9 @@ function func605() {
                 }
                 if (var_2866 == 0) {
                     yield func601();
+                    if (var_62 === 3 && specialRule === "Do or Die") {
+                        var_209 = 999;
+                    }
                     var_2852 = var_209;
                     var_747 = 1;
                     var_389 = 2;
@@ -13173,6 +13176,9 @@ function func638() {
         if (var_62 === 3 && specialRule === "牙（タスク）") {
             var_209 = 1;
         }
+        else if (var_62 === 3 && specialRule === "Do or Die") {
+            var_209 = 999;
+        }
 
         return;
     });
@@ -16271,6 +16277,9 @@ function func654() {
         yield func626();
         if (var_113 == 1) {
             var_209 = Math.floor(var_209 * 2 / 3) + 1;
+        }
+        if (var_62 === 3 && specialRule === "Do or Die") {
+            var_209 = 999;
         }
         var_211 = var_211 - var_209;
         var_208 = var_208 + var_209;
