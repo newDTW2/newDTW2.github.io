@@ -628,6 +628,9 @@ function DSSETMASTERVOLUME(data0) {
 }
 function DMINIT() { }
 function DMLOADMEMORY(file_name, data0, data1) {
+    if (var_62 === 3 && specialRule === "牙（タスク）" && file_name === "0.mp3") {
+        file_name = "414.mp3";
+    }
     currentBgm?.then(bgm => {
         bgm.stop();
         bgm.unload();
