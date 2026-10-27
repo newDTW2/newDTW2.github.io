@@ -640,7 +640,12 @@ function func008() {
         var_100 = 0;
         var_101 = 0;
         var_102 = 0;
-        var_103 = 0;
+        if (var_62 === 3 && specialRule === "Do or Die") {
+            var_103 = 1;
+        }
+        else {
+            var_103 = 0;
+        }
         var_104 = 0;
         var_105 = 0;
         var_106 = 0;
