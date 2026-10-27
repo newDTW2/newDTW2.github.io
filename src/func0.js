@@ -653,7 +653,12 @@ function func008() {
         var_108 = 0;
         var_109 = 0;
         var_110 = 0;
-        var_111 = 0;
+        if (var_62 === 3 && specialRule === "Do or Die") {
+            var_111 = 1;
+        }
+        else {
+            var_111 = 0;
+        }
         var_112 = 0;
         var_113 = 0;
         var_114 = 0;
@@ -6791,6 +6796,18 @@ function func062() {
         dbgprt(62);
         var_224 = var_224 + 1;
         var_233[var_224].Var0 = 602;
+
+        if (var_62 === 3 && specialRule === "Do or Die") {
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 102;
+            var_233[var_224].Var16 = 10;
+            var_233[var_224].Var5 = 1;
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 315;
+            var_233[var_224].Var16 = 5;
+            var_233[var_224].Var5 = 1;
+        }
+
         return;
     });
 }
