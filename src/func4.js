@@ -1768,32 +1768,32 @@ function func420() {
             if (var_898 == 1 && var_478[var_225] == 1) {
                 var_1934 = 1;
             }
-            if (var_1934 == 1) {
-                var_293 = "";
-                var_294 = "";
-                var_295 = "";
-                var_296 = "";
-                var_297 = "";
-                var_298 = "";
-                var_299 = 0;
-                var_293 = "呪われていてはずせない！";
-                var_198 = 1;
-                var_300 = 0;
-                var_25_x = var_25[1];
-                var_26_x = var_26[1];
-                var_27_x = var_27[1];
-                yield func047();
-                for (var cnt3 = 0; cnt3 < 10; ++cnt3) {
-                    yield func337();
-                }
-                yield func340();
-                var_1264 = 0;
-                var_217 = 1;
-                var_1935 = 0;
-                var_1933 = 0;
-                yield func019();
-                return;
-            }
+            // if (var_1934 == 1) {
+            //     var_293 = "";
+            //     var_294 = "";
+            //     var_295 = "";
+            //     var_296 = "";
+            //     var_297 = "";
+            //     var_298 = "";
+            //     var_299 = 0;
+            //     var_293 = "呪われていてはずせない！";
+            //     var_198 = 1;
+            //     var_300 = 0;
+            //     var_25_x = var_25[1];
+            //     var_26_x = var_26[1];
+            //     var_27_x = var_27[1];
+            //     yield func047();
+            //     for (var cnt3 = 0; cnt3 < 10; ++cnt3) {
+            //         yield func337();
+            //     }
+            //     yield func340();
+            //     var_1264 = 0;
+            //     var_217 = 1;
+            //     var_1935 = 0;
+            //     var_1933 = 0;
+            //     yield func019();
+            //     return;
+            // }
         }
         var_293 = "";
         var_294 = "";
