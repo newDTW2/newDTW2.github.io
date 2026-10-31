@@ -2221,7 +2221,8 @@ function func015() {
             }
         }
 
-        if (specialRule === "LESSON5" && var_66 !== var_236 && var_67 !== var_237) {
+        // var_62: 3を指定しないとホテル内でも爆発する
+        if (var_62 === 3 && specialRule === "LESSON5" && var_66 !== var_236 && var_67 !== var_237) {
             var_177 = 10;
         }
 
