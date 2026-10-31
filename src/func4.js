@@ -1753,19 +1753,19 @@ function func420() {
             if (var_896 == 1 && var_1935 == 1) {
                 var_1934 = 1;
             }
-            if (var_897 == 1 && var_1935 == 2) {
+            else if (var_897 == 1 && var_1935 == 2) {
                 var_1934 = 1;
             }
-            if (var_898 == 1 && var_1935 == 3) {
+            else if (var_898 == 1 && var_1935 == 3) {
                 var_1934 = 1;
             }
-            if (var_896 == 1 && var_476[var_225] == 1) {
+            else if (var_896 == 1 && var_476[var_225] == 1) {
                 var_1934 = 1;
             }
-            if (var_897 == 1 && var_477[var_225] == 1) {
+            else if (var_897 == 1 && var_477[var_225] == 1) {
                 var_1934 = 1;
             }
-            if (var_898 == 1 && var_478[var_225] == 1) {
+            else if (var_898 == 1 && var_478[var_225] == 1) {
                 var_1934 = 1;
             }
             if (var_1934 == 1) {
@@ -2704,8 +2704,12 @@ function func433() {
         }
 
         var_233[var_447].Var0 = 0;
-        var_233[var_449].Var0 = 0;
-
+        var_233[var_449].Var0 = 0; // TODO: これいる？
+        var_476[var_447] = 0;
+        var_477[var_447] = 0;
+        var_478[var_447] = 0;
+        var_479[var_447] = 0;
+        
         var_1956 = 1;
         for (var cnt1 = 0; cnt1 < var_224; ++cnt1) {
             if (var_479[var_1956] == 1) {

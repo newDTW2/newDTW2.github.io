@@ -300,6 +300,9 @@ const App = {
             gamepad_key_list[32] = 0;
         },
         unlockAllDungeons() {
+            var_11 = 1; // 赤石つき石仮面開放
+            bsave("00.dat", var_11, null, 80);
+            
             var_404 = 1;
             var_704[88] = 1;
             var_704[34] = 1;
@@ -511,7 +514,10 @@ const App = {
                 alert("インポートに失敗しました");
             }
         },
-        exportSaveFile() {
+        async exportSaveFile() {
+            var_205 = 1;
+            await func231();
+
             const data = {};
 
             for (let i = 0; i < localStorage.length; i++) {
