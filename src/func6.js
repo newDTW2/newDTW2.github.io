@@ -14308,11 +14308,11 @@ function func646() {
         return;
     });
 }
-function func647() {
+function func647(isShootCommandSelected = false) {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(647);
 
-        if (!(var_62 === 3 && specialRule === "牙（タスク）" && var_249 === 1)) {
+        if (!(var_62 === 3 && specialRule === "牙（タスク）" && !isShootCommandSelected)) {
             if (var_251 == 1 && var_410 == 0) {
                 var_293 = "";
                 var_294 = "";
@@ -14344,7 +14344,7 @@ function func647() {
             }
         }
         var_251 = 0;
-        if (var_62 === 3 && specialRule === "牙（タスク）" && var_249 === 1) {
+        if (var_62 === 3 && specialRule === "牙（タスク）" && !isShootCommandSelected) {
             var_340 = 414;
         }
         else {
@@ -14728,7 +14728,7 @@ function func647() {
             yield func337();
         }
         if (var_234 == 0 && var_1223 == 0 && var_1267 == 0 && var_340 != 487 && var_340 != 488 && var_340 != 489 && var_340 != 490) {
-            if (!(var_62 === 3 && specialRule === "牙（タスク）" && var_249 === 1)) {
+            if (!(var_62 === 3 && specialRule === "牙（タスク）" && !isShootCommandSelected)) {
                 yield func421();
             }
         }
