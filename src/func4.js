@@ -1753,19 +1753,19 @@ function func420() {
             if (var_896 == 1 && var_1935 == 1) {
                 var_1934 = 1;
             }
-            if (var_897 == 1 && var_1935 == 2) {
+            else if (var_897 == 1 && var_1935 == 2) {
                 var_1934 = 1;
             }
-            if (var_898 == 1 && var_1935 == 3) {
+            else if (var_898 == 1 && var_1935 == 3) {
                 var_1934 = 1;
             }
-            if (var_896 == 1 && var_476[var_225] == 1) {
+            else if (var_896 == 1 && var_476[var_225] == 1) {
                 var_1934 = 1;
             }
-            if (var_897 == 1 && var_477[var_225] == 1) {
+            else if (var_897 == 1 && var_477[var_225] == 1) {
                 var_1934 = 1;
             }
-            if (var_898 == 1 && var_478[var_225] == 1) {
+            else if (var_898 == 1 && var_478[var_225] == 1) {
                 var_1934 = 1;
             }
             if (var_1934 == 1) {
