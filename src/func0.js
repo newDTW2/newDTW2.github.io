@@ -2220,6 +2220,11 @@ function func015() {
                 }
             }
         }
+
+        if (specialRule === "LESSON5" && var_66 !== var_236 && var_67 !== var_237) {
+            var_177 = 10;
+        }
+
         yield func019();
         return;
     });
@@ -9621,10 +9626,10 @@ function func080() {
                 return;
             }
         }
-        var_254 = getkey(var_647);
-        var_257 = getkey(var_648);
-        var_255 = getkey(var_649);
-        var_259 = getkey(var_650);
+        var_254 = getkey(var_647); // ←
+        var_257 = getkey(var_648); // →
+        var_255 = getkey(var_649); // ↑
+        var_259 = getkey(var_650); // ↓
         var_253 = getkey(var_651);
         var_256 = getkey(var_652);
         var_258 = getkey(var_653);
