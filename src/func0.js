@@ -640,7 +640,7 @@ function func008() {
         var_100 = 0;
         var_101 = 0;
         var_102 = 0;
-        if (var_62 === 3 && specialRule === "Do or Die") {
+        if (specialRule === "Do or Die") {
             var_103 = 1;
         }
         else {
@@ -653,7 +653,7 @@ function func008() {
         var_108 = 0;
         var_109 = 0;
         var_110 = 0;
-        if (var_62 === 3 && specialRule === "Do or Die") {
+        if (specialRule === "Do or Die") {
             var_111 = 1;
         }
         else {
@@ -6807,7 +6807,7 @@ function func062() {
         var_224 = var_224 + 1;
         var_233[var_224].Var0 = 602;
 
-        if (var_62 === 3 && specialRule === "Do or Die") {
+        if (specialRule === "Do or Die") {
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 102;
             var_233[var_224].Var16 = 10;
@@ -8207,7 +8207,7 @@ function func076() {
             }
             gcopy(34, var_598, 80, 20, 40);
 
-            if ((var_62 === 3 && specialRule !== "通常") || specialRule === "ダンジョンリレー") {
+            if (specialRule !== "通常") {
                 color(255, 255, 255);
                 pos(2, 320);
                 font("MS UI Gothic", 12);

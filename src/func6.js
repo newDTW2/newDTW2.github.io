@@ -918,7 +918,7 @@ function func605() {
                 }
                 if (var_2866 == 0) {
                     yield func601();
-                    if (var_62 === 3 && specialRule === "Do or Die") {
+                    if (specialRule === "Do or Die") {
                         var_209 = 999;
                     }
                     var_2852 = var_209;
@@ -13173,10 +13173,10 @@ function func638() {
             var_209 = 65525;
         }
 
-        if (var_62 === 3 && specialRule === "牙（タスク）") {
+        if (specialRule === "牙（タスク）") {
             var_209 = 1;
         }
-        else if (var_62 === 3 && specialRule === "Do or Die") {
+        else if (specialRule === "Do or Die") {
             var_209 = 999;
         }
 
@@ -14312,7 +14312,7 @@ function func647(isShootCommandSelected = false) {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(647);
 
-        if (!(var_62 === 3 && specialRule === "牙（タスク）" && !isShootCommandSelected)) {
+        if (!(specialRule === "牙（タスク）" && !isShootCommandSelected)) {
             if (var_251 == 1 && var_410 == 0) {
                 var_293 = "";
                 var_294 = "";
@@ -14344,7 +14344,7 @@ function func647(isShootCommandSelected = false) {
             }
         }
         var_251 = 0;
-        if (var_62 === 3 && specialRule === "牙（タスク）" && !isShootCommandSelected) {
+        if (specialRule === "牙（タスク）" && !isShootCommandSelected) {
             var_340 = 414;
         }
         else {
@@ -14728,7 +14728,7 @@ function func647(isShootCommandSelected = false) {
             yield func337();
         }
         if (var_234 == 0 && var_1223 == 0 && var_1267 == 0 && var_340 != 487 && var_340 != 488 && var_340 != 489 && var_340 != 490) {
-            if (!(var_62 === 3 && specialRule === "牙（タスク）" && !isShootCommandSelected)) {
+            if (!(specialRule === "牙（タスク）" && !isShootCommandSelected)) {
                 yield func421();
             }
         }
@@ -16278,7 +16278,7 @@ function func654() {
         if (var_113 == 1) {
             var_209 = Math.floor(var_209 * 2 / 3) + 1;
         }
-        if (var_62 === 3 && specialRule === "Do or Die") {
+        if (specialRule === "Do or Die") {
             var_209 = 999;
         }
         var_211 = var_211 - var_209;
@@ -21356,7 +21356,7 @@ function func681() {
         }
         var_2201 = 1;
 
-        if (var_62 === 3 && specialRule === "牙（タスク）" && var_840 % 2 === 1) {
+        if (specialRule === "牙（タスク）" && var_840 % 2 === 1) {
             var_565 = Math.min(var_565 + 1, 99);
             var_566 = Math.min(var_566 + 1, 99);
         }

@@ -3039,6 +3039,7 @@ function func839() {
                     var_3198 = 0;
                     var_548 = 0;
                     specialRule = "通常";
+                    localStorage.setItem("specialRule", specialRule);
                     yield func825(); // ホテルの外 初期化
                     return;
                 }
@@ -3046,6 +3047,7 @@ function func839() {
                     var_3199 = 0;
                     var_548 = 0;
                     specialRule = "通常";
+                    localStorage.setItem("specialRule", specialRule);
                     yield func827(); // レクイエムの大迷宮 初期化
                     return;
                 }
@@ -3068,6 +3070,7 @@ function func839() {
                     var_3201 = 0;
                     var_548 = 0;
                     specialRule = "通常";
+                    localStorage.setItem("specialRule", specialRule);
                     yield func834(); // 一巡後の世界 初期化
                     return;
                 }

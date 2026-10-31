@@ -31872,7 +31872,7 @@ function func598() {
         if (var_128 >= 1) {
             yield func023();
         }
-        if (var_62 === 3 && specialRule === "Do or Die") {
+        if (specialRule === "Do or Die") {
             var_209 = 999;
         }
         var_211 = var_211 - var_209;
@@ -31940,7 +31940,7 @@ function func599() {
         if (var_128 >= 1) {
             yield func023();
         }
-        if (var_62 === 3 && specialRule === "Do or Die") {
+        if (specialRule === "Do or Die") {
             var_209 = 999;
         }
         var_211 = var_211 - var_209;

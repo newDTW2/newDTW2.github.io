@@ -17172,7 +17172,7 @@ function func384() {
                     "壺": { type: 10, weight: 4 },
                 };
                 */
-                if (var_62 === 3 && specialRule === "牙（タスク）") {
+                if (specialRule === "牙（タスク）") {
                     var_1735 = アイテム種別をランダムに取得({
                         "お金": { type: 0, weight: 23 },
                         "食べ物": { type: 6, weight: 6 },
@@ -17586,25 +17586,25 @@ function func385() {
                 }
             }
             if (var_62 != 1) { // ホテルの外以外
-                if (var_62 === 3 && specialRule === "3部縛り") {
+                if (specialRule === "3部縛り") {
                     const disc = 装備DISCをランダムに取得(3);
                     var_78[var_866].Var0 = disc.id;
                     var_78[var_866].Var16 = disc.Var16;
                     var_78[var_866].Var5 = disc.Var5;
                 }
-                else if (var_62 === 3 && specialRule === "4部縛り") {
+                else if (specialRule === "4部縛り") {
                     const disc = 装備DISCをランダムに取得(4);
                     var_78[var_866].Var0 = disc.id;
                     var_78[var_866].Var16 = disc.Var16;
                     var_78[var_866].Var5 = disc.Var5;
                 }
-                else if (var_62 === 3 && specialRule === "5部縛り") {
+                else if (specialRule === "5部縛り") {
                     const disc = 装備DISCをランダムに取得(5);
                     var_78[var_866].Var0 = disc.id;
                     var_78[var_866].Var16 = disc.Var16;
                     var_78[var_866].Var5 = disc.Var5;
                 }
-                else if (var_62 === 3 && specialRule === "6部縛り") {
+                else if (specialRule === "6部縛り") {
                     const disc = 装備DISCをランダムに取得(6);
                     var_78[var_866].Var0 = disc.id;
                     var_78[var_866].Var16 = disc.Var16;
@@ -17925,16 +17925,16 @@ function func385() {
         }
         // 射撃DISC
         if (var_1735 == 3) {
-            if (var_62 === 3 && specialRule === "3部縛り") {
+            if (specialRule === "3部縛り") {
                 var_78[var_866].Var0 = 射撃DISCをランダムに取得(3).id;
             }
-            else if (var_62 === 3 && specialRule === "4部縛り") {
+            else if (specialRule === "4部縛り") {
                 var_78[var_866].Var0 = 射撃DISCをランダムに取得(4).id;
             }
-            else if (var_62 === 3 && specialRule === "5部縛り") {
+            else if (specialRule === "5部縛り") {
                 var_78[var_866].Var0 = 射撃DISCをランダムに取得(5).id;
             }
-            else if (var_62 === 3 && specialRule === "6部縛り") {
+            else if (specialRule === "6部縛り") {
                 var_78[var_866].Var0 = 射撃DISCをランダムに取得(6).id;
             }
             else {
@@ -18200,7 +18200,7 @@ function func385() {
         // コミック
         if (var_1735 == 9) {
             var_1773 = rnd(100);
-            if (var_62 === 3 && specialRule === "牙（タスク）") {
+            if (specialRule === "牙（タスク）") {
                 if (var_1773 >= 0 && var_1773 <= 82) {
                     var_1773 = 83;
                 }
@@ -18216,22 +18216,22 @@ function func385() {
                 var_78[var_866].Var0 = var_1779;
             }
             if (var_1773 >= 13 && var_1773 <= 82) {
-                if (var_62 === 3 && specialRule === "3部縛り") {
+                if (specialRule === "3部縛り") {
                     var_1779 = rnd(17);
                     var_1779 = var_1779 + 912; // 3部
                     var_78[var_866].Var0 = var_1779;
                 }
-                else if (var_62 === 3 && specialRule === "4部縛り") {
+                else if (specialRule === "4部縛り") {
                     var_1779 = rnd(19);
                     var_1779 = var_1779 + 929; // 4部
                     var_78[var_866].Var0 = var_1779;
                 }
-                else if (var_62 === 3 && specialRule === "5部縛り") {
+                else if (specialRule === "5部縛り") {
                     var_1779 = rnd(16);
                     var_1779 = var_1779 + 948; // 5部
                     var_78[var_866].Var0 = var_1779;
                 }
-                else if (var_62 === 3 && specialRule === "6部縛り") {
+                else if (specialRule === "6部縛り") {
                     var_1779 = rnd(17);
                     var_1779 = var_1779 + 964; // 6部
                     var_78[var_866].Var0 = var_1779;
