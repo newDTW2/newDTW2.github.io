@@ -6465,98 +6465,108 @@ function func060() {
                     return;
                 }
                 if (var_62 == 1 && var_91 == 12) {
-                    var_373 = 5;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
+                    if (specialRule === "ダンジョンリレー") {
+                        var_62 = 2;
                     }
-                    var_373 = 4;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
+                    else {
+                        var_373 = 5;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 4;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 3;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 2;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 1;
+                        for (var cnt4 = 0; cnt4 < 10; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 0;
+                        var_94 = 0;
+                        if (var_404 == 0) {
+                            var_207 = 3;
+                        }
+                        var_532 = 1;
+                        var_356 = 301;
+                        if (var_203 == 1) {
+                            var_356 = 321;
+                        }
+                        if (var_203 == 2) {
+                            var_356 = 322;
+                        }
+                        if (var_203 == 3) {
+                            var_356 = 325;
+                        }
+                        var_533 = 50000;
+                        if (var_404 == 0) {
+                            var_404 = 1;
+                        }
+                        if (var_407 == 2) {
+                            var_534++;
+                            yield func929();
+                        }
+                        yield func173();
+                        return;
                     }
-                    var_373 = 3;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 2;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 1;
-                    for (var cnt4 = 0; cnt4 < 10; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 0;
-                    var_94 = 0;
-                    if (var_404 == 0) {
-                        var_207 = 3;
-                    }
-                    var_532 = 1;
-                    var_356 = 301;
-                    if (var_203 == 1) {
-                        var_356 = 321;
-                    }
-                    if (var_203 == 2) {
-                        var_356 = 322;
-                    }
-                    if (var_203 == 3) {
-                        var_356 = 325;
-                    }
-                    var_533 = 50000;
-                    if (var_404 == 0) {
-                        var_404 = 1;
-                    }
-                    if (var_407 == 2) {
-                        var_534++;
-                        yield func929();
-                    }
-                    yield func173();
-                    return;
                 }
                 if (var_62 == 2 && var_91 == 30) {
-                    var_373 = 5;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
+                    if (specialRule === "ダンジョンリレー") {
+                        var_62 = 3;
                     }
-                    var_373 = 4;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 3;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 2;
-                    for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 1;
-                    for (var cnt4 = 0; cnt4 < 10; ++cnt4) {
-                        yield func337();
-                    }
-                    var_373 = 0;
-                    var_94 = 0;
-                    var_532 = 1;
-                    var_356 = 302;
-                    var_533 = 100000;
-                    if (var_526 == 0) {
-                        var_526 = 1;
-                        var_207 = 6;
-                    }
-                    if (var_535 == 1 && var_536 == 0) {
-                        var_356 = 312;
-                        var_533 = 200000;
-                        if (var_526 < 2) {
-                            var_526 = 2;
+                    else {
+                        var_373 = 5;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
                         }
-                        var_11 = 1;
-                        bsave("00.dat", var_11, null, 80);
+                        var_373 = 4;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 3;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 2;
+                        for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 1;
+                        for (var cnt4 = 0; cnt4 < 10; ++cnt4) {
+                            yield func337();
+                        }
+                        var_373 = 0;
+                        var_94 = 0;
+                        var_532 = 1;
+                        var_356 = 302;
+                        var_533 = 100000;
+                        if (var_526 == 0) {
+                            var_526 = 1;
+                            var_207 = 6;
+                        }
+                        if (var_535 == 1 && var_536 == 0) {
+                            var_356 = 312;
+                            var_533 = 200000;
+                            if (var_526 < 2) {
+                                var_526 = 2;
+                            }
+                            var_11 = 1;
+                            bsave("00.dat", var_11, null, 80);
+                        }
+                        if (var_407 == 2) {
+                            var_534++;
+                            yield func929();
+                        }
+                        yield func173();
+                        return;
                     }
-                    if (var_407 == 2) {
-                        var_534++;
-                        yield func929();
-                    }
-                    yield func173();
-                    return;
                 }
                 if (var_62 == 3 && var_91 == 99) {
                     var_373 = 5;
@@ -8197,7 +8207,7 @@ function func076() {
             }
             gcopy(34, var_598, 80, 20, 40);
 
-            if (var_62 === 3 && specialRule !== "通常") {
+            if ((var_62 === 3 && specialRule !== "通常") || specialRule === "ダンジョンリレー") {
                 color(255, 255, 255);
                 pos(2, 320);
                 font("MS UI Gothic", 12);

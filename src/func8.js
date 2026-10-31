@@ -1994,10 +1994,6 @@ function func829() {
         if (var_62 == 3 && var_91 > var_379) {
             var_379 = var_91;
         }
-        
-        specialRule = vm.specialRule;
-        localStorage.setItem("specialRule", specialRule);
-
         var_405 = 0;
         var_344 = 0;
         var_373 = 5;
@@ -3042,25 +3038,37 @@ function func839() {
                 if (var_3198 == 1) {
                     var_3198 = 0;
                     var_548 = 0;
-                    yield func825();
+                    specialRule = "通常";
+                    yield func825(); // ホテルの外 初期化
                     return;
                 }
                 if (var_3199 == 1) {
                     var_3199 = 0;
                     var_548 = 0;
-                    yield func827();
+                    specialRule = "通常";
+                    yield func827(); // レクイエムの大迷宮 初期化
                     return;
                 }
                 if (var_3200 == 1) {
                     var_3200 = 0;
                     var_548 = 0;
-                    yield func829();
+                    
+                    specialRule = vm.specialRule;
+                    localStorage.setItem("specialRule", specialRule);
+
+                    if (specialRule === "ダンジョンリレー") {
+                        yield func825(); // ホテルの外 初期化
+                    }
+                    else {
+                        yield func829(); // ディアボロの試練 初期化
+                    }
                     return;
                 }
                 if (var_3201 == 1) {
                     var_3201 = 0;
                     var_548 = 0;
-                    yield func834();
+                    specialRule = "通常";
+                    yield func834(); // 一巡後の世界 初期化
                     return;
                 }
                 if (var_3203 == 1) {
