@@ -510,7 +510,10 @@ const App = {
                 alert("インポートに失敗しました");
             }
         },
-        exportSaveFile() {
+        async exportSaveFile() {
+            var_205 = 1;
+            await func231();
+
             const data = {};
 
             for (let i = 0; i < localStorage.length; i++) {
