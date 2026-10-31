@@ -34,3 +34,16 @@ function 射撃DISCの出現率を検証(part) {
         }))
     );
 }
+
+function setVar478() {
+    return new Proxy(var_478, {
+        set(target, property, value) {
+            const total = target.reduce((sum, value) => sum + value, 0);
+            const newTotal = total - (target[property] || 0) + value;
+            if (newTotal > 1) {
+                // debugger;
+            }
+            return Reflect.set(target, property, value);
+        }
+    });
+}
