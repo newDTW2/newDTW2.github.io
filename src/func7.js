@@ -886,6 +886,9 @@ function func705() {
                     var_891 = "何者か";
                 }
                 var_296 = "" + var_891 + "をやっつけた";
+                if (specialRule === "凝縮") {
+                    var_2956 *= 2;
+                }
                 var_297 = "" + var_2956 + "の経験値を手に入れた";
                 var_2945 = var_437;
                 var_25_x = var_25[1];
@@ -952,6 +955,9 @@ function func705() {
                 if (var_83[var_673].Var0 == 36 || var_83[var_673].Var0 == 105 || var_83[var_673].Var0 == 106 || var_83[var_673].Var0 == 107 || var_83[var_673].Var0 == 108) {
                     var_296 = "ディアボロ達は";
                 }
+                if (specialRule === "凝縮") {
+                    var_3109 *= 2;
+                }
                 var_297 = "" + var_3109 + "の経験値を手に入れた";
                 var_2945 = var_437;
                 var_25_x = var_25[1];
@@ -994,6 +1000,9 @@ function func705() {
                 var_293 = var_296;
                 var_294 = var_297;
                 var_296 = "ディアボロは";
+                if (specialRule === "凝縮") {
+                    var_3109 *= 2;
+                }
                 var_297 = "" + var_3109 + "の経験値を手に入れた";
                 var_2945 = var_437;
                 var_25_x = var_25[1];

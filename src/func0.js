@@ -6574,7 +6574,7 @@ function func060() {
                         return;
                     }
                 }
-                if (var_62 == 3 && var_91 == 99) {
+                if ((var_62 == 3 && var_91 == 99) || (specialRule === "凝縮" && var_91 === 50)) {
                     var_373 = 5;
                     for (var cnt4 = 0; cnt4 < 2; ++cnt4) {
                         yield func337();

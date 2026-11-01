@@ -17014,6 +17014,9 @@ function func383() {
         dbgprt(383);
         var_336 = rnd(3);
         var_336 = var_336 + 4;
+        if (specialRule === "凝縮") {
+            var_336 += rnd(3) + 4;
+        }
         if (var_1024 == 1) {
             var_1024 = 0;
             var_336 = var_336 + 6;
