@@ -9962,19 +9962,7 @@ function func630() {
             98: [111, 98, 120, 60, 114, 118, 151],
             99: [166, 166, 166, 166, 166, 166, 157],
         };
-        if (specialRule === "凝縮") {
-            if (var_91 < 50) {
-                var_977 = 敵テーブル[var_91 * 2 - 1].concat(敵テーブル[var_91 * 2]);
-                var_2917 = rnd(var_977.length);
-                var_953 = var_977[var_2917];
-            }
-            else {
-                var_977 = 敵テーブル[99];
-                var_2917 = rnd(var_977.length);
-                var_953 = var_977[var_2917];
-            }
-        }
-        else if (var_91 < 100) {
+        if (var_91 < 100) {
             var_977 = 敵テーブル[var_91];
             var_2917 = rnd(var_977.length);
             var_953 = var_977[var_2917];
