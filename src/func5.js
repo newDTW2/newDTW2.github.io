@@ -11102,6 +11102,10 @@ function func535() {
         if (var_94 == 9) {
             return;
         }
+        const tmp = var_91;
+        if (specialRule === "凝縮") {
+            var_91 *= 2;
+        }
         if (var_91 >= 1 && var_91 <= 5) {
             var_337 = 3;
         }
@@ -11113,6 +11117,9 @@ function func535() {
         }
         if (var_91 >= 20) {
             var_337 = 6;
+        }
+        if (specialRule === "凝縮") {
+            var_91 = tmp;
         }
         yield func536();
     });
@@ -16824,6 +16831,10 @@ function func555() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(555);
         var_952 = rnd(3);
+        const tmp = var_91;
+        if (specialRule === "凝縮") {
+            var_91 *= 2;
+        }
         if (var_91 >= 1 && var_91 < 6) {
             var_952 = var_952 + 4;
         }
@@ -16838,6 +16849,9 @@ function func555() {
         }
         if (var_91 >= 30) {
             var_952 = var_952 + 7;
+        }
+        if (specialRule === "凝縮") {
+            var_91 = tmp;
         }
         if (var_62 == 1 && var_91 == 12 && var_94 == 0 && var_386 == 0) {
             return;
