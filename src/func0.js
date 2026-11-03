@@ -8216,13 +8216,13 @@ function func076() {
                 pos(180, 160);
             }
             gcopy(34, var_598, 80, 20, 40);
-        }
 
-        if (var_62 === 3 && specialRule !== "通常") {
-            color(255, 255, 255);
-            pos(2, 320);
-            font("MS UI Gothic", 12);
-            mes(`　　　${specialRule}`);
+            if (specialRule !== "通常") {
+                color(255, 255, 255);
+                pos(2, 320);
+                font("MS UI Gothic", 12);
+                mes(`　　　${specialRule}`);
+            }
         }
 
         if (var_10 >= 1) {
