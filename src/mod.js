@@ -89,4 +89,21 @@ function 射撃DISCをランダムに取得(part) {
     }
 }
 
+function incrementVar_91() {
+    if (specialRule === "凝縮") {
+        var_91 = var_91 + 2;
+    }
+    else {
+        var_91 = var_91 + 1;
+    }
+}
+
+function mesVar_91() {
+    if (specialRule === "凝縮") {
+        mes((var_91 + 1) / 2);
+    }
+    else {
+        meas(var_91);
+    }
+}
 

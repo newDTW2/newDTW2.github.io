@@ -3052,7 +3052,7 @@ function func019() {
                     yield func880();
                     return;
                 }
-                var_91 = var_91 + 1;
+                incrementVar_91();
                 if (var_91 > var_376) {
                     var_376 = var_91;
                 }
@@ -6698,7 +6698,7 @@ function func060() {
                 }
                 var_373 = 0;
                 if (var_73[var_66][var_67] == 1) {
-                    var_91 = var_91 + 1;
+                    incrementVar_91();
                     if (var_91 > var_376) {
                         var_376 = var_91;
                     }
@@ -8184,20 +8184,24 @@ function func076() {
             gcopy(34, 640, 920, 340, 40);
         }
         if (var_62 != 0 && var_62 != 99 && var_94 == 0) {
-            var_596 = Math.floor(var_91 / 100);
-            var_597 = Math.floor((var_91 - var_596 * 100) / 10);
-            var_598 = var_91 - var_596 * 100 - var_597 * 10;
+            let currentFloor = var_91;
+            if (specialRule === "凝縮") {
+                currentFloor = (var_91 + 1) / 2;
+            }
+            var_596 = Math.floor(currentFloor / 100);
+            var_597 = Math.floor((currentFloor - var_596 * 100) / 10);
+            var_598 = currentFloor - var_596 * 100 - var_597 * 10;
             var_596 = var_596 * 20 + 640;
             var_597 = var_597 * 20 + 640;
             var_598 = var_598 * 20 + 640;
-            if (var_597 == 640 && var_91 < 100) {
+            if (var_597 == 640 && currentFloor < 100) {
                 var_597 = 1600;
             }
             if (var_596 == 640) {
                 var_596 = 1600;
             }
             pos(90, 160);
-            if (var_91 >= 100) {
+            if (currentFloor >= 100) {
                 pos(70, 160);
             }
             gcopy(34, 880, 80, 80, 40);
@@ -8212,14 +8216,15 @@ function func076() {
                 pos(180, 160);
             }
             gcopy(34, var_598, 80, 20, 40);
-
-            if (specialRule !== "通常") {
-                color(255, 255, 255);
-                pos(2, 320);
-                font("MS UI Gothic", 12);
-                mes(`　　　${specialRule}`);
-            }
         }
+
+        if (var_62 === 3 && specialRule !== "通常") {
+            color(255, 255, 255);
+            pos(2, 320);
+            font("MS UI Gothic", 12);
+            mes(`　　　${specialRule}`);
+        }
+
         if (var_10 >= 1) {
             yield func338();
         }
@@ -8341,20 +8346,24 @@ function func077() {
             gcopy(34, 640, 920, 340, 40);
         }
         if (var_62 != 0 && var_62 != 99 && var_94 == 0) {
-            var_596 = Math.floor(var_91 / 100);
-            var_597 = Math.floor((var_91 - var_596 * 100) / 10);
-            var_598 = var_91 - var_596 * 100 - var_597 * 10;
+            let currentFloor = var_91;
+            if (specialRule === "凝縮") {
+                currentFloor = (var_91 + 1) / 2;
+            }
+            var_596 = Math.floor(currentFloor / 100);
+            var_597 = Math.floor((currentFloor - var_596 * 100) / 10);
+            var_598 = currentFloor - var_596 * 100 - var_597 * 10;
             var_596 = var_596 * 20 + 640;
             var_597 = var_597 * 20 + 640;
             var_598 = var_598 * 20 + 640;
-            if (var_597 == 640 && var_91 < 100) {
+            if (var_597 == 640 && currentFloor < 100) {
                 var_597 = 1600;
             }
             if (var_596 == 640) {
                 var_596 = 1600;
             }
             pos(90, 160);
-            if (var_91 >= 100) {
+            if (currentFloor >= 100) {
                 pos(70, 160);
             }
             gcopy(34, 880, 80, 80, 40);

@@ -3627,7 +3627,7 @@ function func342() {
             pos(var_43 - 1, var_41 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3672,7 +3672,7 @@ function func342() {
             pos(var_43 + 2, var_41 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3717,7 +3717,7 @@ function func342() {
             pos(var_43, var_41 - 1 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3762,7 +3762,7 @@ function func342() {
             pos(var_43, var_41 + 1 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3807,7 +3807,7 @@ function func342() {
             pos(var_43 + 1, var_41 + 1 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3852,7 +3852,7 @@ function func342() {
             pos(var_43 + 1, var_41 - 1 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3898,7 +3898,7 @@ function func342() {
             pos(var_43, var_41 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");
@@ -3960,7 +3960,7 @@ function func342() {
             pos(var_43 + 1, var_41 + offset);
         }
         if (var_262 == 0) {
-            mes(var_91);
+            mesVar_91();
         }
         if (var_262 == 1) {
             mes("1");

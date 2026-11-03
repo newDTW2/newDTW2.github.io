@@ -9962,7 +9962,19 @@ function func630() {
             98: [111, 98, 120, 60, 114, 118, 151],
             99: [166, 166, 166, 166, 166, 166, 157],
         };
-        if (var_91 < 100) {
+        if (specialRule === "凝縮") {
+            if (var_91 < 99) {
+                var_977 = 敵テーブル[var_91].concat(敵テーブル[var_91 + 1]);
+                var_2917 = rnd(var_977.length);
+                var_953 = var_977[var_2917];
+            }
+            else {
+                var_977 = 敵テーブル[99];
+                var_2917 = rnd(var_977.length);
+                var_953 = var_977[var_2917];
+            }
+        }
+        else if (var_91 < 100) {
             var_977 = 敵テーブル[var_91];
             var_2917 = rnd(var_977.length);
             var_953 = var_977[var_2917];
@@ -9982,13 +9994,13 @@ function func631() {
         if (var_112 > 300) {
             var_2919 = rnd(10);
             if (var_2919 >= 5) {
-                var_91 = var_91 + 1;
+                incrementVar_91();
             }
             if (var_2919 >= 6 && var_112 > 500) {
-                var_91 = var_91 + 1;
+                incrementVar_91();
             }
             if (var_2919 >= 7 && var_112 > 700) {
-                var_91 = var_91 + 1;
+                incrementVar_91();
             }
         }
         if (var_91 == 1) {

@@ -31056,7 +31056,7 @@ function func594() {
             var_2840 = 99;
         }
         var_91 = rnd(var_2840);
-        var_91 = var_91 + 1;
+        incrementVar_91();
         yield func627();
         if (var_62 == 0 || var_62 == 99) {
             var_953 = 37;

@@ -3826,7 +3826,7 @@ function func755() {
         yield func340();
         var_3142 = sdim(50, 20);
         var_3143 = var_91;
-        var_91 = var_91 + 1;
+        incrementVar_91();
         yield func627();
         var_3144 = 0;
         for (var cnt1 = 0; cnt1 < 10; ++cnt1) {
@@ -3987,7 +3987,7 @@ function func758() {
         yield func050();
         yield func340();
         var_3143 = var_91;
-        var_91 = var_91 + 1;
+        incrementVar_91();
         yield func627();
         var_356 = var_977[var_2569];
         yield func177();
