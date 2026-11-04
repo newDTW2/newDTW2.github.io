@@ -6810,19 +6810,30 @@ function func061() {
 function func062() {
     return __awaiter(this, void 0, void 0, function* () {
         dbgprt(62);
-        var_224 = var_224 + 1;
-        var_233[var_224].Var0 = 602;
-
+        
         if (specialRule === "Do or Die") {
+            // ｷﾝｸﾞ・ｸﾘﾑｿﾞﾝのDISC
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 102;
             var_233[var_224].Var16 = 10;
             var_233[var_224].Var5 = 1;
+            // 識別済みにする
+            var_233[var_224].Var14 = 1;
+            var_862[var_233[var_224].Var0][0] = 1;
+            
+            // ｴﾋﾟﾀﾌのDISC
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 315;
             var_233[var_224].Var16 = 5;
             var_233[var_224].Var5 = 1;
+            // 識別済みにする
+            var_233[var_224].Var14 = 1;
+            var_862[var_233[var_224].Var0][0] = 1;
         }
+
+        // ﾈｱﾎﾟﾘｽのﾋﾟｯｯｧ
+        var_224 = var_224 + 1;
+        var_233[var_224].Var0 = 602;
 
         return;
     });
