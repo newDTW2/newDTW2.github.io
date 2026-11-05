@@ -6830,10 +6830,36 @@ function func062() {
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;
         }
+        else if (specialRule === "天国への道") {
+            // ﾎﾜｲﾄｽﾈｲｸのDISC
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 114;
+            var_233[var_224].Var16 = 10;
+            var_233[var_224].Var5 = 4;
+            var_233[var_224].Var14 = 1;
+            var_862[var_233[var_224].Var0][0] = 1;
 
-        // ﾈｱﾎﾟﾘｽのﾋﾟｯｯｧ
-        var_224 = var_224 + 1;
-        var_233[var_224].Var0 = 602;
+            // ﾊﾟｰﾙ・ｼﾞｬﾑのDISC
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 300;
+            var_233[var_224].Var16 = 5;
+            var_233[var_224].Var5 = 3;
+            var_233[var_224].Var14 = 1;
+            var_862[var_233[var_224].Var0][0] = 1;
+
+            // DIOの骨
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 807;
+            var_233[var_224].Var7 = 5;
+            var_233[var_224].Var14 = 1;
+            var_862[var_233[var_224].Var0][0] = 1;
+        }
+
+        if (specialRule !== "天国への道") {
+            // ﾈｱﾎﾟﾘｽのﾋﾟｯｯｧ
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 602;
+        }
 
         return;
     });
