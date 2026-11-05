@@ -17135,6 +17135,16 @@ function func555() {
                 var_2509 = 0;
             }
         }
+
+        if (specialRule === "天国への道") {
+            if (rnd(10) === 10) {
+                // ヨーヨーマッ
+                var_2527 = 6;
+                yield func556();
+                var_2527 = 0;
+            }
+        }
+
         return;
     });
 }
