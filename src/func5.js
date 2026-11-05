@@ -17137,7 +17137,7 @@ function func555() {
         }
 
         if (specialRule === "天国への道") {
-            if (rnd(10) === 10) {
+            if (rnd(10) === 0) {
                 // ヨーヨーマッ
                 var_2527 = 6;
                 yield func556();
