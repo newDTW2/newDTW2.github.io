@@ -6839,14 +6839,6 @@ function func062() {
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;
 
-            // ﾊﾟｰﾙ・ｼﾞｬﾑのDISC
-            var_224 = var_224 + 1;
-            var_233[var_224].Var0 = 300;
-            var_233[var_224].Var16 = 5;
-            var_233[var_224].Var5 = 3;
-            var_233[var_224].Var14 = 1;
-            var_862[var_233[var_224].Var0][0] = 1;
-
             // DIOの骨
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 807;
@@ -6855,11 +6847,9 @@ function func062() {
             var_862[var_233[var_224].Var0][0] = 1;
         }
 
-        if (specialRule !== "天国への道") {
-            // ﾈｱﾎﾟﾘｽのﾋﾟｯｯｧ
-            var_224 = var_224 + 1;
-            var_233[var_224].Var0 = 602;
-        }
+        // ﾈｱﾎﾟﾘｽのﾋﾟｯｯｧ
+        var_224 = var_224 + 1;
+        var_233[var_224].Var0 = 602;
 
         return;
     });

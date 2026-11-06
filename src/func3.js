@@ -17191,14 +17191,13 @@ function func384() {
                 else if (specialRule === "天国への道") {
                     var_1735 = アイテム種別をランダムに取得({
                         "お金": { type: 0, weight: 24 },
-                        "食べ物": { type: 6, weight: 0 },
+                        "食べ物": { type: 6, weight: 6 },
                         "装備DISC": { type: 1, weight: 48 },
                         "記憶DISC": { type: 5, weight: 13 },
                         "射撃DISC": { type: 3, weight: 0 },
                         "カエル・オレンジ": { type: 4, weight: 5 },
                         "コミック": { type: 9, weight: 0 },
                         "壺": { type: 10, weight: 4 },
-                        "パール・ジャム": { type: 12, weight: 6 },
                     });
                 }
                 else {
@@ -18654,12 +18653,6 @@ function func385() {
         // 鉄球（特殊ルール用）
         if (var_1735 === 11) {
             var_78[var_866].Var0 = 726;
-        }
-        // パール・ジャム（特殊ルール用）
-        if (var_1735 === 12) {
-            var_78[var_866].Var0 = 300;
-            var_78[var_866].Var16 = 5;
-            var_78[var_866].Var5 = 3;
         }
         return;
     });
