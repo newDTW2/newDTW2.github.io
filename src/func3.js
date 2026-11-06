@@ -18495,7 +18495,7 @@ function func385() {
                 if (r === 0) {
                     var_78[var_866].Var0 = 802; // トラクターのタイヤ
                 }
-                else if (r <= 10) {
+                else if (r < 50) {
                     var_78[var_866].Var0 = 807; // DIOの骨
                 }
                 else {
