@@ -200,7 +200,7 @@ function buffer(id, disp_width = null, disp_height = null, mode = null) {
 }
 function button(data0, data1) { undef_func("button", [data0, data1]); }
 function cls(id) {
-    contexts[id].fillStyle = ["#fff", "#ccc", "888", "444", "#000"][id];
+    contexts[id].fillStyle = ["#fff", "#ccc", "#888", "#444", "#000"][id];
     contexts[id].fillRect(0, 0, 680, 680);
 }
 function chdir(data0) { undef_func("chdir", [data0]); }
