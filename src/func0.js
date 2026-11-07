@@ -370,7 +370,7 @@ function func007() {
         var_83 = CharactorInfo.dim(300);
         var_84 = dim(70, 70);
         var_85 = 0;
-        if (specialRule === "オインゴ＆ボインゴ" && var_91 % 10 === 8) {
+        if (specialRule === "オインゴ＆ボインゴ" && (var_91 === 50 || var_91 === 98)) {
             var_86 = 0;
             var_70 = 7; // 大部屋モンスターハウス
         }
