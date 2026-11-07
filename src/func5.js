@@ -17144,6 +17144,20 @@ function func555() {
                 var_2527 = 0;
             }
         }
+        else if (specialRule === "オインゴ＆ボインゴ") {
+            if (var_91 > 15) {
+                // オインゴ
+                var_2355 = 97;
+                yield func556();
+                var_2355 = 0;
+            }
+            if (rnd(4) === 0) {
+                // ボインゴ
+                var_2527 = 3;
+                yield func556();
+                var_2527 = 0;
+            }
+        }
 
         return;
     });

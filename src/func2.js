@@ -4509,6 +4509,30 @@ function func246() {
         if (var_91 < 4) {
             var_96 = 0;
         }
+        if (var_96 === 0 && specialRule === "オインゴ＆ボインゴ") {
+            if (Math.random() < 0.4) {
+                var_96 = 1;
+                if (var_91 >= 8 && rnd(4) === 0) {
+                    const typeList = [3]; // ハイウェイスター・ルーム
+                    if (var_91 >= 15) {
+                        typeList.push(2); // バッド・カンパニー・ハウス
+                    }
+                    if (var_91 >= 20) {
+                        typeList.push(4); // 吸血鬼ハウス
+                    }
+                    if (var_91 >= 25) {
+                        typeList.push(5); // スタンドハウス
+                    }
+                    if (var_91 >= 35) {
+                        typeList.push(6); // 杜王町ハウス
+                    }
+                    if (var_91 >= 50) {
+                        typeList.push(7); // 水族館
+                    }
+                    var_96 = typeList[rnd(typeList.length)];
+                }
+            }
+        }
         if (var_62 == 1) {
             var_96 = 0;
         }
