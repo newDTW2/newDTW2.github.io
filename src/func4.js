@@ -17006,6 +17006,9 @@ function func498() {
             var_293 = var_296;
             var_294 = var_297;
             var_2202 = rnd(13);
+            if (specialRule === "オインゴ＆ボインゴ" && var_91 % 10 === 7) {
+                var_2202 = 6; // 大部屋モンスターハウス
+            }
             if (var_62 == 4) {
                 yield func458();
                 if (var_69 == 1) {
