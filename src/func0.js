@@ -290,7 +290,7 @@ function func004() {
         yield func138();
         buffer(36, 340, 340);
         buffer(32, 200, 200);
-        yield func183();
+        // yield func183();
         yield func081();
         yield func082();
         yield func083();

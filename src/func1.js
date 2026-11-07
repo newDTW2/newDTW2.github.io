@@ -7376,7 +7376,7 @@ function func183() {
         }
         screen_(31, 350, 250, 10);
         title("デバッグウィンドウ");
-        cls(1);
+        cls(1); // これのせいでcanvases[1]が汚れる
         objmode(1, 1);
         font("MS UI ゴシック", 10);
         color(0, 0, 0);
