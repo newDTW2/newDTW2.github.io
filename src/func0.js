@@ -6819,8 +6819,10 @@ function func062() {
             // ｷﾝｸﾞ・ｸﾘﾑｿﾞﾝのDISC
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 102;
+            var_233[var_224].Var20 = 102;
             var_233[var_224].Var16 = 10;
             var_233[var_224].Var5 = 1;
+            var_233[var_224].Var19 = 1;
             // 識別済みにする
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;
@@ -6828,8 +6830,10 @@ function func062() {
             // ｴﾋﾟﾀﾌのDISC
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 315;
+            var_233[var_224].Var20 = 315;
             var_233[var_224].Var16 = 5;
             var_233[var_224].Var5 = 1;
+            var_233[var_224].Var19 = 1;
             // 識別済みにする
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;
@@ -6838,15 +6842,37 @@ function func062() {
             // ﾎﾜｲﾄｽﾈｲｸのDISC
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 114;
+            var_233[var_224].Var20 = 114;
             var_233[var_224].Var16 = 10;
             var_233[var_224].Var5 = 4;
+            var_233[var_224].Var19 = 1;
+            // 識別済みにする
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;
 
             // DIOの骨
             var_224 = var_224 + 1;
             var_233[var_224].Var0 = 807;
+            var_233[var_224].Var6 = var_858;
             var_233[var_224].Var7 = 5;
+
+            var_486[var_858][1][0] = 0;
+            var_486[var_858][2][0] = 0;
+            var_486[var_858][3][0] = 0;
+            var_486[var_858][4][0] = 0;
+            var_486[var_858][5][0] = 0;
+            var_486[var_858][6][0] = 0;
+            var_486[var_858][7][0] = 0;
+            var_486[var_858][8][0] = 0;
+            var_486[var_858][9][0] = 0;
+            var_486[var_858][10][0] = 0;
+
+            var_858 += 1;
+            if (var_858 > 79) {
+                var_858 = 0;
+            }
+            
+            // 識別済みにする
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;
         }
