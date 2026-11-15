@@ -17017,6 +17017,9 @@ function func383() {
         if (specialRule === "凝縮") {
             var_336 += rnd(3) + 4;
         }
+        else if (specialRule === "帰宅ラッシュ") {
+            var_336 += 3;
+        }
         if (var_1024 == 1) {
             var_1024 = 0;
             var_336 = var_336 + 6;

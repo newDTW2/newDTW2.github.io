@@ -3168,6 +3168,9 @@ function func019() {
                 if (var_156[396] == 1 && var_112 < 680) {
                     var_112 = var_112 + 2;
                 }
+                if (specialRule === "帰宅ラッシュ" && var_112 >= 400 && var_112 < 700) {
+                    var_112 = 700;
+                }
                 if (var_112 == 700 || var_112 == 850 || var_112 == 1000) {
                     var_240 = 0;
                     yield func072();
@@ -3182,6 +3185,9 @@ function func019() {
                     yield func722();
                 }
                 var_165 = var_165 + 1;
+                if (specialRule === "帰宅ラッシュ") {
+                    var_165 += 6;
+                }
                 if (var_156[358] == 1) {
                     var_165 = var_165 + 1;
                 }
@@ -6872,6 +6878,18 @@ function func062() {
                 var_858 = 0;
             }
             
+            // 識別済みにする
+            var_233[var_224].Var14 = 1;
+            var_862[var_233[var_224].Var0][0] = 1;
+        }
+        else if (specialRule === "帰宅ラッシュ") {
+            // ｼﾝﾃﾞﾚﾗのDISC
+            var_224 = var_224 + 1;
+            var_233[var_224].Var0 = 305;
+            var_233[var_224].Var20 = 305;
+            var_233[var_224].Var16 = 5;
+            var_233[var_224].Var5 = 1;
+            var_233[var_224].Var19 = 1;
             // 識別済みにする
             var_233[var_224].Var14 = 1;
             var_862[var_233[var_224].Var0][0] = 1;

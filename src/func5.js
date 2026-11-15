@@ -16848,6 +16848,9 @@ function func555() {
         if (var_94 == 7) {
             var_952 = var_952 + 10;
         }
+        if (specialRule === "帰宅ラッシュ") {
+            var_952 += 5;
+        }
         for (var cnt1 = 0; cnt1 < var_952; ++cnt1) {
             var_97 = var_97 + 1;
             var_673 = var_97;
