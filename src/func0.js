@@ -3186,7 +3186,7 @@ function func019() {
                 }
                 var_165 = var_165 + 1;
                 if (specialRule === "帰宅ラッシュ") {
-                    var_165 += 6;
+                    var_165 += 3;
                 }
                 if (var_156[358] == 1) {
                     var_165 = var_165 + 1;
