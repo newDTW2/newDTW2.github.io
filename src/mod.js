@@ -13,10 +13,14 @@ function アイテム種別をランダムに取得(出現確率) {
 }
 
 function 装備DISCをランダムに取得(part) {
-    const 部の対象一覧 = 装備DISC一覧.filter(disc =>
-        disc.part.includes(part) &&
-        disc.rarity !== "X"
-    );
+    const 部の対象一覧 = 装備DISC一覧.filter(disc => {
+        if (part === undefined) {
+            return disc.rarity !== "X"
+        }
+        else {
+            return disc.part.includes(part) && disc.rarity !== "X"
+        }
+    });
 
     const 出現率 = {
         R: 1 / 25,
@@ -24,6 +28,9 @@ function 装備DISCをランダムに取得(part) {
         SSR: 1 / 100,
         UR: 1 / 150,
     };
+    if (part === undefined) {
+        出現率["R"] = 1 / 30;
+    }
 
     const レア一覧 = 部の対象一覧.filter(
         disc => 出現率[disc.rarity] !== undefined

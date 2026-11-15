@@ -17514,6 +17514,12 @@ function func385() {
                 var_78[var_866].Var16 = disc.Var16;
                 var_78[var_866].Var5 = disc.Var5;
             }
+            else if (specialRule === "帰宅ラッシュ") {
+                const disc = 装備DISCをランダムに取得();
+                var_78[var_866].Var0 = disc.id;
+                var_78[var_866].Var16 = disc.Var16;
+                var_78[var_866].Var5 = disc.Var5;
+            }
             else if (var_62 == 1) { // ホテルの外
                 var_1772 = rnd(100);
                 if (var_1772 >= 0 && var_1772 < 15) {

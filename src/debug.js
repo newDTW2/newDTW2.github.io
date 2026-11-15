@@ -1,6 +1,6 @@
 
 function 装備DISCの出現率を検証(part) {
-    const 回数 = 1000;
+    const 回数 = 10000;
     const 統計 = {};
 
     for (let i = 0; i < 回数; i++) {
@@ -18,7 +18,7 @@ function 装備DISCの出現率を検証(part) {
 }
 
 function 射撃DISCの出現率を検証(part) {
-    const 回数 = 100;
+    const 回数 = 10000;
     const 統計 = {};
 
     for (let i = 0; i < 回数; i++) {
