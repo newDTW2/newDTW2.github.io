@@ -520,8 +520,10 @@ const App = {
             }
         },
         async exportSaveFile() {
-            var_205 = 1;
-            await func231();
+            if (localStorage.getItem(var_735)) {
+                var_205 = 1;
+                await func231();
+            }
 
             const data = {};
 
@@ -538,8 +540,18 @@ const App = {
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
 
+            const date = new Date();
+            const yyyyMMddhhmmss = [
+                date.getFullYear(),
+                String(date.getMonth() + 1).padStart(2, '0'),
+                String(date.getDate()).padStart(2, '0'),
+                String(date.getHours()).padStart(2, '0'),
+                String(date.getMinutes()).padStart(2, '0'),
+                String(date.getSeconds()).padStart(2, '0')
+            ].join('');
+
             a.href = url;
-            a.download = "diavolo.json";
+            a.download = `diavolo_${yyyyMMddhhmmss}.json`;
             a.click();
 
             URL.revokeObjectURL(url);
