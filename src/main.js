@@ -563,7 +563,9 @@ const App = {
             a.download = `diavolo_${yyyyMMddhhmmss}.json.gz`;
             a.click();
 
-            URL.revokeObjectURL(url);
+            setTimeout(() => {
+                URL.revokeObjectURL(url);
+            }, 10000);
         },
         onChangeアイテムジャンル(itemType) {
             this.itemType = itemType;
