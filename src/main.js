@@ -502,7 +502,14 @@ const App = {
 
             try {
                 const file = e.target.files[0];
-                const text = await file.text();
+                let text;
+                if (file.name.toLowerCase().endsWith(".gz")) {
+                    const stream = file.stream().pipeThrough(new DecompressionStream('gzip'));
+                    text = await new Response(stream).text();
+                }
+                else {
+                    text = await file.text();
+                }
                 const data = JSON.parse(text);
 
                 localStorage.clear();
@@ -531,10 +538,13 @@ const App = {
                 data[key] = localStorage.getItem(key);
             }
 
-            const blob = new Blob(
-                [JSON.stringify(data, null, 2)],
-                { type: "application/json;charset=utf-8" }
-            );
+            const json = JSON.stringify(data);
+
+            const compressedStream = new Blob([json])
+                .stream()
+                .pipeThrough(new CompressionStream('gzip'));
+
+            const blob = await new Response(compressedStream).blob();
 
             const url = URL.createObjectURL(blob);
             const a = document.createElement("a");
@@ -550,7 +560,7 @@ const App = {
             ].join('');
 
             a.href = url;
-            a.download = `diavolo_${yyyyMMddhhmmss}.json`;
+            a.download = `diavolo_${yyyyMMddhhmmss}.json.gz`;
             a.click();
 
             URL.revokeObjectURL(url);
