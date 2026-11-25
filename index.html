@@ -23,6 +23,9 @@
 			<div style="text-align: center;" v-if="isMobile && !isLandscape">
 				スマホを横にしてください
 			</div>
+			<div style="text-align: center;" v-if="isIOSGoogle">
+				Googleアプリでは「セーブデータ移行 > エクスポート」が機能しません。別のブラウザをオススメします
+			</div>
 			<details>
 				<summary>操作説明</summary>
 				<div id="operation-guide">

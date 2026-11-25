@@ -77,6 +77,7 @@ const App = {
             canCheat: false,
             canSave: true,
             isMobile: isMobile,
+            isIOSGoogle: /iPhone|iPad|iPod/.test(navigator.userAgent) && /GSA\//.test(navigator.userAgent),
             isLandscape: [90, 270].includes(screen.orientation.angle),
             padEnabled: false,
             attackButtonIndex: 2,
@@ -553,30 +554,8 @@ const App = {
                 String(date.getMinutes()).padStart(2, "0"),
                 String(date.getSeconds()).padStart(2, "0")
             ].join("");
-
-            const filename = `diavolo_${yyyyMMddhhmmss}.json.gz`;
-
-            const isIOSGoogle = /iPhone|iPad|iPod/.test(navigator.userAgent) && /GSA\//.test(navigator.userAgent);
-            if (isIOSGoogle) {
-                const reader = new FileReader();
-
-                reader.onload = () => {
-                    const a = document.createElement("a");
-                    a.href = reader.result;
-                    a.style.display = "none";
-                    a.setAttribute("download", filename);
-                    a.download = filename;
-
-                    document.body.appendChild(a);
-                    a.click();
-                    a.parentNode.removeChild(a);
-                };
-
-                reader.readAsDataURL(blob);
-            }
-            else {
-                saveAs(blob, filename);
-            }
+            
+            saveAs(blob, `diavolo_${yyyyMMddhhmmss}.json.gz`);
         },
         onChangeアイテムジャンル(itemType) {
             this.itemType = itemType;
