@@ -504,7 +504,7 @@ const App = {
                 const file = e.target.files[0];
                 let text;
                 if (file.name.toLowerCase().endsWith(".gz")) {
-                    const stream = file.stream().pipeThrough(new DecompressionStream('gzip'));
+                    const stream = file.stream().pipeThrough(new DecompressionStream("gzip"));
                     text = await new Response(stream).text();
                 }
                 else {
@@ -540,32 +540,43 @@ const App = {
 
             const json = JSON.stringify(data);
 
-            const compressedStream = new Blob([json])
-                .stream()
-                .pipeThrough(new CompressionStream('gzip'));
+            const compressedStream = new Blob([json]).stream().pipeThrough(new CompressionStream("gzip"));
 
             const blob = await new Response(compressedStream).blob();
-
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement("a");
 
             const date = new Date();
             const yyyyMMddhhmmss = [
                 date.getFullYear(),
-                String(date.getMonth() + 1).padStart(2, '0'),
-                String(date.getDate()).padStart(2, '0'),
-                String(date.getHours()).padStart(2, '0'),
-                String(date.getMinutes()).padStart(2, '0'),
-                String(date.getSeconds()).padStart(2, '0')
-            ].join('');
+                String(date.getMonth() + 1).padStart(2, "0"),
+                String(date.getDate()).padStart(2, "0"),
+                String(date.getHours()).padStart(2, "0"),
+                String(date.getMinutes()).padStart(2, "0"),
+                String(date.getSeconds()).padStart(2, "0")
+            ].join("");
 
-            a.href = url;
-            a.download = `diavolo_${yyyyMMddhhmmss}.json.gz`;
-            a.click();
+            const filename = `diavolo_${yyyyMMddhhmmss}.json.gz`;
 
-            setTimeout(() => {
-                URL.revokeObjectURL(url);
-            }, 10000);
+            const isIOSGoogle = /iPhone|iPad|iPod/.test(navigator.userAgent) && /GSA\//.test(navigator.userAgent);
+            if (isIOSGoogle) {
+                const reader = new FileReader();
+
+                reader.onload = () => {
+                    const a = document.createElement("a");
+                    a.href = reader.result;
+                    a.style.display = "none";
+                    a.setAttribute("download", filename);
+                    a.download = filename;
+
+                    document.body.appendChild(a);
+                    a.click();
+                    a.parentNode.removeChild(a);
+                };
+
+                reader.readAsDataURL(blob);
+            }
+            else {
+                saveAs(blob, filename);
+            }
         },
         onChangeアイテムジャンル(itemType) {
             this.itemType = itemType;
