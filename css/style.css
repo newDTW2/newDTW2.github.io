@@ -137,3 +137,10 @@ label {
   white-space: pre-line;
 }
 
+#page-description {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  color: #999;
+  font-size: 0.9em;
+  text-align: center;
+}
